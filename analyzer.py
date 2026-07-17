@@ -48,7 +48,9 @@ def call_multi(messages):
     for b in BACKENDS:
         c = _post(b, messages)
         if c:
+            print(f"[analyzer] ✅ {b['name']} 调用成功（{b['model']}）")
             return c
+    print("[analyzer] ⚠️ 所有后端均未成功（可能 Key 缺失或全失败），将回退启发式")
     return None
 
 
