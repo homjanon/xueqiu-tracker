@@ -53,6 +53,9 @@ BACKENDS = [
 TIMEOUT = int(os.getenv("TIMEOUT", "150"))
 
 PAGES = int(os.getenv("PAGES", "2"))
+
+# 无新增发言时，每人保留最近多少条发言作为网站兜底展示
+RECENT_N = int(os.getenv("RECENT_N", "10"))
 HEADLESS = os.getenv("HEADLESS", "true").lower() != "false"
 
 DATA_DIR = os.getenv("DATA_DIR", "data")
