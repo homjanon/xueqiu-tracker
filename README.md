@@ -13,6 +13,11 @@
    - 无 Key 时回退关键词启发式（仅文字）。
 5. 对**带图发言**：下载截图（带 Referer 规避防盗链）→ 压缩 → 送视觉模型，抽取 `action / stocks / price / quantity / trend`。
 6. 跨用户合并生成**「每日一句话总结」**（`daily_summary`），由 LLM 浓缩全天重点操作，失败回退启发式拼接。
+
+## 提示词与文档格式
+- 文字识别的结构化提示词放在 **`prompt/extract_prompt.txt`**（参考 portfolio 仓的 `prompt/daily_report_prompt.txt` 风格）：角色 + 识别规则 + 输出 schema + 昵称对照表占位符。修改识别逻辑**优先改这个文件**，无需动代码；缺失时回退 `analyzer.TEXT_PROMPT`。
+- 喂给 LLM 的不是裸编号列表，而是 **portfolio 式结构化文档**：每条发言一个带 `发言ID / 发布时间 / 性质(原创·含引用·转发) / 系统预标注昵称 / 原文` 的分块，文档内嵌 `STOCK_ALIASES` 昵称对照表，让模型自行把「酒家→广州酒家(SH603043)」；并明确标注引用链不算本人操作以降噪。
+- 不再强制 `response_format: json_object`（会迫使推理模型吐 `{reasoning:…}` 空对象）；改为提示词约定 `{"signals":[…]}` 格式 + `analyzer._extract_json` 鲁棒解析（兼容裸数组/对象/围栏/`<think>`块），LLM 返回空时按【动作缺口】由启发式补缺。
 7. 输出：
    - `data/latest.json` —— **网站读取此文件**，采用「顶层合并 + `users[]` 明细」双结构（见下）
    - `reports/YYYY-MM-DD.md` —— 人读简报
