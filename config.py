@@ -1,8 +1,8 @@
 """配置：从环境变量读取，缺失时用默认值。
 模型调用按优先级走三级后端（均为原生多模态，图文通吃）：
-  1) NVIDIA Qwen3.5-VL（免费）
-  2) NVIDIA Kimi-K2.5（免费）
-  3) 硅基流动 Qwen3.5-35B-A3B（便宜付费）
+  1) NVIDIA Qwen3.5-122B-A10B（免费，原生VLM，122B总参/10B激活，比397B更快更稳）
+  2) NVIDIA Kimi-K2.5（免费，走 build.nvidia.com 专属 endpoint）
+  3) 硅基流动 Qwen3.5-35B-A3B（便宜付费，已验证可用）
 支持多用户（逗号分隔）；USER_HINTS 为各用户专属黑话词典（注入 LLM 提示）。
 """
 import os
@@ -24,12 +24,12 @@ USER_HINTS = {
 
 BACKENDS = [
     {
-        "name": "nvidia-qwen3.5-vl",
-        # 统一网关（NVIDIA AI Foundation Models），Qwen3.5-VL 在此可用，但 397B 免费档较慢
+        "name": "nvidia-qwen3.5-122b",
+        # 原生多模态视觉模型（122B总参/10B激活），比 397B 更小更快，免费档更稳
         "base_url": os.getenv("PRIMARY_BASE_URL", "https://integrate.api.nvidia.com/v1"),
         "api_key": os.getenv("NVIDIA_API_KEY", ""),
-        "model": os.getenv("PRIMARY_MODEL", "qwen/qwen3.5-397b-a17b"),
-        "timeout": int(os.getenv("PRIMARY_TIMEOUT", "150")),
+        "model": os.getenv("PRIMARY_MODEL", "qwen/qwen3.5-122b-a10b"),
+        "timeout": int(os.getenv("PRIMARY_TIMEOUT", "120")),
     },
     {
         "name": "nvidia-kimi-k2.5",

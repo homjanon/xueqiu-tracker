@@ -7,8 +7,8 @@
 2. 带 Cookie 调用雪球时间线 JSON 接口 `statuses/user_timeline.json`，按 `XUEQIU_USER_IDS`（逗号分隔）逐个抓取动态。
 3. 清洗 HTML、按各用户 `last_post_id` 去重，仅处理新增发言。
 4. **信号识别**走三级后端链（均为原生多模态，图文通吃），首个可用即生效：
-   - ① NVIDIA **Qwen3.5-VL**（`qwen/qwen3.5-397b-a17b`）— 免费
-   - ② NVIDIA **Kimi-K2.5**（`moonshotai/kimi-k2.5`）— 免费
+   - ① NVIDIA **Qwen3.5-122B-A10B**（`qwen/qwen3.5-122b-a10b`，原生VLM，122B总参/10B激活，比397B更快）— 免费
+   - ② NVIDIA **Kimi-K2.5**（`moonshotai/kimi-k2.5`，走 build.nvidia.com 专属 endpoint）— 免费
    - ③ 硅基流动 **Qwen3.5-35B-A3B**（`Qwen/Qwen3.5-35B-A3B`）— 便宜付费
    - 无 Key 时回退关键词启发式（仅文字）。
 5. 对**带图发言**：下载截图（带 Referer 规避防盗链）→ 压缩 → 送视觉模型，抽取 `action / stocks / price / quantity / trend`。
