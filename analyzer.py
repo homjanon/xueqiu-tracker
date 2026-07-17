@@ -6,7 +6,7 @@ import re
 
 import requests
 
-from config import BACKENDS
+from config import BACKENDS, TIMEOUT
 from scraper import download_image_b64
 
 BUY_KW = ["买入", "建仓", "加仓", "上车", "抄底", "新入", "补仓", "吸筹",
@@ -35,7 +35,7 @@ def _post(backend, messages):
                       "Content-Type": "application/json"},
             json={"model": backend["model"], "messages": messages,
                   "response_format": {"type": "json_object"}},
-            timeout=90)
+            timeout=backend.get("timeout", TIMEOUT))
         r.raise_for_status()
         return r.json()["choices"][0]["message"]["content"]
     except Exception as e:

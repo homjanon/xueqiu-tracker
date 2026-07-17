@@ -25,23 +25,32 @@ USER_HINTS = {
 BACKENDS = [
     {
         "name": "nvidia-qwen3.5-vl",
+        # 统一网关（NVIDIA AI Foundation Models），Qwen3.5-VL 在此可用，但 397B 免费档较慢
         "base_url": os.getenv("PRIMARY_BASE_URL", "https://integrate.api.nvidia.com/v1"),
         "api_key": os.getenv("NVIDIA_API_KEY", ""),
         "model": os.getenv("PRIMARY_MODEL", "qwen/qwen3.5-397b-a17b"),
+        "timeout": int(os.getenv("PRIMARY_TIMEOUT", "150")),
     },
     {
         "name": "nvidia-kimi-k2.5",
-        "base_url": os.getenv("FALLBACK1_BASE_URL", "https://integrate.api.nvidia.com/v1"),
+        # Kimi-K2.5 不在统一网关（会 404），须走 build.nvidia.com 专属 endpoint
+        "base_url": os.getenv("FALLBACK1_BASE_URL",
+                              "https://ai.api.nvidia.com/v1/nim/moonshotai/kimi-k2.5/v1"),
         "api_key": os.getenv("NVIDIA_API_KEY", ""),
         "model": os.getenv("FALLBACK1_MODEL", "moonshotai/kimi-k2.5"),
+        "timeout": int(os.getenv("FALLBACK1_TIMEOUT", "150")),
     },
     {
         "name": "siliconflow-qwen3.5-35b",
         "base_url": os.getenv("FALLBACK2_BASE_URL", "https://api.siliconflow.cn/v1"),
         "api_key": os.getenv("SILICONFLOW_API_KEY", ""),
         "model": os.getenv("FALLBACK2_MODEL", "Qwen/Qwen3.5-35B-A3B"),
+        "timeout": int(os.getenv("FALLBACK2_TIMEOUT", "90")),
     },
 ]
+
+# 全局默认超时（各后端可用 BACKENDS[].timeout 覆盖）
+TIMEOUT = int(os.getenv("TIMEOUT", "150"))
 
 PAGES = int(os.getenv("PAGES", "2"))
 HEADLESS = os.getenv("HEADLESS", "true").lower() != "false"
