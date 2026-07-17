@@ -2,7 +2,7 @@ name: 雪球大V追踪
 
 on:
   schedule:
-    - cron: '0 14 * * *'      # 北京时间 22:00（UTC+8 = UTC 14:00）
+    - cron: '0 4 * * *'       # 北京时间 12:00（UTC+8 = UTC 04:00）
   workflow_dispatch:            # 支持手动触发
 
 permissions:
@@ -28,7 +28,7 @@ jobs:
 
       - name: 抓取并分析
         env:
-          XUEQIU_USER_ID: ${{ secrets.XUEQIU_USER_ID }}
+          XUEQIU_USER_IDS: ${{ secrets.XUEQIU_USER_IDS }}
           NVIDIA_API_KEY: ${{ secrets.NVIDIA_API_KEY }}
           SILICONFLOW_API_KEY: ${{ secrets.SILICONFLOW_API_KEY }}
         run: python tracker.py

@@ -3,12 +3,25 @@
   1) NVIDIA Qwen3.5-VL（免费）
   2) NVIDIA Kimi-K2.5（免费）
   3) 硅基流动 Qwen3.5-35B-A3B（便宜付费）
+支持多用户（逗号分隔）；USER_HINTS 为各用户专属黑话词典（注入 LLM 提示）。
 """
 import os
 
-XUEQIU_USER_ID = os.getenv("XUEQIU_USER_ID", "6515752937")
+XUEQIU_USER_IDS = [x.strip() for x in
+                   os.getenv("XUEQIU_USER_IDS", "6515752937,1821992043").split(",") if x.strip()]
 
-# 三级后端链（按顺序尝试，首个有 Key 且成功的生效）
+# 各用户专属黑话/习惯提示（注入 LLM，提升买/卖/持有识别准确率）
+USER_HINTS = {
+    "1821992043": """【该用户黑话提示，请据此正确解读】
+- "mnp" = 实盘操作（真实的买卖动作）
+- "羊毛" = 做差价/做T（通常在招商银行与宁波银行之间来回做，因两者长期走势同步）
+- "大波" = 宁波银行（代码 SZ002142）
+- "小招"/"小昭" = 招商银行（代码 SH600036）
+- "进货" = 买入
+- "招行"/"CMBank" = 招商银行
+请结合谐音、昵称、常理合理推测其是否有实盘操作（买入/卖出/加仓/减仓/持有）；只要有真实买卖动作就标出 action，不要因用了黑话就忽略。输出 stocks 尽量带代码。""",
+}
+
 BACKENDS = [
     {
         "name": "nvidia-qwen3.5-vl",
@@ -19,7 +32,7 @@ BACKENDS = [
     {
         "name": "nvidia-kimi-k2.5",
         "base_url": os.getenv("FALLBACK1_BASE_URL", "https://integrate.api.nvidia.com/v1"),
-        "api_key": os.getenv("NVIDIA_API_KEY", ""),  # 与主力同属 NVIDIA
+        "api_key": os.getenv("NVIDIA_API_KEY", ""),
         "model": os.getenv("FALLBACK1_MODEL", "moonshotai/kimi-k2.5"),
     },
     {
@@ -30,11 +43,9 @@ BACKENDS = [
     },
 ]
 
-# 抓取参数
 PAGES = int(os.getenv("PAGES", "2"))
 HEADLESS = os.getenv("HEADLESS", "true").lower() != "false"
 
-# 输出目录
 DATA_DIR = os.getenv("DATA_DIR", "data")
 REPORT_DIR = os.getenv("REPORT_DIR", "reports")
 STATE_FILE = os.getenv("STATE_FILE", "state.json")

@@ -98,6 +98,8 @@ def normalize(posts):
             "is_retweet": bool(po.get("retweeted_status") or po.get("retweet_status_id")),
             "truncated": po.get("truncated", False),
             "user_id": po.get("user_id"),
+            "user_name": ((po.get("user") or {}).get("screen_name")
+                          if isinstance(po.get("user"), dict) else po.get("user_name")),
             "pics": _extract_pics(po),
         })
     seen, uniq = set(), []
