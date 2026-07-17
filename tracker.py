@@ -12,7 +12,7 @@ import os
 from config import (XUEQIU_USER_IDS, USER_HINTS, PAGES, HEADLESS, RECENT_N,
                     DATA_DIR, REPORT_DIR, STATE_FILE)
 from scraper import fetch_timeline, normalize
-from analyzer import classify, vision_extract, daily_summary
+from analyzer import classify, vision_extract, daily_summary, _nicknames_in_text
 
 CST = datetime.timezone(datetime.timedelta(hours=8))
 
@@ -93,13 +93,17 @@ def build_report(ts, summary, users, showing_fallback):
         L.append(f"## {name}（{u['user_id']}）· 新增 {u['new_count']} 条")
         sigs = u["text_signals"] + u["vision_signals"]
         if sigs:
+            post_text = {p["id"]: p.get("text", "") for p in u.get("posts", [])}
             L.append("### 操作信号")
             for s in sigs:
-                stocks = "、".join(s.get("stocks") or []) or "（未标注代码）"
+                stocks = s.get("stocks") or []
+                if not stocks:
+                    stocks = _nicknames_in_text(post_text.get(s.get("post_id"), ""))
+                stocks_str = "、".join(stocks) if stocks else "（未标注代码）"
                 extra = []
                 if s.get("price"): extra.append(f"价格:{s['price']}")
                 if s.get("quantity"): extra.append(f"数量:{s['quantity']}")
-                L.append(f"- **{s.get('action')}** {stocks} {' '.join(extra)} ｜ 置信度:{s.get('confidence')} ｜ 来源:{s.get('method')}")
+                L.append(f"- **{s.get('action')}** {stocks_str} {' '.join(extra)} ｜ 置信度:{s.get('confidence')} ｜ 来源:{s.get('method')}")
                 L.append(f"  > {s.get('evidence','')[:200]}")
         else:
             L.append("- 无明确买卖操作信号")

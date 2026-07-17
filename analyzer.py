@@ -157,14 +157,6 @@ def _load_extract_prompt():
     return TEXT_PROMPT
 
 
-def _render_glossary():
-    """把 STOCK_ALIASES 渲染成 Markdown 表格，供模型自行映射昵称->全名(代码)。"""
-    rows = ["| 昵称 | 标准写法 |", "|------|----------|"]
-    for k, v in STOCK_ALIASES.items():
-        rows.append(f"| {k} | {v} |")
-    return "\n".join(rows)
-
-
 def _classify_nature(post):
     """判定发言性质，提示模型区分本人操作与引用他人（降噪）。"""
     t = post.get("text", "")
@@ -176,8 +168,8 @@ def _classify_nature(post):
 
 
 def _prelabel_nicknames(text):
-    """预标注文本中出现的昵称，辅助模型定位标的。"""
-    found = [f"{k}→{v}" for k, v in STOCK_ALIASES.items() if k in text]
+    """预标注文本中出现的昵称（仅列出昵称本身，不强行映射，尊重用户原文叫法）。"""
+    found = [k for k, v in STOCK_ALIASES.items() if k in text]
     return "、".join(found) if found else "（无）"
 
 
@@ -193,31 +185,32 @@ def _build_user_doc(posts):
             f"- 发言ID: {p['id']}\n"
             f"- 发布时间: {created}\n"
             f"- 性质: {nature}\n"
-            f"- 系统预标注昵称: {nicks}\n"
+            f"- 系统检测到昵称: {nicks}\n"
             f"- 原文: {p['text']}\n"
         )
     return "# 用户发言文档\n\n" + "\n".join(blocks)
 
 
-def _enrich_stocks(signals):
-    """用 STOCK_ALIASES 把缺代码的昵称补全为标准 全名(代码)。"""
-    for s in signals:
-        new = []
-        for st in (s.get("stocks") or []):
-            repl = None
-            for k, v in STOCK_ALIASES.items():
-                if k in st and "(" not in st:
-                    repl = v
-                    break
-            new.append(repl if repl else st)
-        s["stocks"] = new
-    return signals
+def _heuristic_stocks(t):
+    """从文本提取标的：优先 $全名(代码)$，并补充文中昵称（保留原文叫法，不强行转代码）。"""
+    stocks = [f"{m.group(1)}({m.group(2)})" for m in STOCK_RE.finditer(t)]
+    existing = " ".join(stocks)
+    for k in STOCK_ALIASES:
+        if k in t and k not in existing:   # 避免「招商银行」已存在时又补「招行」
+            stocks.append(k)
+    return stocks
+
+
+def _nicknames_in_text(text):
+    """从原文中提取出现的昵称（作为 stocks 为空时的兜底展示）。"""
+    if not text:
+        return []
+    return [k for k in STOCK_ALIASES if k in text]
 
 
 def _llm_classify(posts, hint=""):
     """调用 LLM 识别操作，返回信号列表；失败/无 Key 返回 None。"""
     system = _load_extract_prompt()
-    system = system.replace("__GLOSSARY__", _render_glossary())
     system = system.replace("__HINT__", ("【该用户专属黑话/习惯提示】\n" + hint) if hint else "（无）")
     doc = _build_user_doc(posts)
     content = call_multi([
@@ -230,7 +223,7 @@ def _llm_classify(posts, hint=""):
         arr = _extract_json(content)
         for s in arr:
             s.setdefault("method", "llm")
-        return _enrich_stocks(arr)
+        return arr   # 保留 LLM 输出的原文叫法（昵称），不再强制映射为全名(代码)
     except Exception as e:
         print("[analyzer] LLM 解析失败:", e)
         return None
@@ -305,7 +298,7 @@ def heuristic(posts, hint=""):
             sig.append({
                 "post_id": po["id"],
                 "action": action,
-                "stocks": [f"{m.group(1)}({m.group(2)})" for m in STOCK_RE.finditer(t)],
+                "stocks": _heuristic_stocks(t),
                 "confidence": "low",
                 "evidence": t[:200],
                 "method": "heuristic",
@@ -337,6 +330,10 @@ def daily_summary(user_infos, hint_by_name=None):
         return "今日各路大V暂无明确买卖操作，以观点与行情交流为主。"
 
     lines = []
+    post_text = {}
+    for u in user_infos:
+        for p in (u.get("posts") or []):
+            post_text[p["id"]] = p.get("text", "")
     for u in user_infos:
         name = u.get("name", "")
         sigs = (u.get("text_signals") or []) + (u.get("vision_signals") or [])
@@ -344,8 +341,11 @@ def daily_summary(user_infos, hint_by_name=None):
             lines.append(f"{name}:（无明确操作）")
             continue
         for s in sigs:
-            stocks = "、".join(s.get("stocks") or []) or "未标注标的"
-            lines.append(f"{name}: {_ACTION_CN.get(s.get('action'), s.get('action'))} {stocks}（{s.get('confidence')}）")
+            stocks = s.get("stocks") or []
+            if not stocks:
+                stocks = _nicknames_in_text(post_text.get(s.get("post_id"), ""))
+            stocks_str = "、".join(stocks) if stocks else "未标注标的"
+            lines.append(f"{name}: {_ACTION_CN.get(s.get('action'), s.get('action'))} {stocks_str}（{s.get('confidence')}）")
     prompt = ("以下是今日多位雪球大V的明确操作信号，请写【一句话】中文总结全天重点操作"
               "（谁买了/卖了/加了/减了/看好/不看好什么）；若有人无操作也带一句。"
               "只输出那一句话，不要列表、不要解释、不要输出多余标点以外的字符。\n\n"
