@@ -6,7 +6,7 @@ import re
 
 import requests
 
-from config import BACKENDS, TIMEOUT
+from config import BACKENDS, TIMEOUT, STOCK_ALIASES
 from scraper import download_image_b64
 
 BUY_KW = ["买入", "建仓", "加仓", "上车", "抄底", "新入", "补仓", "吸筹",
@@ -60,21 +60,39 @@ def _parse_json(content):
     return data if isinstance(data, list) else (data.get("signals") or [])
 
 
-TEXT_PROMPT = """以下是雪球用户今日新增发言，请识别其中【明确】的买入/卖出/加仓/减仓/持有操作，忽略模糊表态、纯观点、行情吐槽、无标的的发言。
-对每条相关发言提取：
-- post_id: 发言原 id
+TEXT_PROMPT = """你是雪球持仓追踪助手。以下是某雪球大V的发言（可能含"回复@/转发//@"等，只要本人提及实盘操作都算数）。
+请识别其中【明确的】买入/卖出/加仓/减仓/持有操作。规则：
+1. 动作词映射：买入/建仓/加仓/上车/抄底/新入/补仓/进货/买了/加了一些=buy；卖出/减仓/清仓/出掉/出了/止损/止盈/卖掉/卖了/砍了=sell；加仓=add；减仓=reduce；持有/不动/躺平/没动/继续拿/拿着=hold。"保本出了X"=卖出X。
+2. 标的不仅限 $名(代码)$ 格式：昵称/简称也算（如 酒家=广州酒家、顺丰=顺丰控股、青岛港=青岛港、小招/小昭=招商银行、大波/宁波银行=宁波银行）。请尽量写出【股票全名+代码】；即使没有代码，也照常标 action 并写出股票名。
+3. 一条发言可能含多个操作、多个标的，请拆成多条记录（可同 post_id 多条）。
+4. 忽略纯观点、行情吐槽、无动作词的闲聊；但只要出现上述动作词且能对应到某标的（含昵称），就提取，不要因缺少代码而丢弃。
+对每条相关发言输出 JSON 数组，每条包含：
+- post_id: 发言原 id（整数）
 - action: buy/sell/add/reduce/hold
-- stocks: 涉及的股票名或代码列表
+- stocks: 股票全名或代码列表（尽量带代码，如 ["广州酒家(SH603043)","顺丰控股(SZ002352)"]）
 - confidence: high/medium/low
-- evidence: 原文原句（截取关键部分）
-只输出 JSON 数组，例如：
-[{"post_id":123,"action":"buy","stocks":["青岛港"],"confidence":"high","evidence":"加了一些青岛港h股"}]
+- evidence: 原文关键原句（截取）
+只输出 JSON 数组，不要解释、不要多余文字。
 """
 
 
-def classify(posts, hint=""):
-    if not posts:
-        return []
+def _enrich_stocks(signals):
+    """用 STOCK_ALIASES 把缺代码的昵称补全为标准 全名(代码)。"""
+    for s in signals:
+        new = []
+        for st in (s.get("stocks") or []):
+            repl = None
+            for k, v in STOCK_ALIASES.items():
+                if k in st and "(" not in st:
+                    repl = v
+                    break
+            new.append(repl if repl else st)
+        s["stocks"] = new
+    return signals
+
+
+def _llm_classify(posts, hint=""):
+    """调用 LLM 识别操作，返回信号列表；失败/无 Key 返回 None。"""
     numbered = "\n".join(f"{i+1}. (id={p['id']}) {p['text']}" for i, p in enumerate(posts))
     user_part = ("\n\n【该用户专属黑话/习惯提示，请据此正确解读，不要因用了黑话就忽略实盘操作】\n"
                  + hint) if hint else ""
@@ -82,20 +100,39 @@ def classify(posts, hint=""):
         {"role": "system", "content": "你是雪球持仓追踪助手。只输出严格JSON数组，不要解释。"},
         {"role": "user", "content": TEXT_PROMPT + user_part + "\n发言列表：\n" + numbered},
     ])
-    if content:
-        try:
-            arr = _parse_json(content)
-            for s in arr:
-                s.setdefault("method", "llm")
-            return arr
-        except Exception as e:
-            print("[analyzer] LLM 解析失败，回退启发式:", e)
-    return heuristic(posts, hint=hint)
+    if not content:
+        return None
+    try:
+        arr = _parse_json(content)
+        for s in arr:
+            s.setdefault("method", "llm")
+        return _enrich_stocks(arr)
+    except Exception as e:
+        print("[analyzer] LLM 解析失败:", e)
+        return None
+
+
+def classify(posts, hint=""):
+    """LLM 优先识别；启发式始终运行并按【动作缺口】补缺（LLM 漏了哪个方向就补哪个），合并去重。"""
+    if not posts:
+        return []
+    llm_sigs = _llm_classify(posts, hint=hint) or []   # list（可能为空）或 None
+    hep_sigs = heuristic(posts, hint=hint)            # 始终跑，作保底
+    # 记录 LLM 已覆盖的 (post_id -> {action})，用于按动作补缺
+    covered = {}
+    for s in llm_sigs:
+        covered.setdefault(s["post_id"], set()).add(s["action"])
+    merged = list(llm_sigs)
+    for h in hep_sigs:
+        if h["action"] not in covered.get(h["post_id"], set()):  # 该帖该方向 LLM 没覆盖 → 补
+            merged.append(h)
+            covered.setdefault(h["post_id"], set()).add(h["action"])
+    return merged
 
 
 VISION_PROMPT = """这是雪球用户发的截图（可能是K线走势、持仓数量、价格等）。请识别并提取结构化信息，只输出严格JSON数组：
-[{"action":"buy/sell/add/reduce/hold/none","stocks":["股票名或代码"],"price":"识别到的价格(无则空串)","quantity":"识别到的数量/股数(无则空串)","trend":"走势描述","confidence":"high/medium/low","evidence":"关键可见文字"}]
-若截图无法判断具体操作，action填none。"""
+[{"action":"buy/sell/add/reduce/hold/none","stocks":["股票全名或代码(尽量带代码，如 招商银行(SH600036))"],"price":"识别到的价格(无则空串)","quantity":"识别到的数量/股数(无则空串)","trend":"走势描述","confidence":"high/medium/low","evidence":"关键可见文字"}]
+昵称也算标的（酒家=广州酒家、顺丰=顺丰控股、小招/小昭=招商银行、大波/宁波银行）。若截图无法判断具体操作，action填none。"""
 
 
 def vision_extract(post, hint=""):
@@ -126,28 +163,29 @@ def vision_extract(post, hint=""):
 
 
 def heuristic(posts, hint=""):
+    """关键词兜底：同一发言若同时含买/卖词，可 emit 多条（多动作）。"""
     sig = []
     for po in posts:
         t = po["text"]
+        actions = []
         if any(k in t for k in BUY_KW):
-            action = "buy"
-        elif any(k in t for k in SELL_KW):
-            action = "sell"
-        elif any(k in t for k in HOLD_KW):
-            action = "hold"
-        elif any(k in t for k in TRADE_MARKER_KW):
+            actions.append("buy")
+        if any(k in t for k in SELL_KW):      # 不再 elif：一条发言可同时含买和卖
+            actions.append("sell")
+        if not actions and any(k in t for k in HOLD_KW):
+            actions.append("hold")
+        if not actions and any(k in t for k in TRADE_MARKER_KW):
             # 出现黑话实盘标记但方向不明，标为 hold 占位并备注由 LLM 判断
-            action = "hold"
-        else:
-            continue
-        sig.append({
-            "post_id": po["id"],
-            "action": action,
-            "stocks": [f"{m.group(1)}({m.group(2)})" for m in STOCK_RE.finditer(t)],
-            "confidence": "low",
-            "evidence": t[:200],
-            "method": "heuristic",
-        })
+            actions.append("hold")
+        for action in actions:
+            sig.append({
+                "post_id": po["id"],
+                "action": action,
+                "stocks": [f"{m.group(1)}({m.group(2)})" for m in STOCK_RE.finditer(t)],
+                "confidence": "low",
+                "evidence": t[:200],
+                "method": "heuristic",
+            })
     return sig
 
 
