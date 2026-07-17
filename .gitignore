@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+.env
+browser_raw.json
+sample_raw.json
+debug.py
+debug2.py
+browser_test.py
