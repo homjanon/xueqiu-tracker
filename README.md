@@ -1,24 +1,22 @@
 # xueqiu-vip-tracker
 
-自动跟踪**多个**x大V的每日发言，识别其中**明确的买入/卖出/加仓/减仓/持有**操作，并读取其**截图**（价格/数量/K线），输出机器可读数据供外部网站直接读取。
+自动跟踪**多个**x大V的每日发言，由 LLM **中性归纳每人讨论了什么**（每句 ≤50 字），输出机器可读数据供外部网站直接读取。不判断买卖操作——操作由你自己看归纳来判断。
 
 ## 工作原理
 1. **Playwright 真实浏览器**加载xx首页，执行其阿里云 WAF 的 JS 挑战，拿到 `xq_a_token` Cookie（纯 HTTP 无法绕过此 WAF）。
 2. 带 Cookie 调用xx时间线 JSON 接口 `statuses/user_timeline.json`，按 `XUEQIU_USER_IDS`（逗号分隔）逐个抓取动态。
 3. 清洗 HTML、按各用户 `last_post_id` 去重，仅处理新增发言。
-4. **信号识别**走三级后端链（均为原生多模态，图文通吃），首个可用即生效：
-   - ① NVIDIA **Qwen3.5-122B-A10B**（`qwen/qwen3.5-122b-a10b`，原生VLM，122B总参/10B激活，比397B更快）— 免费
+4. **每日讨论归纳**（`analyzer.daily_summary`）：每位用户各自调用 LLM，把其发言**中性归纳成一句 ≤50 字**的短评（关注的市场/标的/观点/情绪），**不做任何买卖操作判断**；某人当日无发言则显示「暂未发言」。三级后端链首个可用即生效：
+   - ① NVIDIA **Qwen3.5-122B-A10B**（`qwen/qwen3.5-122b-a10b`，比397B更快）— 免费
    - ② NVIDIA **Kimi-K2.5**（`moonshotai/kimi-k2.5`，走 build.nvidia.com 专属 endpoint）— 免费
    - ③ 硅基流动 **Qwen3.5-35B-A3B**（`Qwen/Qwen3.5-35B-A3B`）— 便宜付费
-   - 无 Key 时回退关键词启发式（仅文字）。
-5. 对**带图发言**：下载截图（带 Referer 规避防盗链）→ 压缩 → 送视觉模型，抽取 `action / stocks / price / quantity / trend`。
-6. 跨用户合并生成**「每日一句话总结」**（`daily_summary`），由 LLM 浓缩全天重点操作，失败回退启发式拼接。
+   - 无 Key / 全部失败时回退：取该用户最新发言原文前 50 字作摘录，同样不判断交易。
+5. 黑话提示 `USER_HINTS`（如 谷子地 的 mnp/大波/招行 等）作为轻量上下文注入，帮 LLM 读懂讨论，但归纳仍只做事实描述。
 
-## 提示词与文档格式
-- 文字识别的结构化提示词放在 **`prompt/extract_prompt.txt`**（参考 portfolio 仓的 `prompt/daily_report_prompt.txt` 风格）：角色 + 识别规则 + 输出 schema + 用户黑话提示占位符。修改识别逻辑**优先改这个文件**，无需动代码；缺失时回退 `analyzer.TEXT_PROMPT`。
-- 喂给 LLM 的不是裸编号列表，而是 **portfolio 式结构化文档**：每条发言一个带 `发言ID / 发布时间 / 性质(原创·含引用·转发) / 系统检测到昵称 / 原文` 的分块；明确标注引用链不算本人操作以降噪。
-- **stocks 保留用户原文叫法**（酒家、顺丰、招行…，或 `$广州酒家(SH603043)$` 原样），**不强行映射成官方全称/代码**——避免模型因转不出代码而留空、导致总结出现「未标注标的」。启发式兜底也会把文中已知昵称带出；总结生成时若 signals 为空，再从原文解析昵称兜底展示。
-- 不再强制 `response_format: json_object`（会迫使推理模型吐 `{reasoning:…}` 空对象）；改为提示词约定 `{"signals":[…]}` 格式 + `analyzer._extract_json` 鲁棒解析（兼容裸数组/对象/围栏/`<think>`块），LLM 返回空时按【动作缺口】由启发式补缺。
+## 设计取舍
+- **不做交易信号提取**：此前尝试过 LLM/启发式判断买/卖/持仓并映射股票代码，但昵称映射、未标注标的、把提及误判为持有等问题反复出现。改为只做**中性归纳**，交易操作由你自行判断。
+- 不强制 `response_format: json_object`（会迫使推理模型吐 `{reasoning:…}`）；用 `_extract_text` 鲁棒提取纯文本（兼容裸文本 / `{"summary":...}` / 围栏 / `<think>`块），并截断到 50 字兜底。
+- `text_signals` / `vision_signals` 字段**保留为空数组**（向后兼容网站），主信息为 `daily_summary` + 原始 `posts`。
 7. 输出：
    - `data/latest.json` —— **网站读取此文件**，采用「顶层合并 + `users[]` 明细」双结构（见下）
    - `reports/YYYY-MM-DD.md` —— 人读简报
@@ -28,27 +26,27 @@
 ```jsonc
 {
   "fetched_at": "2026-07-17 12:00:00",
-  "daily_summary": "今天xx加仓了xx港，xx做了差价……",
+  "daily_summary": "紫金陈：聚焦安琪酵母、东鹏饮料、鱼跃医疗等消费老登股，讨论回调布局与可转债风险\nice_招行谷子地：围绕招商银行、宁波银行做利差与打新，关注银行ETF与红利低波",
   "user_count": 2,
   "new_count": 10,
-  "text_signal_count": 5,
-  "vision_signal_count": 1,
+  "text_signal_count": 0,
+  "vision_signal_count": 0,
   // —— 顶层合并：老网站零改动可直接读 ——
   "posts": [ /* 所有用户新增发言合并 */ ],
-  "text_signals": [ /* 所有用户文字信号合并（含 _user 字段标注来源） */ ],
-  "vision_signals": [ /* 所有用户图片信号合并（含 _user 字段标注来源） */ ],
+  "text_signals": [],   // 已不再提取交易信号，保留空数组向后兼容
+  "vision_signals": [],
   // —— 每用户明细 ——
   "users": [
     {
       "user_id": "6xxxx", "name": "xxx",
-      "new_count": 5, "text_signal_count": 3, "vision_signal_count": 1,
-      "posts": [...], "text_signals": [...], "vision_signals": [...]
+      "new_count": 5, "text_signal_count": 0, "vision_signal_count": 0,
+      "posts": [...], "text_signals": [], "vision_signals": []
     },
     { "user_id": "1xxx", "name": "x2xx", ... }
   ]
 }
 ```
-> 网站若只需一句话概览，直接读 `daily_summary` 即可；若需明细，可遍历 `users[]` 或顶层合并字段。
+> 网站直接读 `daily_summary`（每人一句，换行分隔）即可获得当日概览；原始发言见 `posts` / `users[].posts`。`text_signals`/`vision_signals` 固定为空数组，仅作向后兼容预留。
 
 
 ## GitHub Actions（推荐）

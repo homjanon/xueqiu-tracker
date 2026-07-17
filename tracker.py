@@ -9,10 +9,10 @@ import datetime
 import json
 import os
 
-from config import (XUEQIU_USER_IDS, USER_HINTS, PAGES, HEADLESS, RECENT_N,
+from config import (XUEQIU_USER_IDS, PAGES, HEADLESS, RECENT_N,
                     DATA_DIR, REPORT_DIR, STATE_FILE)
 from scraper import fetch_timeline, normalize
-from analyzer import classify, vision_extract, daily_summary, _nicknames_in_text
+from analyzer import daily_summary
 
 CST = datetime.timezone(datetime.timedelta(hours=8))
 
@@ -38,7 +38,6 @@ def save_state(st):
 
 
 def process_user(uid, state_users):
-    hint = USER_HINTS.get(uid, "")
     last_id = state_users.get(uid, {}).get("last_post_id", 0)
     print(f"\n=== 用户 {uid}（上次最大ID: {last_id}）===")
 
@@ -53,15 +52,6 @@ def process_user(uid, state_users):
     # 每人最近 RECENT_N 条（时间线本就倒序，前 N 即最新），用于无新增时兜底展示
     recent = posts[:RECENT_N]
 
-    text_sig = classify(new, hint=hint) if new else []
-    vision_sig = []
-    for p in new:
-        v = vision_extract(p, hint=hint)
-        if v:
-            vision_sig.extend(v)
-    if vision_sig:
-        print(f"[图片] 识别到 {len(vision_sig)} 条图片信号")
-
     if new:
         state_users[uid] = {"last_post_id": max([p["id"] for p in posts] + [last_id]), "name": name}
 
@@ -69,12 +59,12 @@ def process_user(uid, state_users):
         "user_id": uid,
         "name": name,
         "new_count": len(new),
-        "text_signal_count": len(text_sig),
-        "vision_signal_count": len(vision_sig),
+        "text_signal_count": 0,
+        "vision_signal_count": 0,
         "posts": new,
         "recent_posts": recent,
-        "text_signals": text_sig,
-        "vision_signals": vision_sig,
+        "text_signals": [],
+        "vision_signals": [],
     }
 
 
@@ -85,30 +75,13 @@ def build_report(ts, summary, users, showing_fallback):
     if showing_fallback:
         L.append("> ⚠️ 本次无新增发言，以下为各用户近期发言兜底展示。")
         L.append("")
-    L.append("## AI 一句话总结")
+    L.append("## 今日讨论归纳")
     L.append(f"> {summary}")
     L.append("")
     for u in users:
         name = u["name"] or u["user_id"]
         L.append(f"## {name}（{u['user_id']}）· 新增 {u['new_count']} 条")
-        sigs = u["text_signals"] + u["vision_signals"]
-        if sigs:
-            post_text = {p["id"]: p.get("text", "") for p in u.get("posts", [])}
-            L.append("### 操作信号")
-            for s in sigs:
-                stocks = s.get("stocks") or []
-                if not stocks:
-                    stocks = _nicknames_in_text(post_text.get(s.get("post_id"), ""))
-                stocks_str = "、".join(stocks) if stocks else "（未标注代码）"
-                extra = []
-                if s.get("price"): extra.append(f"价格:{s['price']}")
-                if s.get("quantity"): extra.append(f"数量:{s['quantity']}")
-                L.append(f"- **{s.get('action')}** {stocks_str} {' '.join(extra)} ｜ 置信度:{s.get('confidence')} ｜ 来源:{s.get('method')}")
-                L.append(f"  > {s.get('evidence','')[:200]}")
-        else:
-            L.append("- 无明确买卖操作信号")
-        L.append("")
-        L.append("### 原始新增发言")
+        L.append("### 原始发言")
         for p in u["posts"][:30]:
             pic = " [图]" if p.get("pics") else ""
             L.append(f"- ({p['id']}){pic} {p['text'][:200]}")
