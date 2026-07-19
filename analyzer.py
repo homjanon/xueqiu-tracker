@@ -62,24 +62,25 @@ def _extract_text(content):
 
 
 def _summarize_user(name, uid, posts):
-    """把单个用户的发言归纳成 ≤50 字一句；无发言返回「暂未发言」。"""
+    """把单个用户的发言归纳成 40-60 字一句；无发言返回「暂未发言」。"""
     if not posts:
         return "暂未发言"
     hint = USER_HINTS.get(uid, "")
     text_block = "\n".join(f"- {p.get('text', '')}" for p in posts[:15])
-    system = ("你是财经编辑。若用户用了黑话（见下方提示），请据此正确理解其讨论内容；"
-              "但归纳中只做事实描述，不要判断任何买卖操作。"
+    system = ("你是财经编辑。若用户用了黑话（见下方提示），请据此正确理解其讨论内容。"
+              "本任务重点是抓取用户点名提到的具体标的。"
               + ("\n\n黑话提示：\n" + hint if hint else ""))
     user = (f"以下是雪球用户「{name}」近期的发言原文：\n\n{text_block}\n\n"
-            f"请用不超过 50 字的一两句话，中性归纳他讨论了什么（关注的市场/标的/观点/情绪等）。"
-            f"只做事实性归纳，禁止出现「买入/卖出/持有/加仓/减仓」等结论性标签；不编造；"
-            f"严格≤50字，无标题无列表无解释。")
+            f"请用 40-60 字归纳他讨论了什么。要求：\n"
+            f"- 本任务重点是抓取用户点名的具体标的（股票/ETF，如 安琪酵母、青岛港、招商银行、银行ETF），勿以「消费/港口/券商」等泛称带过；\n"
+            f"- 可如实转述用户原文明确表达的动作（如「加仓XX」「出了XX」），但不要替用户推断未明说的操作（勿自行下「持有XX」结论）；\n"
+            f"- 中性、不编造；无标题无列表无解释。")
     out = call_multi([{"role": "system", "content": system},
                       {"role": "user", "content": user}])
     sent = _extract_text(out) if out else None
     if not sent:
-        sent = (posts[0].get("text", "")[:50]) or "暂未发言"
-    return sent[:50]   # 截断兜底，确保 ≤50 字
+        sent = (posts[0].get("text", "")) or "暂未发言"   # 无截断兜底，直接给原文前段
+    return sent   # 不再代码层截断，长度由提示词约束(40-60字)
 
 
 def daily_summary(user_infos):
