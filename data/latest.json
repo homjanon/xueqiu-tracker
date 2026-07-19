@@ -1,16 +1,16 @@
 {
-  "fetched_at": "2026-07-19 21:08:58",
-  "daily_summary": "紫金陈：紫金陈分享新小说，讨论消费、港口及券商等标的估值与持仓逻辑，质疑部分基金经理诚信，表达传统价投观点\nice_招行谷子地：讨论信用账户打新、融资展期操作，并提及儿子代持股票基金，同时闲聊披萨口味",
+  "fetched_at": "2026-07-20 07:55:45",
+  "daily_summary": "紫金陈：紫金陈卖出广州酒家、顺丰，加仓青岛港H股，提及马应龙。他讨论券商估值，并看好消费与港口板块的收息逻辑\nice_招行谷子地：用户讨论长鑫发行与宁德的相似性，建议粉丝别卖、别缴款，未提及具体买卖动作，也未点名其他具体股票标的",
   "user_count": 2,
-  "new_count": 8,
+  "new_count": 3,
   "text_signal_count": 0,
   "vision_signal_count": 0,
   "showing_fallback": false,
   "posts": [
     {
-      "id": 401010009,
-      "created_at": 1784454990000,
-      "text": "回复@骝骝2016: 没，招券的信用账户不打新，普通账户是给儿子代持的股票和基金。门票仓在华泰//@骝骝2016:回复@ice_招行谷子地:你这是没用招商证券APP打新股吗？这个中签界面一看就是华泰证券的。",
+      "id": 401033597,
+      "created_at": 1784472795000,
+      "text": "回复@价值小铁匠: 顺着说就行了，我不会给任何具体操作建议//@价值小铁匠:回复@ice_招行谷子地:难绷，前后两个粉丝处在割裂的世界",
       "source": "Android",
       "is_retweet": true,
       "truncated": false,
@@ -19,9 +19,9 @@
       "pics": []
     },
     {
-      "id": 401009665,
-      "created_at": 1784454746000,
-      "text": "回复@罩不住: 滚入本金//@罩不住:回复@ice_招行谷子地:多次展期的时候是不是要把之前的利息结清呢？",
+      "id": 401031800,
+      "created_at": 1784471725000,
+      "text": "回复@蓝蓝海_2008: 那你就别卖。//@蓝蓝海_2008:回复@ice_招行谷子地:冰大。有人分析说：长鑫发行与宁德有相似。我们不卖都发大了，哈哈 查看图片",
       "source": "Android",
       "is_retweet": true,
       "truncated": false,
@@ -30,64 +30,9 @@
       "pics": []
     },
     {
-      "id": 400998769,
-      "created_at": 1784447721000,
-      "text": "回复@蜕-变: 只有薄饼（脆口）披萨好吃，厚饼的不如我去吃京东肉饼//@蜕-变:回复@ice_招行谷子地:达美乐非常好吃",
-      "source": "Android",
-      "is_retweet": true,
-      "truncated": false,
-      "user_id": 1821992043,
-      "user_name": "ice_招行谷子地",
-      "pics": []
-    },
-    {
-      "id": 400998454,
-      "created_at": 1784447417000,
-      "text": "回复@成长中的韭黄: 原来年轻的时候公司加班，老板经常是点达美乐披萨，估计是因为便宜？//@成长中的韭黄:回复@ice_招行谷子地:...夸张，我这里很多家诶，最喜欢鸡腿培根什么的。他家肉酱不好吃",
-      "source": "Android",
-      "is_retweet": true,
-      "truncated": false,
-      "user_id": 1821992043,
-      "user_name": "ice_招行谷子地",
-      "pics": []
-    },
-    {
-      "id": 400998339,
-      "created_at": 1784447305000,
-      "text": "回复@姜太公不爱钓鱼: 低于250都不是稳中//@姜太公不爱钓鱼:回复@苏安亭:200个号稳中",
-      "source": "Android",
-      "is_retweet": true,
-      "truncated": false,
-      "user_id": 1821992043,
-      "user_name": "ice_招行谷子地",
-      "pics": []
-    },
-    {
-      "id": 400998278,
-      "created_at": 1784447234000,
-      "text": "难道排队的人第一个披萨免费吗？这玩意儿有那么好吃吗？我儿子要么站点披萨，要么必胜客，从来没吃过达美乐",
-      "source": "Android",
-      "is_retweet": true,
-      "truncated": false,
-      "user_id": 1821992043,
-      "user_name": "ice_招行谷子地",
-      "pics": []
-    },
-    {
-      "id": 400998017,
-      "created_at": 1784447000000,
-      "text": "珍惜眼前人，离了大概率找不到更好的了",
-      "source": "Android",
-      "is_retweet": true,
-      "truncated": false,
-      "user_id": 1821992043,
-      "user_name": "ice_招行谷子地",
-      "pics": []
-    },
-    {
-      "id": 400997876,
-      "created_at": 1784446841000,
-      "text": "回复@罩不住: 不同券商不同，我展期十几次了//@罩不住:回复@ice_招行谷子地:融资到期怎么处理？延期吗，好像只能延几次吧",
+      "id": 401031725,
+      "created_at": 1784471674000,
+      "text": "回复@哥哥买好股做好人: 你别缴款就行了//@哥哥买好股做好人:回复@ice_招行谷子地:冰哥，长鑫会不会破发的",
       "source": "Android",
       "is_retweet": true,
       "truncated": false,
@@ -221,6 +166,39 @@
       "pics": []
     },
     {
+      "id": 401033597,
+      "created_at": 1784472795000,
+      "text": "回复@价值小铁匠: 顺着说就行了，我不会给任何具体操作建议//@价值小铁匠:回复@ice_招行谷子地:难绷，前后两个粉丝处在割裂的世界",
+      "source": "Android",
+      "is_retweet": true,
+      "truncated": false,
+      "user_id": 1821992043,
+      "user_name": "ice_招行谷子地",
+      "pics": []
+    },
+    {
+      "id": 401031800,
+      "created_at": 1784471725000,
+      "text": "回复@蓝蓝海_2008: 那你就别卖。//@蓝蓝海_2008:回复@ice_招行谷子地:冰大。有人分析说：长鑫发行与宁德有相似。我们不卖都发大了，哈哈 查看图片",
+      "source": "Android",
+      "is_retweet": true,
+      "truncated": false,
+      "user_id": 1821992043,
+      "user_name": "ice_招行谷子地",
+      "pics": []
+    },
+    {
+      "id": 401031725,
+      "created_at": 1784471674000,
+      "text": "回复@哥哥买好股做好人: 你别缴款就行了//@哥哥买好股做好人:回复@ice_招行谷子地:冰哥，长鑫会不会破发的",
+      "source": "Android",
+      "is_retweet": true,
+      "truncated": false,
+      "user_id": 1821992043,
+      "user_name": "ice_招行谷子地",
+      "pics": []
+    },
+    {
       "id": 401010009,
       "created_at": 1784454990000,
       "text": "回复@骝骝2016: 没，招券的信用账户不打新，普通账户是给儿子代持的股票和基金。门票仓在华泰//@骝骝2016:回复@ice_招行谷子地:你这是没用招商证券APP打新股吗？这个中签界面一看就是华泰证券的。",
@@ -280,39 +258,6 @@
       "created_at": 1784447234000,
       "text": "难道排队的人第一个披萨免费吗？这玩意儿有那么好吃吗？我儿子要么站点披萨，要么必胜客，从来没吃过达美乐",
       "source": "Android",
-      "is_retweet": true,
-      "truncated": false,
-      "user_id": 1821992043,
-      "user_name": "ice_招行谷子地",
-      "pics": []
-    },
-    {
-      "id": 400998017,
-      "created_at": 1784447000000,
-      "text": "珍惜眼前人，离了大概率找不到更好的了",
-      "source": "Android",
-      "is_retweet": true,
-      "truncated": false,
-      "user_id": 1821992043,
-      "user_name": "ice_招行谷子地",
-      "pics": []
-    },
-    {
-      "id": 400997876,
-      "created_at": 1784446841000,
-      "text": "回复@罩不住: 不同券商不同，我展期十几次了//@罩不住:回复@ice_招行谷子地:融资到期怎么处理？延期吗，好像只能延几次吧",
-      "source": "Android",
-      "is_retweet": true,
-      "truncated": false,
-      "user_id": 1821992043,
-      "user_name": "ice_招行谷子地",
-      "pics": []
-    },
-    {
-      "id": 400993418,
-      "created_at": 1784442401000,
-      "text": "回复@成长中的韭黄: 我的融资仓从2014年满融到现在12年，市值增长11倍，年化20%+。我估计他的战绩不仅秒杀我，肯定也秒杀巴菲特。//@成长中的韭黄:回复@ice_招行谷子地:他回复战绩秒杀你之后，也屏蔽我了 查看图片",
-      "source": "雪球",
       "is_retweet": true,
       "truncated": false,
       "user_id": 1821992043,
@@ -446,14 +391,14 @@
     {
       "user_id": "1821992043",
       "name": "ice_招行谷子地",
-      "new_count": 8,
+      "new_count": 3,
       "text_signal_count": 0,
       "vision_signal_count": 0,
       "posts": [
         {
-          "id": 401010009,
-          "created_at": 1784454990000,
-          "text": "回复@骝骝2016: 没，招券的信用账户不打新，普通账户是给儿子代持的股票和基金。门票仓在华泰//@骝骝2016:回复@ice_招行谷子地:你这是没用招商证券APP打新股吗？这个中签界面一看就是华泰证券的。",
+          "id": 401033597,
+          "created_at": 1784472795000,
+          "text": "回复@价值小铁匠: 顺着说就行了，我不会给任何具体操作建议//@价值小铁匠:回复@ice_招行谷子地:难绷，前后两个粉丝处在割裂的世界",
           "source": "Android",
           "is_retweet": true,
           "truncated": false,
@@ -462,9 +407,9 @@
           "pics": []
         },
         {
-          "id": 401009665,
-          "created_at": 1784454746000,
-          "text": "回复@罩不住: 滚入本金//@罩不住:回复@ice_招行谷子地:多次展期的时候是不是要把之前的利息结清呢？",
+          "id": 401031800,
+          "created_at": 1784471725000,
+          "text": "回复@蓝蓝海_2008: 那你就别卖。//@蓝蓝海_2008:回复@ice_招行谷子地:冰大。有人分析说：长鑫发行与宁德有相似。我们不卖都发大了，哈哈 查看图片",
           "source": "Android",
           "is_retweet": true,
           "truncated": false,
@@ -473,64 +418,9 @@
           "pics": []
         },
         {
-          "id": 400998769,
-          "created_at": 1784447721000,
-          "text": "回复@蜕-变: 只有薄饼（脆口）披萨好吃，厚饼的不如我去吃京东肉饼//@蜕-变:回复@ice_招行谷子地:达美乐非常好吃",
-          "source": "Android",
-          "is_retweet": true,
-          "truncated": false,
-          "user_id": 1821992043,
-          "user_name": "ice_招行谷子地",
-          "pics": []
-        },
-        {
-          "id": 400998454,
-          "created_at": 1784447417000,
-          "text": "回复@成长中的韭黄: 原来年轻的时候公司加班，老板经常是点达美乐披萨，估计是因为便宜？//@成长中的韭黄:回复@ice_招行谷子地:...夸张，我这里很多家诶，最喜欢鸡腿培根什么的。他家肉酱不好吃",
-          "source": "Android",
-          "is_retweet": true,
-          "truncated": false,
-          "user_id": 1821992043,
-          "user_name": "ice_招行谷子地",
-          "pics": []
-        },
-        {
-          "id": 400998339,
-          "created_at": 1784447305000,
-          "text": "回复@姜太公不爱钓鱼: 低于250都不是稳中//@姜太公不爱钓鱼:回复@苏安亭:200个号稳中",
-          "source": "Android",
-          "is_retweet": true,
-          "truncated": false,
-          "user_id": 1821992043,
-          "user_name": "ice_招行谷子地",
-          "pics": []
-        },
-        {
-          "id": 400998278,
-          "created_at": 1784447234000,
-          "text": "难道排队的人第一个披萨免费吗？这玩意儿有那么好吃吗？我儿子要么站点披萨，要么必胜客，从来没吃过达美乐",
-          "source": "Android",
-          "is_retweet": true,
-          "truncated": false,
-          "user_id": 1821992043,
-          "user_name": "ice_招行谷子地",
-          "pics": []
-        },
-        {
-          "id": 400998017,
-          "created_at": 1784447000000,
-          "text": "珍惜眼前人，离了大概率找不到更好的了",
-          "source": "Android",
-          "is_retweet": true,
-          "truncated": false,
-          "user_id": 1821992043,
-          "user_name": "ice_招行谷子地",
-          "pics": []
-        },
-        {
-          "id": 400997876,
-          "created_at": 1784446841000,
-          "text": "回复@罩不住: 不同券商不同，我展期十几次了//@罩不住:回复@ice_招行谷子地:融资到期怎么处理？延期吗，好像只能延几次吧",
+          "id": 401031725,
+          "created_at": 1784471674000,
+          "text": "回复@哥哥买好股做好人: 你别缴款就行了//@哥哥买好股做好人:回复@ice_招行谷子地:冰哥，长鑫会不会破发的",
           "source": "Android",
           "is_retweet": true,
           "truncated": false,
@@ -552,6 +442,39 @@
           "pics": []
         },
         {
+          "id": 401033597,
+          "created_at": 1784472795000,
+          "text": "回复@价值小铁匠: 顺着说就行了，我不会给任何具体操作建议//@价值小铁匠:回复@ice_招行谷子地:难绷，前后两个粉丝处在割裂的世界",
+          "source": "Android",
+          "is_retweet": true,
+          "truncated": false,
+          "user_id": 1821992043,
+          "user_name": "ice_招行谷子地",
+          "pics": []
+        },
+        {
+          "id": 401031800,
+          "created_at": 1784471725000,
+          "text": "回复@蓝蓝海_2008: 那你就别卖。//@蓝蓝海_2008:回复@ice_招行谷子地:冰大。有人分析说：长鑫发行与宁德有相似。我们不卖都发大了，哈哈 查看图片",
+          "source": "Android",
+          "is_retweet": true,
+          "truncated": false,
+          "user_id": 1821992043,
+          "user_name": "ice_招行谷子地",
+          "pics": []
+        },
+        {
+          "id": 401031725,
+          "created_at": 1784471674000,
+          "text": "回复@哥哥买好股做好人: 你别缴款就行了//@哥哥买好股做好人:回复@ice_招行谷子地:冰哥，长鑫会不会破发的",
+          "source": "Android",
+          "is_retweet": true,
+          "truncated": false,
+          "user_id": 1821992043,
+          "user_name": "ice_招行谷子地",
+          "pics": []
+        },
+        {
           "id": 401010009,
           "created_at": 1784454990000,
           "text": "回复@骝骝2016: 没，招券的信用账户不打新，普通账户是给儿子代持的股票和基金。门票仓在华泰//@骝骝2016:回复@ice_招行谷子地:你这是没用招商证券APP打新股吗？这个中签界面一看就是华泰证券的。",
@@ -611,39 +534,6 @@
           "created_at": 1784447234000,
           "text": "难道排队的人第一个披萨免费吗？这玩意儿有那么好吃吗？我儿子要么站点披萨，要么必胜客，从来没吃过达美乐",
           "source": "Android",
-          "is_retweet": true,
-          "truncated": false,
-          "user_id": 1821992043,
-          "user_name": "ice_招行谷子地",
-          "pics": []
-        },
-        {
-          "id": 400998017,
-          "created_at": 1784447000000,
-          "text": "珍惜眼前人，离了大概率找不到更好的了",
-          "source": "Android",
-          "is_retweet": true,
-          "truncated": false,
-          "user_id": 1821992043,
-          "user_name": "ice_招行谷子地",
-          "pics": []
-        },
-        {
-          "id": 400997876,
-          "created_at": 1784446841000,
-          "text": "回复@罩不住: 不同券商不同，我展期十几次了//@罩不住:回复@ice_招行谷子地:融资到期怎么处理？延期吗，好像只能延几次吧",
-          "source": "Android",
-          "is_retweet": true,
-          "truncated": false,
-          "user_id": 1821992043,
-          "user_name": "ice_招行谷子地",
-          "pics": []
-        },
-        {
-          "id": 400993418,
-          "created_at": 1784442401000,
-          "text": "回复@成长中的韭黄: 我的融资仓从2014年满融到现在12年，市值增长11倍，年化20%+。我估计他的战绩不仅秒杀我，肯定也秒杀巴菲特。//@成长中的韭黄:回复@ice_招行谷子地:他回复战绩秒杀你之后，也屏蔽我了 查看图片",
-          "source": "雪球",
           "is_retweet": true,
           "truncated": false,
           "user_id": 1821992043,
