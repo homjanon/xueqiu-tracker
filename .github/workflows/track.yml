@@ -31,6 +31,7 @@ jobs:
           XUEQIU_USER_IDS: ${{ secrets.XUEQIU_USER_IDS }}
           NVIDIA_API_KEY: ${{ secrets.NVIDIA_API_KEY }}
           AGNES_API_KEY: ${{ secrets.AGNES_API_KEY }}
+          SENSENOVA_API_KEY: ${{ secrets.SENSENOVA_API_KEY }}
         run: python tracker.py
 
       - name: 提交数据回仓库
