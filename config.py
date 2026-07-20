@@ -1,8 +1,7 @@
 """配置：从环境变量读取，缺失时用默认值。
-模型调用按优先级走三级后端（均为原生多模态，图文通吃）：
-  1) NVIDIA Kimi-K2.5（免费，走 build.nvidia.com 专属 endpoint）
-  2) NVIDIA Qwen3.5-122B-A10B（免费，原生VLM，122B总参/10B激活，比397B更快更稳）
-  3) Agnes AI agnes-2.0-flash（免费多模态，复用 douban-tracker 配置，替换原硅基流动）
+模型调用按优先级走两级后端（均为原生多模态，图文通吃）：
+  1) Agnes AI agnes-2.0-flash（免费多模态，复用 douban-tracker 配置）
+  2) NVIDIA Qwen3.5-122B-A10B（免费，原生VLM，122B总参/10B激活）
 支持多用户（逗号分隔）；USER_HINTS 为各用户专属黑话词典（注入 LLM 提示）。
 """
 import os
@@ -25,29 +24,20 @@ USER_HINTS = {
 
 BACKENDS = [
     {
-        # ① NVIDIA Kimi-K2.5（免费，走 build.nvidia.com 专属 endpoint）—— 现排第1位
-        "name": "nvidia-kimi-k2.5",
-        "base_url": os.getenv("FALLBACK1_BASE_URL",
-                             "https://ai.api.nvidia.com/v1/nim/moonshotai/kimi-k2.5/v1"),
-        "api_key": os.getenv("NVIDIA_API_KEY", ""),
-        "model": os.getenv("FALLBACK1_MODEL", "moonshotai/kimi-k2.5"),
-        "timeout": int(os.getenv("FALLBACK1_TIMEOUT", "150")),
-    },
-    {
-        # ② NVIDIA Qwen3.5-122B-A10B（免费，原生VLM，122B总参/10B激活，比397B更快更稳）
-        "name": "nvidia-qwen3.5-122b",
-        "base_url": os.getenv("PRIMARY_BASE_URL", "https://integrate.api.nvidia.com/v1"),
-        "api_key": os.getenv("NVIDIA_API_KEY", ""),
-        "model": os.getenv("PRIMARY_MODEL", "qwen/qwen3.5-122b-a10b"),
-        "timeout": int(os.getenv("PRIMARY_TIMEOUT", "120")),
-    },
-    {
-        # ③ Agnes AI agnes-2.0-flash（免费多模态，复用 douban-tracker 配置）替换原硅基流动 Qwen3.5-35B
+        # ① Agnes AI agnes-2.0-flash（免费多模态，复用 douban-tracker 配置）
         "name": "agnes-2.0-flash",
         "base_url": os.getenv("AGNES_BASE_URL", "https://apihub.agnes-ai.com/v1"),
         "api_key": os.getenv("AGNES_API_KEY", ""),
         "model": os.getenv("AGNES_MODEL", "agnes-2.0-flash"),
         "timeout": int(os.getenv("AGNES_TIMEOUT", "120")),
+    },
+    {
+        # ② NVIDIA Qwen3.5-122B-A10B（免费，原生VLM，122B总参/10B激活）
+        "name": "nvidia-qwen3.5-122b",
+        "base_url": os.getenv("PRIMARY_BASE_URL", "https://integrate.api.nvidia.com/v1"),
+        "api_key": os.getenv("NVIDIA_API_KEY", ""),
+        "model": os.getenv("PRIMARY_MODEL", "qwen/qwen3.5-122b-a10b"),
+        "timeout": int(os.getenv("PRIMARY_TIMEOUT", "120")),
     },
 ]
 
