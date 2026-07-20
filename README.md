@@ -6,9 +6,10 @@
 1. **Playwright 真实浏览器**加载xx首页，执行其阿里云 WAF 的 JS 挑战，拿到 `xq_a_token` Cookie（纯 HTTP 无法绕过此 WAF）。
 2. 带 Cookie 调用xx时间线 JSON 接口 `statuses/user_timeline.json`，按 `XUEQIU_USER_IDS`（逗号分隔）逐个抓取动态。
 3. 清洗 HTML、按各用户 `last_post_id` 去重，仅处理新增发言。
-4. **每日讨论归纳**（`analyzer.daily_summary`）：每位用户各自调用 LLM，把其发言**中性归纳成一句 40-60 字**的短评；**重点抓取用户点名的具体标的（股票/ETF，勿以「消费/港口/券商」等泛称带过）**，可如实转述原文明确表达的动作（如「加仓XX」「出了XX」），但**不替用户推断未明说的操作**（不自行下「持有XX」结论）；某人当日无发言则显示「暂未发言」。两级后端链首个可用即生效：
+4. **每日讨论归纳**（`analyzer.daily_summary`）：每位用户各自调用 LLM，把其发言**中性归纳成一句 40-60 字**的短评；**重点抓取用户点名的具体标的（股票/ETF，勿以「消费/港口/券商」等泛称带过）**，可如实转述原文明确表达的动作（如「加仓XX」「出了XX」），但**不替用户推断未明说的操作**（不自行下「持有XX」结论）；某人当日无发言则显示「暂未发言」。三级后端链首个可用即生效：
    - ① **Agnes AI agnes-2.0-flash**（`agnes-2.0-flash`，复用 douban-tracker 配置）— 免费
    - ② NVIDIA **Qwen3.5-122B-A10B**（`qwen/qwen3.5-122b-a10b`，比397B更快）— 免费
+   - ③ 商汤日日新 **SenseNova 6.7 Flash-Lite**（`sensenova-6.7-flash-lite`，Token Plan 限时免费）— 免费兜底
    - 无 Key / 全部失败时回退：取该用户最新发言原文前段作摘录（不代码层截断，长度由提示词约束）。
 5. 黑话提示 `USER_HINTS`（如 谷子地 的 mnp/大波/招行 等）作为轻量上下文注入，帮 LLM 读懂讨论，但归纳重点仍是抓取用户点名的具体标的。
 
@@ -50,7 +51,7 @@
 
 ## GitHub Actions（推荐）
 1. 把仓库推到 GitHub。
-2. `Settings → Secrets → Actions` 添加：`XUEQIU_USER_IDS`、`NVIDIA_API_KEY`、`AGNES_API_KEY`。
+2. `Settings → Secrets → Actions` 添加：`XUEQIU_USER_IDS`、`NVIDIA_API_KEY`、`AGNES_API_KEY`、`SENSENOVA_API_KEY`。
    （`XUEQIU_USER_IDS` 形如 `6515752937,1821992043`）
 3. 工作流每天**北京时间 12:00** 自动运行（亦可在 Actions 页手动触发），运行后自动提交 `data/`、`reports/`、`state.json`。
 
