@@ -1,12 +1,133 @@
 {
-  "fetched_at": "2026-07-20 10:14:07",
-  "daily_summary": "紫金陈：紫金陈提及卖出广州酒家、顺丰，买入顺丰、广州酒家、马应龙、青岛港H股，并讨论券商估值及AI影响，强调回撤20%加仓策略\nice_招行谷子地：用户讨论雪球平台对招商银行标的的影响力用户列表进行限流及永久限制的问题，未涉及具体股票买卖操作",
+  "fetched_at": "2026-07-20 13:04:29",
+  "daily_summary": "紫金陈：紫金陈提及卖出酒家和顺丰，加仓青岛港H股及顺丰、广州酒家、马应龙等，并评论券商估值，认为其PE无意义\nice_招行谷子地：讨论雪球限流及长鑫存储打新风险，提及招商银行、宁波银行、五粮液、中国平安持仓，涉及招券信用账户及华泰证券门票仓情况（无新增，展示近期发言）。",
   "user_count": 2,
-  "new_count": 4,
+  "new_count": 0,
   "text_signal_count": 0,
   "vision_signal_count": 0,
-  "showing_fallback": false,
+  "showing_fallback": true,
   "posts": [
+    {
+      "id": 385877271,
+      "created_at": 1777201147000,
+      "text": "新小说《我不服》上市，剧情好看，多重反转，全网各平台有售，恳请各位土豪多多下单支持。",
+      "source": "iPhone",
+      "is_retweet": false,
+      "truncated": false,
+      "user_id": 6515752937,
+      "user_name": "紫金陈",
+      "pics": []
+    },
+    {
+      "id": 400241155,
+      "created_at": 1784083527000,
+      "text": "回复@我有三只喵: 是吧，我说我每次回撤20个点就是底，只是每次大家都不信。反正我回撤20点就会赶紧咬牙上仓位。 查看图片//@我有三只喵:回复@紫金陈:紫金陈底太准了这次，几乎没有误差",
+      "source": "iPhone",
+      "is_retweet": true,
+      "truncated": false,
+      "user_id": 6515752937,
+      "user_name": "紫金陈",
+      "pics": []
+    },
+    {
+      "id": 400235511,
+      "created_at": 1784082663000,
+      "text": "回复@紫金陈: 保本出了酒家和顺丰，酒家是买了后才留意到发可转债，我对这类资金宽裕的公司股权融资不喜欢，顺丰是买入后才注意到它扣非利润比净利少几十个，真实pe是19。前几天又加了一些青岛港h股。//@紫金陈:回复@紫金陈:再加五个点仓位，新入顺丰广州酒家马应龙青岛港这些登股。",
+      "source": "iPhone",
+      "is_retweet": true,
+      "truncated": false,
+      "user_id": 6515752937,
+      "user_name": "紫金陈",
+      "pics": []
+    },
+    {
+      "id": 398767650,
+      "created_at": 1783390684000,
+      "text": "我持仓里没有一个红利指数的成分股，但最近一个多月，所有持仓股股价都跟着红利指数走，真是奇怪。",
+      "source": "iPhone",
+      "is_retweet": false,
+      "truncated": false,
+      "user_id": 6515752937,
+      "user_name": "紫金陈",
+      "pics": []
+    },
+    {
+      "id": 398754261,
+      "created_at": 1783388766000,
+      "text": "回复@紫金陈: 再加五个点仓位，新入顺丰广州酒家马应龙青岛港这些登股。//@紫金陈:回复@紫金陈:看看我回撤20个点就是底的炒股历史规律结不结实，我买到55%的仓位，再观察一段时间，如果消费跌不下去，就买港口，港口目前价格就算跌，收息都能回本，只是股价上下弹性都不高。查看图片",
+      "source": "iPhone",
+      "is_retweet": true,
+      "truncated": false,
+      "user_id": 6515752937,
+      "user_name": "紫金陈",
+      "pics": []
+    },
+    {
+      "id": 398358690,
+      "created_at": 1783071210000,
+      "text": "刷到一些韩的采访，她嘴里就没几句实话，一个经常撒谎的人，搞基金就诚信了吗？她这基金确实收支合规，但怎么合规公转私，开公司的都会。把钱捐医疗设备，给医护搞培训，这类支出操作空间极大。",
+      "source": "iPhone",
+      "is_retweet": true,
+      "truncated": false,
+      "user_id": 6515752937,
+      "user_name": "紫金陈",
+      "pics": []
+    },
+    {
+      "id": 397788275,
+      "created_at": 1782874657000,
+      "text": "回复@紫金陈: 感觉前天保守了，登股集体破位时刻，上仓位不够果敢，继续看看，如果登股不破新低，只能加仓上下空间都不大的港口股了。//@紫金陈:回复@紫金陈:看看我回撤20个点就是底的炒股历史规律结不结实，我买到55%的仓位，再观察一段时间，如果消费跌不下去，就买港口，港口目前价格就算跌，收息都能回本，只是股价上下弹性都不高。查看图片",
+      "source": "iPhone",
+      "is_retweet": true,
+      "truncated": false,
+      "user_id": 6515752937,
+      "user_name": "紫金陈",
+      "pics": []
+    },
+    {
+      "id": 397658081,
+      "created_at": 1782816730000,
+      "text": "回复@赤壁鏖战: 我的办法就是我买的标的，很难想象再跌20%，这招防不了爆雷，爆雷的没办法，很多票也只能死扛，所以加上分散，不至于所有持仓都爆雷。我就是很传统的价投，低估加分散。//@赤壁鏖战:回复@紫金陈:控制回撤有啥好方法？我跌到受不了就只会减仓投降，这样才能保住以前的部分利润，但是往往这个时候都割在了比较低的位置",
+      "source": "iPhone",
+      "is_retweet": true,
+      "truncated": false,
+      "user_id": 6515752937,
+      "user_name": "紫金陈",
+      "pics": []
+    },
+    {
+      "id": 397651202,
+      "created_at": 1782814250000,
+      "text": "回复@溪河水: 我不懂tob市场，toc的话，除了豆包替代百度，想象不出ai未来看得见的几年对大众生活有啥改变。//@溪河水:回复@紫金陈:主要是担心社会经济运行的底层逻辑变了 这才是最害怕的地方，以往经验不能用了",
+      "source": "iPhone",
+      "is_retweet": true,
+      "truncated": false,
+      "user_id": 6515752937,
+      "user_name": "紫金陈",
+      "pics": []
+    },
+    {
+      "id": 397648221,
+      "created_at": 1782813570000,
+      "text": "回复@aappiiqq: 券商赚再多都是行业高薪股东喝点汤，pe没意义。不知道为啥每家都这样。//@aappiiqq:回复@紫金陈:券商一些估值都低于10了，不知道能不能涨",
+      "source": "iPhone",
+      "is_retweet": true,
+      "truncated": false,
+      "user_id": 6515752937,
+      "user_name": "紫金陈",
+      "pics": []
+    },
+    {
+      "id": 178287183,
+      "created_at": 1619485608000,
+      "text": "",
+      "source": "雪球",
+      "is_retweet": false,
+      "truncated": false,
+      "user_id": 1821992043,
+      "user_name": "ice_招行谷子地",
+      "pics": []
+    },
     {
       "id": 401074810,
       "created_at": 1784512721000,
@@ -46,6 +167,61 @@
       "text": "",
       "source": "雪球",
       "is_retweet": false,
+      "truncated": false,
+      "user_id": 1821992043,
+      "user_name": "ice_招行谷子地",
+      "pics": []
+    },
+    {
+      "id": 401033597,
+      "created_at": 1784472795000,
+      "text": "回复@价值小铁匠: 顺着说就行了，我不会给任何具体操作建议//@价值小铁匠:回复@ice_招行谷子地:难绷，前后两个粉丝处在割裂的世界",
+      "source": "Android",
+      "is_retweet": true,
+      "truncated": false,
+      "user_id": 1821992043,
+      "user_name": "ice_招行谷子地",
+      "pics": []
+    },
+    {
+      "id": 401031800,
+      "created_at": 1784471725000,
+      "text": "回复@蓝蓝海_2008: 那你就别卖。//@蓝蓝海_2008:回复@ice_招行谷子地:冰大。有人分析说：长鑫发行与宁德有相似。我们不卖都发大了，哈哈 查看图片",
+      "source": "Android",
+      "is_retweet": true,
+      "truncated": false,
+      "user_id": 1821992043,
+      "user_name": "ice_招行谷子地",
+      "pics": []
+    },
+    {
+      "id": 401031725,
+      "created_at": 1784471674000,
+      "text": "回复@哥哥买好股做好人: 你别缴款就行了//@哥哥买好股做好人:回复@ice_招行谷子地:冰哥，长鑫会不会破发的",
+      "source": "Android",
+      "is_retweet": true,
+      "truncated": false,
+      "user_id": 1821992043,
+      "user_name": "ice_招行谷子地",
+      "pics": []
+    },
+    {
+      "id": 401010009,
+      "created_at": 1784454990000,
+      "text": "回复@骝骝2016: 没，招券的信用账户不打新，普通账户是给儿子代持的股票和基金。门票仓在华泰//@骝骝2016:回复@ice_招行谷子地:你这是没用招商证券APP打新股吗？这个中签界面一看就是华泰证券的。",
+      "source": "Android",
+      "is_retweet": true,
+      "truncated": false,
+      "user_id": 1821992043,
+      "user_name": "ice_招行谷子地",
+      "pics": []
+    },
+    {
+      "id": 401009665,
+      "created_at": 1784454746000,
+      "text": "回复@罩不住: 滚入本金//@罩不住:回复@ice_招行谷子地:多次展期的时候是不是要把之前的利息结清呢？",
+      "source": "Android",
+      "is_retweet": true,
       "truncated": false,
       "user_id": 1821992043,
       "user_name": "ice_招行谷子地",
@@ -402,55 +578,10 @@
     {
       "user_id": "1821992043",
       "name": "ice_招行谷子地",
-      "new_count": 4,
+      "new_count": 0,
       "text_signal_count": 0,
       "vision_signal_count": 0,
-      "posts": [
-        {
-          "id": 401074810,
-          "created_at": 1784512721000,
-          "text": "回复@andy30056: 人家的地盘，人家说了算。//@andy30056:回复@ice_招行谷子地:雪球凭啥这样干啊？",
-          "source": "雪球",
-          "is_retweet": true,
-          "truncated": false,
-          "user_id": 1821992043,
-          "user_name": "ice_招行谷子地",
-          "pics": []
-        },
-        {
-          "id": 401068311,
-          "created_at": 1784511938000,
-          "text": "回复@冥河摆渡人: 估计是永久性限流了吧。//@冥河摆渡人:回复@ice_招行谷子地:还在限流啊，这槛是迈不过去了还是咋滴…",
-          "source": "雪球",
-          "is_retweet": true,
-          "truncated": false,
-          "user_id": 1821992043,
-          "user_name": "ice_招行谷子地",
-          "pics": []
-        },
-        {
-          "id": 401063808,
-          "created_at": 1784511381000,
-          "text": "回复@希思凯撒: 因为雪球限流我//@希思凯撒:回复@ice_招行谷子地:纳闷雪球里招行标的的“影响力用户列表”为何没有冰哥？",
-          "source": "Android",
-          "is_retweet": true,
-          "truncated": false,
-          "user_id": 1821992043,
-          "user_name": "ice_招行谷子地",
-          "pics": []
-        },
-        {
-          "id": 401052606,
-          "created_at": 1784508383000,
-          "text": "",
-          "source": "雪球",
-          "is_retweet": false,
-          "truncated": false,
-          "user_id": 1821992043,
-          "user_name": "ice_招行谷子地",
-          "pics": []
-        }
-      ],
+      "posts": [],
       "recent_posts": [
         {
           "id": 178287183,
