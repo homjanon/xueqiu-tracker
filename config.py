@@ -1,7 +1,7 @@
 """配置：从环境变量读取，缺失时用默认值。
 模型调用按优先级走三级后端（均为原生多模态，图文通吃）：
   1) Agnes AI agnes-2.0-flash（免费多模态，复用 douban-tracker 配置）
-  2) NVIDIA Qwen3.5-122B-A10B（免费，原生VLM，122B总参/10B激活）
+  2) NVIDIA GLM-5.2（z-ai/glm-5.2，免费，参考 portfolio 仓调用方式）
   3) 商汤日日新 SenseNova 6.7 Flash-Lite（免费，Token Plan 限时免费）
 支持多用户（逗号分隔）；USER_HINTS 为各用户专属黑话词典（注入 LLM 提示）。
 """
@@ -33,11 +33,11 @@ BACKENDS = [
         "timeout": int(os.getenv("AGNES_TIMEOUT", "120")),
     },
     {
-        # ② NVIDIA Qwen3.5-122B-A10B（免费，原生VLM，122B总参/10B激活）
-        "name": "nvidia-qwen3.5-122b",
+        # ② NVIDIA GLM-5.2（免费，参考 portfolio 仓调用方式）
+        "name": "nvidia-glm-5.2",
         "base_url": os.getenv("PRIMARY_BASE_URL", "https://integrate.api.nvidia.com/v1"),
         "api_key": os.getenv("NVIDIA_API_KEY", ""),
-        "model": os.getenv("PRIMARY_MODEL", "qwen/qwen3.5-122b-a10b"),
+        "model": os.getenv("PRIMARY_MODEL", "z-ai/glm-5.2"),
         "timeout": int(os.getenv("PRIMARY_TIMEOUT", "120")),
     },
     {
