@@ -8,7 +8,7 @@
 3. 清洗 HTML、按各用户 `last_post_id` 去重，仅处理新增发言。
 4. **每日讨论归纳**（`analyzer.daily_summary`）：每位用户各自调用 LLM，把其发言**中性归纳成一句 40-60 字**的短评；**重点抓取用户点名的具体标的（股票/ETF，勿以「消费/港口/券商」等泛称带过）**，可如实转述原文明确表达的动作（如「加仓XX」「出了XX」），但**不替用户推断未明说的操作**（不自行下「持有XX」结论）；某人当日无发言则显示「暂未发言」。三级后端链首个可用即生效：
    - ① **Agnes AI agnes-2.0-flash**（`agnes-2.0-flash`，复用 douban-tracker 配置）— 免费
-   - ② NVIDIA **Qwen3.5-122B-A10B**（`qwen/qwen3.5-122b-a10b`，比397B更快）— 免费
+   - ② NVIDIA **GLM-5.2**（`z-ai/glm-5.2`，参考 portfolio 仓调用方式）— 免费
    - ③ 商汤日日新 **SenseNova 6.7 Flash-Lite**（`sensenova-6.7-flash-lite`，Token Plan 限时免费）— 免费兜底
    - 无 Key / 全部失败时回退：取该用户最新发言原文前段作摘录（不代码层截断，长度由提示词约束）。
 5. 黑话提示 `USER_HINTS`（如 谷子地 的 mnp/大波/招行 等）作为轻量上下文注入，帮 LLM 读懂讨论，但归纳重点仍是抓取用户点名的具体标的。
