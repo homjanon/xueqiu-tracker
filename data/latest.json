@@ -1,27 +1,16 @@
 {
-  "fetched_at": "2026-07-29 14:38:27",
-  "daily_summary": "紫金陈：紫金陈称今年收益率跑过上证，底部加仓后收益回正。他提到消费板块若跌不下去就买青岛港，港口价格下跌收息可回本，但股价弹性不高\nice_招行谷子地：用户近期主要讨论旅行行程，并评论了中际旭创、光模块技术路线及张坤、但斌等基金经理动向，未提及具体股票买卖操作",
+  "fetched_at": "2026-07-30 14:34:34",
+  "daily_summary": "紫金陈：紫金陈提到卖出酒家和顺丰，加仓青岛港H股，并计划若消费股不跌则买入港口股，强调回撤20%加仓策略，持仓未包含红利指数成分股\nice_招行谷子地：用户讨论招商银行分红比例，提及五粮液策略，并分享金字塔建仓经验，未明确具体买卖动作",
   "user_count": 2,
-  "new_count": 20,
+  "new_count": 4,
   "text_signal_count": 0,
   "vision_signal_count": 0,
   "showing_fallback": false,
   "posts": [
     {
-      "id": 402640556,
-      "created_at": 1785301547000,
-      "text": "回复@紫金陈: 今年收益率已经跑过上证，虽然收益率显示是负，由于底部猛加仓，收益金额已经回正。查看图片//@紫金陈:回复@紫金陈:看看我回撤20个点就是底的炒股历史规律结不结实，我买到55%的仓位，再观察一段时间，如果消费跌不下去，就买港口，港口目前价格就算跌，收息都能回本，只是股价上下弹性都不高。查看图片",
-      "source": "iPhone",
-      "is_retweet": true,
-      "truncated": false,
-      "user_id": 6515752937,
-      "user_name": "紫金陈",
-      "pics": []
-    },
-    {
-      "id": 402643564,
-      "created_at": 1785302239000,
-      "text": "回复@站在光锂: 估计这也是最后一次了//@站在光锂:回复@ice_招行谷子地:你们还会一起出去，看别人家说很多初中生就不跟父母出游了",
+      "id": 402814810,
+      "created_at": 1785380015000,
+      "text": "回复@坐等上涨: 我的是金字塔建仓//@坐等上涨:回复@ice_招行谷子地:冰哥，你这个倒金字塔建仓，跟不上。最后一次没钱了，成本高很多，跌到70我都想去贷款加仓了，最后想想算了，不追求极致。",
       "source": "Android",
       "is_retweet": true,
       "truncated": false,
@@ -30,9 +19,9 @@
       "pics": []
     },
     {
-      "id": 402643411,
-      "created_at": 1785302202000,
-      "text": "回复@一个空玻璃瓶: 跟导游//@一个空玻璃瓶:回复@ice_招行谷子地:自己去的吗？",
+      "id": 402806177,
+      "created_at": 1785378910000,
+      "text": "回复@七八不懂: 傍晚的飞机//@七八不懂:回复@ice_招行谷子地:冰哥回了吧",
       "source": "Android",
       "is_retweet": true,
       "truncated": false,
@@ -41,53 +30,9 @@
       "pics": []
     },
     {
-      "id": 402606384,
-      "created_at": 1785293100000,
-      "text": "回复@一直住顶楼: 已经在写了//@一直住顶楼:回复@ice_招行谷子地:公众号可以出个游记吗？",
-      "source": "Android",
-      "is_retweet": true,
-      "truncated": false,
-      "user_id": 1821992043,
-      "user_name": "ice_招行谷子地",
-      "pics": []
-    },
-    {
-      "id": 402603663,
-      "created_at": 1785292663000,
-      "text": "回复@与浪同行: 自己规划。//@与浪同行:回复@ice_招行谷子地:行程都是自己规划，还是落地后找旅行团？",
-      "source": "Android",
-      "is_retweet": true,
-      "truncated": false,
-      "user_id": 1821992043,
-      "user_name": "ice_招行谷子地",
-      "pics": []
-    },
-    {
-      "id": 402599031,
-      "created_at": 1785291997000,
-      "text": "回复@不要加群不要加群: 嗯//@不要加群不要加群:回复@ice_招行谷子地:带儿子一起吗？",
-      "source": "Android",
-      "is_retweet": true,
-      "truncated": false,
-      "user_id": 1821992043,
-      "user_name": "ice_招行谷子地",
-      "pics": []
-    },
-    {
-      "id": 402598063,
-      "created_at": 1785291883000,
-      "text": "回复@Yaolxg: 上周四到明天//@Yaolxg:回复@ice_招行谷子地:冰哥在云南玩了几天啊",
-      "source": "Android",
-      "is_retweet": true,
-      "truncated": false,
-      "user_id": 1821992043,
-      "user_name": "ice_招行谷子地",
-      "pics": []
-    },
-    {
-      "id": 402596441,
-      "created_at": 1785291666000,
-      "text": "今天高黎贡山徒步，明天回京",
+      "id": 402785702,
+      "created_at": 1785376350000,
+      "text": "$五粮液(SZ000858)$ 敌进我退，敌退我进。敌疲我打，敌退我追。",
       "source": "Android",
       "is_retweet": false,
       "truncated": false,
@@ -96,131 +41,10 @@
       "pics": []
     },
     {
-      "id": 402550621,
-      "created_at": 1785271249000,
-      "text": "回复@亲近的股票神勇侠:  查看图片//@亲近的股票神勇侠:回复@投资稀缺和垄断:怎么？？？",
+      "id": 402676784,
+      "created_at": 1785309927000,
+      "text": "回复@刘老人头: 自己去看历史文章//@刘老人头:回复@ice_招行谷子地:谷哥我看了汇丰控股一年利润百分之65用来分红，招商银行未来有没有可能会一年利润百分之50用来分红，求教",
       "source": "Android",
-      "is_retweet": true,
-      "truncated": false,
-      "user_id": 1821992043,
-      "user_name": "ice_招行谷子地",
-      "pics": []
-    },
-    {
-      "id": 402550585,
-      "created_at": 1785271050000,
-      "text": "回复@再进阶2026: 查看图片//@再进阶2026:回复@投资稀缺和垄断:英伟达都动不了中际旭创，你啊根本没有真正去分析过光模块，光模块技术是英伟达，谷歌，博通，其他美国云大厂综合博弈下的技术路线，英伟达怎么不想用自己的光通信技术？但是他的客户不同意，不同意绑定在英伟达上，因为英伟达的芯片已经让他们尝到了高昂成本带来的痛苦",
-      "source": "Android",
-      "is_retweet": true,
-      "truncated": false,
-      "user_id": 1821992043,
-      "user_name": "ice_招行谷子地",
-      "pics": []
-    },
-    {
-      "id": 402550438,
-      "created_at": 1785270796000,
-      "text": "看到这个帖子，最精彩的部分是评论，拉黑了好几个",
-      "source": "Android",
-      "is_retweet": true,
-      "truncated": false,
-      "user_id": 1821992043,
-      "user_name": "ice_招行谷子地",
-      "pics": []
-    },
-    {
-      "id": 402530097,
-      "created_at": 1785248647000,
-      "text": "回复@五楼-躺平价值派: 这种垃圾V只能等粉丝反水。别人真没辙。//@五楼-躺平价值派:回复@ice_招行谷子地:哈哈，之前一个伪价投喊卖老登买科技，我还评论说，你这样说我觉得反转就快到了，结果今天一去看，都删除文章，假装什么也没发生",
-      "source": "雪球",
-      "is_retweet": true,
-      "truncated": false,
-      "user_id": 1821992043,
-      "user_name": "ice_招行谷子地",
-      "pics": []
-    },
-    {
-      "id": 402529423,
-      "created_at": 1785248418000,
-      "text": "回复@这次难道不一样: 这个我不记得了，因为都被我拉黑了。//@这次难道不一样:回复@ice_招行谷子地:能说说哪些大V吗",
-      "source": "雪球",
-      "is_retweet": true,
-      "truncated": false,
-      "user_id": 1821992043,
-      "user_name": "ice_招行谷子地",
-      "pics": []
-    },
-    {
-      "id": 402529024,
-      "created_at": 1785248311000,
-      "text": "回复@云淡风轻099: 张坤已经被架空了，他属于身不由己。//@云淡风轻099:回复@ice_招行谷子地:易方达蓝筹基。",
-      "source": "雪球",
-      "is_retweet": true,
-      "truncated": false,
-      "user_id": 1821992043,
-      "user_name": "ice_招行谷子地",
-      "pics": []
-    },
-    {
-      "id": 402528713,
-      "created_at": 1785248210000,
-      "text": "回复@敬重的稳赚小果敢: 错了，是45年加入倭军，49年加入国军。//@敬重的稳赚小果敢:回复@ice_招行谷子地:6月底投降割老登加入小登，相当于48年加入“国军”呀",
-      "source": "雪球",
-      "is_retweet": true,
-      "truncated": false,
-      "user_id": 1821992043,
-      "user_name": "ice_招行谷子地",
-      "pics": []
-    },
-    {
-      "id": 402525735,
-      "created_at": 1785247307000,
-      "text": "回复@刚哥爱投资: 这个还真不是，他早就去追硬科技了，虽然7月有损失，但是应该是利润回吐，不至于伤筋动骨。最惨的应该是2类人，一种是6月底之前在老登里抗了太久，最终扛不住跳去双创的叛徒；另一种是6月底还在满融双创的赌徒。//@刚哥爱投资:回复@ice_招行谷子地:但斌",
-      "source": "雪球",
-      "is_retweet": true,
-      "truncated": false,
-      "user_id": 1821992043,
-      "user_name": "ice_招行谷子地",
-      "pics": []
-    },
-    {
-      "id": 402524031,
-      "created_at": 1785246823000,
-      "text": "回复@来一杯龙井: 当初他们以为自己站在光里，现在看是光着站在那里。//@来一杯龙井:回复@ice_招行谷子地:当时说自己站错队的大v，不知道现在站在哪里。",
-      "source": "雪球",
-      "is_retweet": true,
-      "truncated": false,
-      "user_id": 1821992043,
-      "user_name": "ice_招行谷子地",
-      "pics": []
-    },
-    {
-      "id": 402523023,
-      "created_at": 1785246533000,
-      "text": "最搞笑的就是6月底一堆伪价投大V高喊打不过就加入跑去接盘双创。我就说一句：傻X。我不是特指某位，是指所有6月底跑去跪舔双创的。",
-      "source": "雪球",
-      "is_retweet": false,
-      "truncated": false,
-      "user_id": 1821992043,
-      "user_name": "ice_招行谷子地",
-      "pics": []
-    },
-    {
-      "id": 402503122,
-      "created_at": 1785237442000,
-      "text": "我是摩拜美女的",
-      "source": "Android",
-      "is_retweet": true,
-      "truncated": false,
-      "user_id": 1821992043,
-      "user_name": "ice_招行谷子地",
-      "pics": []
-    },
-    {
-      "id": 402466448,
-      "created_at": 1785223704000,
-      "text": "完全是胡说八道，招行从未公布过存款的分布，只有AUM数据",
-      "source": "雪球",
       "is_retweet": true,
       "truncated": false,
       "user_id": 1821992043,
@@ -353,6 +177,50 @@
       "pics": []
     },
     {
+      "id": 402814810,
+      "created_at": 1785380015000,
+      "text": "回复@坐等上涨: 我的是金字塔建仓//@坐等上涨:回复@ice_招行谷子地:冰哥，你这个倒金字塔建仓，跟不上。最后一次没钱了，成本高很多，跌到70我都想去贷款加仓了，最后想想算了，不追求极致。",
+      "source": "Android",
+      "is_retweet": true,
+      "truncated": false,
+      "user_id": 1821992043,
+      "user_name": "ice_招行谷子地",
+      "pics": []
+    },
+    {
+      "id": 402806177,
+      "created_at": 1785378910000,
+      "text": "回复@七八不懂: 傍晚的飞机//@七八不懂:回复@ice_招行谷子地:冰哥回了吧",
+      "source": "Android",
+      "is_retweet": true,
+      "truncated": false,
+      "user_id": 1821992043,
+      "user_name": "ice_招行谷子地",
+      "pics": []
+    },
+    {
+      "id": 402785702,
+      "created_at": 1785376350000,
+      "text": "$五粮液(SZ000858)$ 敌进我退，敌退我进。敌疲我打，敌退我追。",
+      "source": "Android",
+      "is_retweet": false,
+      "truncated": false,
+      "user_id": 1821992043,
+      "user_name": "ice_招行谷子地",
+      "pics": []
+    },
+    {
+      "id": 402676784,
+      "created_at": 1785309927000,
+      "text": "回复@刘老人头: 自己去看历史文章//@刘老人头:回复@ice_招行谷子地:谷哥我看了汇丰控股一年利润百分之65用来分红，招商银行未来有没有可能会一年利润百分之50用来分红，求教",
+      "source": "Android",
+      "is_retweet": true,
+      "truncated": false,
+      "user_id": 1821992043,
+      "user_name": "ice_招行谷子地",
+      "pics": []
+    },
+    {
       "id": 402643564,
       "created_at": 1785302239000,
       "text": "回复@站在光锂: 估计这也是最后一次了//@站在光锂:回复@ice_招行谷子地:你们还会一起出去，看别人家说很多初中生就不跟父母出游了",
@@ -406,72 +274,16 @@
       "user_id": 1821992043,
       "user_name": "ice_招行谷子地",
       "pics": []
-    },
-    {
-      "id": 402598063,
-      "created_at": 1785291883000,
-      "text": "回复@Yaolxg: 上周四到明天//@Yaolxg:回复@ice_招行谷子地:冰哥在云南玩了几天啊",
-      "source": "Android",
-      "is_retweet": true,
-      "truncated": false,
-      "user_id": 1821992043,
-      "user_name": "ice_招行谷子地",
-      "pics": []
-    },
-    {
-      "id": 402596441,
-      "created_at": 1785291666000,
-      "text": "今天高黎贡山徒步，明天回京",
-      "source": "Android",
-      "is_retweet": false,
-      "truncated": false,
-      "user_id": 1821992043,
-      "user_name": "ice_招行谷子地",
-      "pics": []
-    },
-    {
-      "id": 402550621,
-      "created_at": 1785271249000,
-      "text": "回复@亲近的股票神勇侠:  查看图片//@亲近的股票神勇侠:回复@投资稀缺和垄断:怎么？？？",
-      "source": "Android",
-      "is_retweet": true,
-      "truncated": false,
-      "user_id": 1821992043,
-      "user_name": "ice_招行谷子地",
-      "pics": []
-    },
-    {
-      "id": 402550585,
-      "created_at": 1785271050000,
-      "text": "回复@再进阶2026: 查看图片//@再进阶2026:回复@投资稀缺和垄断:英伟达都动不了中际旭创，你啊根本没有真正去分析过光模块，光模块技术是英伟达，谷歌，博通，其他美国云大厂综合博弈下的技术路线，英伟达怎么不想用自己的光通信技术？但是他的客户不同意，不同意绑定在英伟达上，因为英伟达的芯片已经让他们尝到了高昂成本带来的痛苦",
-      "source": "Android",
-      "is_retweet": true,
-      "truncated": false,
-      "user_id": 1821992043,
-      "user_name": "ice_招行谷子地",
-      "pics": []
     }
   ],
   "users": [
     {
       "user_id": "6515752937",
       "name": "紫金陈",
-      "new_count": 1,
+      "new_count": 0,
       "text_signal_count": 0,
       "vision_signal_count": 0,
-      "posts": [
-        {
-          "id": 402640556,
-          "created_at": 1785301547000,
-          "text": "回复@紫金陈: 今年收益率已经跑过上证，虽然收益率显示是负，由于底部猛加仓，收益金额已经回正。查看图片//@紫金陈:回复@紫金陈:看看我回撤20个点就是底的炒股历史规律结不结实，我买到55%的仓位，再观察一段时间，如果消费跌不下去，就买港口，港口目前价格就算跌，收息都能回本，只是股价上下弹性都不高。查看图片",
-          "source": "iPhone",
-          "is_retweet": true,
-          "truncated": false,
-          "user_id": 6515752937,
-          "user_name": "紫金陈",
-          "pics": []
-        }
-      ],
+      "posts": [],
       "recent_posts": [
         {
           "id": 385877271,
@@ -590,14 +402,14 @@
     {
       "user_id": "1821992043",
       "name": "ice_招行谷子地",
-      "new_count": 19,
+      "new_count": 4,
       "text_signal_count": 0,
       "vision_signal_count": 0,
       "posts": [
         {
-          "id": 402643564,
-          "created_at": 1785302239000,
-          "text": "回复@站在光锂: 估计这也是最后一次了//@站在光锂:回复@ice_招行谷子地:你们还会一起出去，看别人家说很多初中生就不跟父母出游了",
+          "id": 402814810,
+          "created_at": 1785380015000,
+          "text": "回复@坐等上涨: 我的是金字塔建仓//@坐等上涨:回复@ice_招行谷子地:冰哥，你这个倒金字塔建仓，跟不上。最后一次没钱了，成本高很多，跌到70我都想去贷款加仓了，最后想想算了，不追求极致。",
           "source": "Android",
           "is_retweet": true,
           "truncated": false,
@@ -606,9 +418,9 @@
           "pics": []
         },
         {
-          "id": 402643411,
-          "created_at": 1785302202000,
-          "text": "回复@一个空玻璃瓶: 跟导游//@一个空玻璃瓶:回复@ice_招行谷子地:自己去的吗？",
+          "id": 402806177,
+          "created_at": 1785378910000,
+          "text": "回复@七八不懂: 傍晚的飞机//@七八不懂:回复@ice_招行谷子地:冰哥回了吧",
           "source": "Android",
           "is_retweet": true,
           "truncated": false,
@@ -617,53 +429,9 @@
           "pics": []
         },
         {
-          "id": 402606384,
-          "created_at": 1785293100000,
-          "text": "回复@一直住顶楼: 已经在写了//@一直住顶楼:回复@ice_招行谷子地:公众号可以出个游记吗？",
-          "source": "Android",
-          "is_retweet": true,
-          "truncated": false,
-          "user_id": 1821992043,
-          "user_name": "ice_招行谷子地",
-          "pics": []
-        },
-        {
-          "id": 402603663,
-          "created_at": 1785292663000,
-          "text": "回复@与浪同行: 自己规划。//@与浪同行:回复@ice_招行谷子地:行程都是自己规划，还是落地后找旅行团？",
-          "source": "Android",
-          "is_retweet": true,
-          "truncated": false,
-          "user_id": 1821992043,
-          "user_name": "ice_招行谷子地",
-          "pics": []
-        },
-        {
-          "id": 402599031,
-          "created_at": 1785291997000,
-          "text": "回复@不要加群不要加群: 嗯//@不要加群不要加群:回复@ice_招行谷子地:带儿子一起吗？",
-          "source": "Android",
-          "is_retweet": true,
-          "truncated": false,
-          "user_id": 1821992043,
-          "user_name": "ice_招行谷子地",
-          "pics": []
-        },
-        {
-          "id": 402598063,
-          "created_at": 1785291883000,
-          "text": "回复@Yaolxg: 上周四到明天//@Yaolxg:回复@ice_招行谷子地:冰哥在云南玩了几天啊",
-          "source": "Android",
-          "is_retweet": true,
-          "truncated": false,
-          "user_id": 1821992043,
-          "user_name": "ice_招行谷子地",
-          "pics": []
-        },
-        {
-          "id": 402596441,
-          "created_at": 1785291666000,
-          "text": "今天高黎贡山徒步，明天回京",
+          "id": 402785702,
+          "created_at": 1785376350000,
+          "text": "$五粮液(SZ000858)$ 敌进我退，敌退我进。敌疲我打，敌退我追。",
           "source": "Android",
           "is_retweet": false,
           "truncated": false,
@@ -672,131 +440,10 @@
           "pics": []
         },
         {
-          "id": 402550621,
-          "created_at": 1785271249000,
-          "text": "回复@亲近的股票神勇侠:  查看图片//@亲近的股票神勇侠:回复@投资稀缺和垄断:怎么？？？",
+          "id": 402676784,
+          "created_at": 1785309927000,
+          "text": "回复@刘老人头: 自己去看历史文章//@刘老人头:回复@ice_招行谷子地:谷哥我看了汇丰控股一年利润百分之65用来分红，招商银行未来有没有可能会一年利润百分之50用来分红，求教",
           "source": "Android",
-          "is_retweet": true,
-          "truncated": false,
-          "user_id": 1821992043,
-          "user_name": "ice_招行谷子地",
-          "pics": []
-        },
-        {
-          "id": 402550585,
-          "created_at": 1785271050000,
-          "text": "回复@再进阶2026: 查看图片//@再进阶2026:回复@投资稀缺和垄断:英伟达都动不了中际旭创，你啊根本没有真正去分析过光模块，光模块技术是英伟达，谷歌，博通，其他美国云大厂综合博弈下的技术路线，英伟达怎么不想用自己的光通信技术？但是他的客户不同意，不同意绑定在英伟达上，因为英伟达的芯片已经让他们尝到了高昂成本带来的痛苦",
-          "source": "Android",
-          "is_retweet": true,
-          "truncated": false,
-          "user_id": 1821992043,
-          "user_name": "ice_招行谷子地",
-          "pics": []
-        },
-        {
-          "id": 402550438,
-          "created_at": 1785270796000,
-          "text": "看到这个帖子，最精彩的部分是评论，拉黑了好几个",
-          "source": "Android",
-          "is_retweet": true,
-          "truncated": false,
-          "user_id": 1821992043,
-          "user_name": "ice_招行谷子地",
-          "pics": []
-        },
-        {
-          "id": 402530097,
-          "created_at": 1785248647000,
-          "text": "回复@五楼-躺平价值派: 这种垃圾V只能等粉丝反水。别人真没辙。//@五楼-躺平价值派:回复@ice_招行谷子地:哈哈，之前一个伪价投喊卖老登买科技，我还评论说，你这样说我觉得反转就快到了，结果今天一去看，都删除文章，假装什么也没发生",
-          "source": "雪球",
-          "is_retweet": true,
-          "truncated": false,
-          "user_id": 1821992043,
-          "user_name": "ice_招行谷子地",
-          "pics": []
-        },
-        {
-          "id": 402529423,
-          "created_at": 1785248418000,
-          "text": "回复@这次难道不一样: 这个我不记得了，因为都被我拉黑了。//@这次难道不一样:回复@ice_招行谷子地:能说说哪些大V吗",
-          "source": "雪球",
-          "is_retweet": true,
-          "truncated": false,
-          "user_id": 1821992043,
-          "user_name": "ice_招行谷子地",
-          "pics": []
-        },
-        {
-          "id": 402529024,
-          "created_at": 1785248311000,
-          "text": "回复@云淡风轻099: 张坤已经被架空了，他属于身不由己。//@云淡风轻099:回复@ice_招行谷子地:易方达蓝筹基。",
-          "source": "雪球",
-          "is_retweet": true,
-          "truncated": false,
-          "user_id": 1821992043,
-          "user_name": "ice_招行谷子地",
-          "pics": []
-        },
-        {
-          "id": 402528713,
-          "created_at": 1785248210000,
-          "text": "回复@敬重的稳赚小果敢: 错了，是45年加入倭军，49年加入国军。//@敬重的稳赚小果敢:回复@ice_招行谷子地:6月底投降割老登加入小登，相当于48年加入“国军”呀",
-          "source": "雪球",
-          "is_retweet": true,
-          "truncated": false,
-          "user_id": 1821992043,
-          "user_name": "ice_招行谷子地",
-          "pics": []
-        },
-        {
-          "id": 402525735,
-          "created_at": 1785247307000,
-          "text": "回复@刚哥爱投资: 这个还真不是，他早就去追硬科技了，虽然7月有损失，但是应该是利润回吐，不至于伤筋动骨。最惨的应该是2类人，一种是6月底之前在老登里抗了太久，最终扛不住跳去双创的叛徒；另一种是6月底还在满融双创的赌徒。//@刚哥爱投资:回复@ice_招行谷子地:但斌",
-          "source": "雪球",
-          "is_retweet": true,
-          "truncated": false,
-          "user_id": 1821992043,
-          "user_name": "ice_招行谷子地",
-          "pics": []
-        },
-        {
-          "id": 402524031,
-          "created_at": 1785246823000,
-          "text": "回复@来一杯龙井: 当初他们以为自己站在光里，现在看是光着站在那里。//@来一杯龙井:回复@ice_招行谷子地:当时说自己站错队的大v，不知道现在站在哪里。",
-          "source": "雪球",
-          "is_retweet": true,
-          "truncated": false,
-          "user_id": 1821992043,
-          "user_name": "ice_招行谷子地",
-          "pics": []
-        },
-        {
-          "id": 402523023,
-          "created_at": 1785246533000,
-          "text": "最搞笑的就是6月底一堆伪价投大V高喊打不过就加入跑去接盘双创。我就说一句：傻X。我不是特指某位，是指所有6月底跑去跪舔双创的。",
-          "source": "雪球",
-          "is_retweet": false,
-          "truncated": false,
-          "user_id": 1821992043,
-          "user_name": "ice_招行谷子地",
-          "pics": []
-        },
-        {
-          "id": 402503122,
-          "created_at": 1785237442000,
-          "text": "我是摩拜美女的",
-          "source": "Android",
-          "is_retweet": true,
-          "truncated": false,
-          "user_id": 1821992043,
-          "user_name": "ice_招行谷子地",
-          "pics": []
-        },
-        {
-          "id": 402466448,
-          "created_at": 1785223704000,
-          "text": "完全是胡说八道，招行从未公布过存款的分布，只有AUM数据",
-          "source": "雪球",
           "is_retweet": true,
           "truncated": false,
           "user_id": 1821992043,
@@ -817,6 +464,50 @@
           "pics": []
         },
         {
+          "id": 402814810,
+          "created_at": 1785380015000,
+          "text": "回复@坐等上涨: 我的是金字塔建仓//@坐等上涨:回复@ice_招行谷子地:冰哥，你这个倒金字塔建仓，跟不上。最后一次没钱了，成本高很多，跌到70我都想去贷款加仓了，最后想想算了，不追求极致。",
+          "source": "Android",
+          "is_retweet": true,
+          "truncated": false,
+          "user_id": 1821992043,
+          "user_name": "ice_招行谷子地",
+          "pics": []
+        },
+        {
+          "id": 402806177,
+          "created_at": 1785378910000,
+          "text": "回复@七八不懂: 傍晚的飞机//@七八不懂:回复@ice_招行谷子地:冰哥回了吧",
+          "source": "Android",
+          "is_retweet": true,
+          "truncated": false,
+          "user_id": 1821992043,
+          "user_name": "ice_招行谷子地",
+          "pics": []
+        },
+        {
+          "id": 402785702,
+          "created_at": 1785376350000,
+          "text": "$五粮液(SZ000858)$ 敌进我退，敌退我进。敌疲我打，敌退我追。",
+          "source": "Android",
+          "is_retweet": false,
+          "truncated": false,
+          "user_id": 1821992043,
+          "user_name": "ice_招行谷子地",
+          "pics": []
+        },
+        {
+          "id": 402676784,
+          "created_at": 1785309927000,
+          "text": "回复@刘老人头: 自己去看历史文章//@刘老人头:回复@ice_招行谷子地:谷哥我看了汇丰控股一年利润百分之65用来分红，招商银行未来有没有可能会一年利润百分之50用来分红，求教",
+          "source": "Android",
+          "is_retweet": true,
+          "truncated": false,
+          "user_id": 1821992043,
+          "user_name": "ice_招行谷子地",
+          "pics": []
+        },
+        {
           "id": 402643564,
           "created_at": 1785302239000,
           "text": "回复@站在光锂: 估计这也是最后一次了//@站在光锂:回复@ice_招行谷子地:你们还会一起出去，看别人家说很多初中生就不跟父母出游了",
@@ -864,50 +555,6 @@
           "id": 402599031,
           "created_at": 1785291997000,
           "text": "回复@不要加群不要加群: 嗯//@不要加群不要加群:回复@ice_招行谷子地:带儿子一起吗？",
-          "source": "Android",
-          "is_retweet": true,
-          "truncated": false,
-          "user_id": 1821992043,
-          "user_name": "ice_招行谷子地",
-          "pics": []
-        },
-        {
-          "id": 402598063,
-          "created_at": 1785291883000,
-          "text": "回复@Yaolxg: 上周四到明天//@Yaolxg:回复@ice_招行谷子地:冰哥在云南玩了几天啊",
-          "source": "Android",
-          "is_retweet": true,
-          "truncated": false,
-          "user_id": 1821992043,
-          "user_name": "ice_招行谷子地",
-          "pics": []
-        },
-        {
-          "id": 402596441,
-          "created_at": 1785291666000,
-          "text": "今天高黎贡山徒步，明天回京",
-          "source": "Android",
-          "is_retweet": false,
-          "truncated": false,
-          "user_id": 1821992043,
-          "user_name": "ice_招行谷子地",
-          "pics": []
-        },
-        {
-          "id": 402550621,
-          "created_at": 1785271249000,
-          "text": "回复@亲近的股票神勇侠:  查看图片//@亲近的股票神勇侠:回复@投资稀缺和垄断:怎么？？？",
-          "source": "Android",
-          "is_retweet": true,
-          "truncated": false,
-          "user_id": 1821992043,
-          "user_name": "ice_招行谷子地",
-          "pics": []
-        },
-        {
-          "id": 402550585,
-          "created_at": 1785271050000,
-          "text": "回复@再进阶2026: 查看图片//@再进阶2026:回复@投资稀缺和垄断:英伟达都动不了中际旭创，你啊根本没有真正去分析过光模块，光模块技术是英伟达，谷歌，博通，其他美国云大厂综合博弈下的技术路线，英伟达怎么不想用自己的光通信技术？但是他的客户不同意，不同意绑定在英伟达上，因为英伟达的芯片已经让他们尝到了高昂成本带来的痛苦",
           "source": "Android",
           "is_retweet": true,
           "truncated": false,
