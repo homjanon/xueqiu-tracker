@@ -10,9 +10,10 @@ import json
 import os
 
 from config import (XUEQIU_USER_IDS, PAGES, HEADLESS, RECENT_N,
-                    DATA_DIR, REPORT_DIR, STATE_FILE)
+                    DATA_DIR, REPORT_DIR, STATE_FILE, MENTIONS_FILE)
 from scraper import fetch_timeline, normalize
 from analyzer import daily_summary
+from extractor import update_mentions, save_store
 
 CST = datetime.timezone(datetime.timedelta(hours=8))
 
@@ -145,6 +146,15 @@ def main():
     }
     with open(f"{DATA_DIR}/latest.json", "w", encoding="utf-8") as f:
         json.dump(latest, f, ensure_ascii=False, indent=2)
+
+    # 标的提及追踪：增量抽取两人点名提到的标的，写 data/mentions.json（失败不影响主流程）
+    try:
+        store, mstats = update_mentions(users, f"{DATA_DIR}/{MENTIONS_FILE}", use_ai=True)
+        save_store(store, f"{DATA_DIR}/{MENTIONS_FILE}", ts)
+        print(f"[提及] 处理 {mstats['posts']} 帖 · 提取 {mstats['mentions']} 条 · "
+              f"来源 AI{mstats['ai']}/词典{mstats['dict']}")
+    except Exception as e:
+        print(f"[提及] 生成失败，跳过: {e}")
 
     md = build_report(ts, summary, users, showing_fallback)
     with open(f"{REPORT_DIR}/{now.strftime('%Y-%m-%d')}.md", "w", encoding="utf-8") as f:

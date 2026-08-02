@@ -1,0 +1,160 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-08-02 17:16:49",
+  "users": {
+    "6515752937": {
+      "name": "紫金陈",
+      "account": {
+        "position": "买到55%的仓位",
+        "position_at": 1782874657000,
+        "position_quote": "看看我回撤20个点就是底的炒股历史规律结不结实，我买到55%的仓位，再观察一段时间，如果消费跌不下去，就买港口，港口目前价格就算跌，收息都能回本，只是股价上下弹性都不高。",
+        "position_quoted": true,
+        "pnl": "今年收益率已经跑过上证",
+        "pnl_at": 1785301547000,
+        "pnl_quote": "今年收益率已经跑过上证，虽然收益率显示是负，由于底部猛加仓，收益金额已经回正。",
+        "pnl_quoted": false
+      },
+      "symbols": {
+        "顺丰控股": {
+          "normalized": true,
+          "aliases_seen": [
+            "顺丰"
+          ],
+          "latest": {
+            "at": 1784082663000,
+            "post_id": 400235511,
+            "raw_name": "顺丰",
+            "quote": "保本出了酒家和顺丰",
+            "qty": ""
+          },
+          "history": [
+            {
+              "at": 1783388766000,
+              "post_id": 398754261,
+              "raw_name": "顺丰",
+              "quote": "再加五个点仓位，新入顺丰广州酒家马应龙青岛港这些登股",
+              "qty": ""
+            }
+          ],
+          "first_at": 1783388766000,
+          "mention_count": 2
+        },
+        "广州酒家": {
+          "normalized": true,
+          "aliases_seen": [
+            "广州酒家",
+            "酒家"
+          ],
+          "latest": {
+            "at": 1784082663000,
+            "post_id": 400235511,
+            "raw_name": "酒家",
+            "quote": "保本出了酒家和顺丰",
+            "qty": ""
+          },
+          "history": [
+            {
+              "at": 1783388766000,
+              "post_id": 398754261,
+              "raw_name": "广州酒家",
+              "quote": "再加五个点仓位，新入顺丰广州酒家马应龙青岛港这些登股",
+              "qty": ""
+            }
+          ],
+          "first_at": 1783388766000,
+          "mention_count": 2
+        },
+        "马应龙": {
+          "normalized": true,
+          "aliases_seen": [
+            "马应龙"
+          ],
+          "latest": {
+            "at": 1783388766000,
+            "post_id": 398754261,
+            "raw_name": "马应龙",
+            "quote": "再加五个点仓位，新入顺丰广州酒家马应龙青岛港这些登股",
+            "qty": ""
+          },
+          "history": [],
+          "first_at": 1783388766000,
+          "mention_count": 1
+        },
+        "青岛港": {
+          "normalized": true,
+          "aliases_seen": [
+            "青岛港",
+            "青岛港h股"
+          ],
+          "latest": {
+            "at": 1784082663000,
+            "post_id": 400235511,
+            "raw_name": "青岛港h股",
+            "quote": "前几天又加了一些青岛港h股",
+            "qty": ""
+          },
+          "history": [
+            {
+              "at": 1783388766000,
+              "post_id": 398754261,
+              "raw_name": "青岛港",
+              "quote": "再加五个点仓位，新入顺丰广州酒家马应龙青岛港这些登股",
+              "qty": ""
+            }
+          ],
+          "first_at": 1783388766000,
+          "mention_count": 2
+        }
+      },
+      "processed_max_id": 402640556
+    },
+    "1821992043": {
+      "name": "ice_招行谷子地",
+      "account": {
+        "position": "满融",
+        "position_at": 1785578374000,
+        "position_quote": "我满融，差的就是融资利息。当年招行涨幅超过融资利率后你就追不上了。",
+        "position_quoted": false,
+        "pnl": "截止7月31日收盘，股市比年初亏0.03%",
+        "pnl_at": 1785571699000,
+        "pnl_quote": "截止7月31日收盘，股市比年初亏0.03%。",
+        "pnl_quoted": false
+      },
+      "symbols": {
+        "五粮液": {
+          "normalized": true,
+          "aliases_seen": [
+            "五粮液"
+          ],
+          "latest": {
+            "at": 1785572039000,
+            "post_id": 403240275,
+            "raw_name": "五粮液",
+            "quote": "有109手五粮液",
+            "qty": "109手"
+          },
+          "history": [],
+          "first_at": 1785572039000,
+          "mention_count": 1
+        },
+        "招商银行": {
+          "normalized": true,
+          "aliases_seen": [
+            "招行"
+          ],
+          "latest": {
+            "at": 1785578374000,
+            "post_id": 403245505,
+            "raw_name": "招行",
+            "quote": "当年招行涨幅超过融资利率后你就追不上了",
+            "qty": ""
+          },
+          "history": [],
+          "first_at": 1785578374000,
+          "mention_count": 1
+        }
+      },
+      "processed_max_id": 403281454
+    }
+  }
+}
