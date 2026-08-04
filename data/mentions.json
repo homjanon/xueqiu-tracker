@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-08-03 15:35:54",
+  "updated_at": "2026-08-04 13:23:53",
   "users": {
     "6515752937": {
       "name": "紫金陈",
@@ -115,9 +115,9 @@
         "position_at": 1785738969000,
         "position_quote": "$招商银行(SH600036)$ 满融招行绝望盼回调ing！我还能复投！",
         "position_quoted": false,
-        "pnl": "约5个点的超额收益",
-        "pnl_at": 1785738059000,
-        "pnl_quote": "截止上周五收盘，这一调仓已经产生了约5个点的超额收益。今天应该更高。",
+        "pnl": "昨天刚刚赚钱，3%",
+        "pnl_at": 1785805408000,
+        "pnl_quote": "昨天刚刚赚钱，3%",
         "pnl_quoted": false
       },
       "symbols": {
@@ -217,7 +217,7 @@
           "mention_count": 1
         }
       },
-      "processed_max_id": 403412917
+      "processed_max_id": 403556881
     }
   }
 }
