@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-08-04 14:33:59",
+  "updated_at": "2026-08-05 14:35:08",
   "users": {
     "6515752937": {
       "name": "紫金陈",
@@ -127,13 +127,20 @@
             "五粮液"
           ],
           "latest": {
-            "at": 1785723247000,
-            "post_id": 403348828,
+            "at": 1785892926000,
+            "post_id": 403702390,
             "raw_name": "五粮液",
-            "quote": "当然，我不是神仙无法预测到五粮液的年报整了一出回溯报表",
-            "qty": "10900"
+            "quote": "我不是建仓了$五粮液(SZ000858)$ 吗？",
+            "qty": ""
           },
           "history": [
+            {
+              "at": 1785723247000,
+              "post_id": 403348828,
+              "raw_name": "五粮液",
+              "quote": "当然，我不是神仙无法预测到五粮液的年报整了一出回溯报表",
+              "qty": "10900"
+            },
             {
               "at": 1785572039000,
               "post_id": 403240275,
@@ -143,7 +150,7 @@
             }
           ],
           "first_at": 1785572039000,
-          "mention_count": 2
+          "mention_count": 3
         },
         "招商银行": {
           "normalized": true,
@@ -215,9 +222,41 @@
           "history": [],
           "first_at": 1785740922000,
           "mention_count": 1
+        },
+        "易方达宽基": {
+          "normalized": false,
+          "aliases_seen": [
+            "易方达宽基"
+          ],
+          "latest": {
+            "at": 1785902899000,
+            "post_id": 403754252,
+            "raw_name": "易方达宽基",
+            "quote": "@易方达宽基",
+            "qty": ""
+          },
+          "history": [],
+          "first_at": 1785902899000,
+          "mention_count": 1
+        },
+        "易方达指数通": {
+          "normalized": false,
+          "aliases_seen": [
+            "易方达指数通"
+          ],
+          "latest": {
+            "at": 1785902899000,
+            "post_id": 403754252,
+            "raw_name": "易方达指数通",
+            "quote": "@易方达指数通",
+            "qty": ""
+          },
+          "history": [],
+          "first_at": 1785902899000,
+          "mention_count": 1
         }
       },
-      "processed_max_id": 403569923
+      "processed_max_id": 403767404
     }
   }
 }
