@@ -375,6 +375,15 @@ def extract_post(text, uid, use_ai=True):
         for k in ("position", "pnl"):
             if not result["account"].get(k):
                 result["account"][k] = acc_fb[k]
+        # AI 漏抽数量时，用词典扫描的数量兜底补上（避免 AI 模式 again 漏掉 109手 这类）
+        fb_mentions = fallback_extract(text)["mentions"]
+        fb_qty = {normalize_symbol(m["raw_name"])[0]: m["qty"]
+                  for m in fb_mentions if m.get("qty")}
+        for m in result["mentions"]:
+            if not m.get("qty"):
+                q = fb_qty.get(normalize_symbol(m["raw_name"])[0])
+                if q:
+                    m["qty"] = q
     return result
 
 
@@ -417,9 +426,13 @@ def _apply_mention(slot, m, post):
     canon, hit = normalize_symbol(m["raw_name"])
     if not canon:
         return
-    rec = {"at": post["created_at"], "post_id": post["id"],
-           "raw_name": m["raw_name"], "quote": m["quote"], "qty": m.get("qty", "")}
     sym = slot["symbols"].get(canon)
+    # 数量固定显示：新提取为空时，保留已读取的数量（用户手动/历史值不丢），非空才覆盖
+    new_qty = m.get("qty", "")
+    prev_qty = (sym or {}).get("latest", {}).get("qty", "") if sym else ""
+    rec_qty = new_qty or prev_qty
+    rec = {"at": post["created_at"], "post_id": post["id"],
+           "raw_name": m["raw_name"], "quote": m["quote"], "qty": rec_qty}
     if sym is None:
         slot["symbols"][canon] = {
             "normalized": hit,
