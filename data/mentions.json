@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-08-06 14:38:09",
+  "updated_at": "2026-08-07 13:46:09",
   "users": {
     "6515752937": {
       "name": "紫金陈",
@@ -254,9 +254,33 @@
           "history": [],
           "first_at": 1785902899000,
           "mention_count": 1
+        },
+        "比亚迪": {
+          "normalized": false,
+          "aliases_seen": [
+            "比亚迪"
+          ],
+          "latest": {
+            "at": 1786072977000,
+            "post_id": 404098881,
+            "raw_name": "比亚迪",
+            "quote": "新能源车大厂只有比亚迪，其他都是杂牌",
+            "qty": ""
+          },
+          "history": [
+            {
+              "at": 1786071859000,
+              "post_id": 404093644,
+              "raw_name": "比亚迪",
+              "quote": "这里的大厂特指$比亚迪(SZ002594)$",
+              "qty": ""
+            }
+          ],
+          "first_at": 1786071859000,
+          "mention_count": 2
         }
       },
-      "processed_max_id": 403947389
+      "processed_max_id": 404118800
     }
   }
 }
