@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-08-15 12:38:12",
+  "updated_at": "2026-08-16 12:42:03",
   "users": {
     "6515752937": {
       "name": "紫金陈",
@@ -399,7 +399,7 @@
           "mention_count": 1
         }
       },
-      "processed_max_id": 405161753
+      "processed_max_id": 405207684
     }
   }
 }
