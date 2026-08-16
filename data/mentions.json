@@ -1,7 +1,131 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-08-16 12:42:03",
+  "updated_at": "2026-08-16 23:26:47",
   "users": {
+    "1821992043": {
+      "name": "ice_招行谷子地",
+      "account": {
+        "position": "满融",
+        "position_at": 1785738969000,
+        "position_quote": "$招商银行(SH600036)$ 满融招行绝望盼回调ing！我还能复投！",
+        "position_quoted": false,
+        "pnl": "昨天刚刚赚钱，3%",
+        "pnl_at": 1785805408000,
+        "pnl_quote": "昨天刚刚赚钱，3%",
+        "pnl_quoted": false
+      },
+      "symbols": {
+        "五粮液": {
+          "normalized": true,
+          "aliases_seen": [
+            "五粮液"
+          ],
+          "latest": {
+            "at": 1785892926000,
+            "post_id": 403702390,
+            "raw_name": "五粮液",
+            "quote": "我不是建仓了$五粮液(SZ000858)$ 吗？",
+            "qty": "109手"
+          },
+          "history": [
+            {
+              "at": 1785723247000,
+              "post_id": 403348828,
+              "raw_name": "五粮液",
+              "quote": "当然，我不是神仙无法预测到五粮液的年报整了一出回溯报表",
+              "qty": "10900"
+            },
+            {
+              "at": 1785572039000,
+              "post_id": 403240275,
+              "raw_name": "五粮液",
+              "quote": "有109手五粮液",
+              "qty": "109手"
+            }
+          ],
+          "first_at": 1785572039000,
+          "mention_count": 3
+        },
+        "招商银行": {
+          "normalized": true,
+          "aliases_seen": [
+            "招行",
+            "招商银行"
+          ],
+          "latest": {
+            "at": 1786687332000,
+            "post_id": 405056929,
+            "raw_name": "招行",
+            "quote": "招行老不跌",
+            "qty": "875300股"
+          },
+          "history": [
+            {
+              "at": 1786687115000,
+              "post_id": 405056122,
+              "raw_name": "招行",
+              "quote": "休正一下是1万股招行，4500股平保",
+              "qty": "1万股"
+            },
+            {
+              "at": 1786686729000,
+              "post_id": 405054796,
+              "raw_name": "招行",
+              "quote": "分红复投已经完成，增持了 10000 股招行，4500 股中国平安。",
+              "qty": "4500股"
+            },
+            {
+              "at": 1786604346000,
+              "post_id": 404895728,
+              "raw_name": "招行",
+              "quote": "陆续在加。只不过分散加在招行，宁波，平保上了",
+              "qty": "7000股"
+            }
+          ],
+          "first_at": 1785578374000,
+          "mention_count": 11
+        },
+        "平保": {
+          "normalized": false,
+          "aliases_seen": [
+            "中国平安"
+          ],
+          "latest": {
+            "at": 1786687115000,
+            "post_id": 405056122,
+            "raw_name": "平保",
+            "quote": "休正一下是1万股招行，4500股平保",
+            "qty": "4500股"
+          },
+          "history": [
+            {
+              "at": 1786604346000,
+              "post_id": 404895728,
+              "raw_name": "平保",
+              "quote": "陆续在加。只不过分散加在招行，宁波，平保上了",
+              "qty": "2000股"
+            },
+            {
+              "at": 1786417087000,
+              "post_id": 404524236,
+              "raw_name": "平保",
+              "quote": "mnp买入2000股平保",
+              "qty": "2000股"
+            },
+            {
+              "at": 1785740922000,
+              "post_id": 403408571,
+              "raw_name": "平保",
+              "quote": "平保后来卖了",
+              "qty": ""
+            }
+          ],
+          "first_at": 1785740922000,
+          "mention_count": 4
+        }
+      },
+      "processed_max_id": 405207684
+    },
     "6515752937": {
       "name": "紫金陈",
       "account": {
@@ -107,299 +231,6 @@
         }
       },
       "processed_max_id": 402640556
-    },
-    "1821992043": {
-      "name": "ice_招行谷子地",
-      "account": {
-        "position": "满融",
-        "position_at": 1785738969000,
-        "position_quote": "$招商银行(SH600036)$ 满融招行绝望盼回调ing！我还能复投！",
-        "position_quoted": false,
-        "pnl": "昨天刚刚赚钱，3%",
-        "pnl_at": 1785805408000,
-        "pnl_quote": "昨天刚刚赚钱，3%",
-        "pnl_quoted": false
-      },
-      "symbols": {
-        "五粮液": {
-          "normalized": true,
-          "aliases_seen": [
-            "五粮液"
-          ],
-          "latest": {
-            "at": 1785892926000,
-            "post_id": 403702390,
-            "raw_name": "五粮液",
-            "quote": "我不是建仓了$五粮液(SZ000858)$ 吗？",
-            "qty": "109手"
-          },
-          "history": [
-            {
-              "at": 1785723247000,
-              "post_id": 403348828,
-              "raw_name": "五粮液",
-              "quote": "当然，我不是神仙无法预测到五粮液的年报整了一出回溯报表",
-              "qty": "10900"
-            },
-            {
-              "at": 1785572039000,
-              "post_id": 403240275,
-              "raw_name": "五粮液",
-              "quote": "有109手五粮液",
-              "qty": "109手"
-            }
-          ],
-          "first_at": 1785572039000,
-          "mention_count": 3
-        },
-        "招商银行": {
-          "normalized": true,
-          "aliases_seen": [
-            "招行",
-            "招商银行"
-          ],
-          "latest": {
-            "at": 1786687332000,
-            "post_id": 405056929,
-            "raw_name": "招行",
-            "quote": "招行老不跌",
-            "qty": "1万股"
-          },
-          "history": [
-            {
-              "at": 1786687115000,
-              "post_id": 405056122,
-              "raw_name": "招行",
-              "quote": "休正一下是1万股招行，4500股平保",
-              "qty": "1万股"
-            },
-            {
-              "at": 1786686729000,
-              "post_id": 405054796,
-              "raw_name": "招行",
-              "quote": "分红复投已经完成，增持了 10000 股招行，4500 股中国平安。",
-              "qty": "4500股"
-            },
-            {
-              "at": 1786604346000,
-              "post_id": 404895728,
-              "raw_name": "招行",
-              "quote": "陆续在加。只不过分散加在招行，宁波，平保上了",
-              "qty": "7000股"
-            }
-          ],
-          "first_at": 1785578374000,
-          "mention_count": 11
-        },
-        "德明利": {
-          "normalized": false,
-          "aliases_seen": [
-            "德明利"
-          ],
-          "latest": {
-            "at": 1785722446000,
-            "post_id": 403344344,
-            "raw_name": "德明利",
-            "quote": "看他之前讨论过德明利，你懂的",
-            "qty": ""
-          },
-          "history": [],
-          "first_at": 1785722446000,
-          "mention_count": 1
-        },
-        "平保": {
-          "normalized": false,
-          "aliases_seen": [
-            "平保"
-          ],
-          "latest": {
-            "at": 1786687115000,
-            "post_id": 405056122,
-            "raw_name": "平保",
-            "quote": "休正一下是1万股招行，4500股平保",
-            "qty": "4500股"
-          },
-          "history": [
-            {
-              "at": 1786604346000,
-              "post_id": 404895728,
-              "raw_name": "平保",
-              "quote": "陆续在加。只不过分散加在招行，宁波，平保上了",
-              "qty": "2000股"
-            },
-            {
-              "at": 1786417087000,
-              "post_id": 404524236,
-              "raw_name": "平保",
-              "quote": "mnp买入2000股平保",
-              "qty": "2000股"
-            },
-            {
-              "at": 1785740922000,
-              "post_id": 403408571,
-              "raw_name": "平保",
-              "quote": "平保后来卖了",
-              "qty": ""
-            }
-          ],
-          "first_at": 1785740922000,
-          "mention_count": 4
-        },
-        "易方达宽基": {
-          "normalized": false,
-          "aliases_seen": [
-            "易方达宽基"
-          ],
-          "latest": {
-            "at": 1785902899000,
-            "post_id": 403754252,
-            "raw_name": "易方达宽基",
-            "quote": "@易方达宽基",
-            "qty": ""
-          },
-          "history": [],
-          "first_at": 1785902899000,
-          "mention_count": 1
-        },
-        "易方达指数通": {
-          "normalized": false,
-          "aliases_seen": [
-            "易方达指数通"
-          ],
-          "latest": {
-            "at": 1785902899000,
-            "post_id": 403754252,
-            "raw_name": "易方达指数通",
-            "quote": "@易方达指数通",
-            "qty": ""
-          },
-          "history": [],
-          "first_at": 1785902899000,
-          "mention_count": 1
-        },
-        "比亚迪": {
-          "normalized": false,
-          "aliases_seen": [
-            "比亚迪"
-          ],
-          "latest": {
-            "at": 1786498817000,
-            "post_id": 404658876,
-            "raw_name": "比亚迪",
-            "quote": "我只买比亚迪，再见",
-            "qty": ""
-          },
-          "history": [
-            {
-              "at": 1786072977000,
-              "post_id": 404098881,
-              "raw_name": "比亚迪",
-              "quote": "新能源车大厂只有比亚迪，其他都是杂牌",
-              "qty": ""
-            },
-            {
-              "at": 1786071859000,
-              "post_id": 404093644,
-              "raw_name": "比亚迪",
-              "quote": "这里的大厂特指$比亚迪(SZ002594)$",
-              "qty": ""
-            }
-          ],
-          "first_at": 1786071859000,
-          "mention_count": 3
-        },
-        "中国平安": {
-          "normalized": true,
-          "aliases_seen": [
-            "中国平安"
-          ],
-          "latest": {
-            "at": 1786686729000,
-            "post_id": 405054796,
-            "raw_name": "中国平安",
-            "quote": "分红复投已经完成，增持了 10000 股招行，4500 股中国平安。",
-            "qty": "4500股"
-          },
-          "history": [
-            {
-              "at": 1786417087000,
-              "post_id": 404524236,
-              "raw_name": "中国平安",
-              "quote": "$中国平安(SH601318)$ 大礼包已经到账",
-              "qty": ""
-            }
-          ],
-          "first_at": 1786417087000,
-          "mention_count": 2
-        },
-        "平安银行": {
-          "normalized": true,
-          "aliases_seen": [
-            "平安",
-            "平安银行"
-          ],
-          "latest": {
-            "at": 1786717446000,
-            "post_id": 405124682,
-            "raw_name": "平安银行",
-            "quote": "$平安银行(SZ000001)$  交作业。",
-            "qty": ""
-          },
-          "history": [
-            {
-              "at": 1786418029000,
-              "post_id": 404528329,
-              "raw_name": "平安",
-              "quote": "100的平安我看不上，但是现在50了",
-              "qty": ""
-            }
-          ],
-          "first_at": 1786418029000,
-          "mention_count": 2
-        },
-        "宁波银行": {
-          "normalized": true,
-          "aliases_seen": [
-            "宁波银行",
-            "宁波"
-          ],
-          "latest": {
-            "at": 1786604346000,
-            "post_id": 404895728,
-            "raw_name": "宁波",
-            "quote": "陆续在加。只不过分散加在招行，宁波，平保上了",
-            "qty": "28"
-          },
-          "history": [
-            {
-              "at": 1786502057000,
-              "post_id": 404676987,
-              "raw_name": "宁波银行",
-              "quote": "$宁波银行(SZ002142)$ mnp 31.58 28",
-              "qty": "28"
-            }
-          ],
-          "first_at": 1786502057000,
-          "mention_count": 2
-        },
-        "南京银行": {
-          "normalized": false,
-          "aliases_seen": [
-            "南京银行"
-          ],
-          "latest": {
-            "at": 1786602306000,
-            "post_id": 404885711,
-            "raw_name": "南京银行",
-            "quote": "南京银行什么时候到过68元？",
-            "qty": ""
-          },
-          "history": [],
-          "first_at": 1786602306000,
-          "mention_count": 1
-        }
-      },
-      "processed_max_id": 405207684
     }
   }
 }
