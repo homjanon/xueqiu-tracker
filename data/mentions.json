@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-08-18 12:42:26",
+  "updated_at": "2026-08-18 13:14:03",
   "users": {
     "1821992043": {
       "name": "ice_招行谷子地",
@@ -228,6 +228,22 @@
           ],
           "first_at": 1783388766000,
           "mention_count": 2
+        },
+        "安琪酵母": {
+          "normalized": false,
+          "aliases_seen": [
+            "安琪"
+          ],
+          "latest": {
+            "at": 1787030024786,
+            "post_id": null,
+            "raw_name": "安琪酵母",
+            "quote": "",
+            "qty": ""
+          },
+          "history": [],
+          "first_at": 1787030024786,
+          "mention_count": 0
         }
       },
       "processed_max_id": 405353651
