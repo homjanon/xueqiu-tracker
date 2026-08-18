@@ -1,84 +1,29 @@
 {
-  "fetched_at": "2026-08-18 07:49:58",
-  "daily_summary": "紫金陈：紫金陈提及港股周生生(00116)、建滔集团(00148)、百度及韩股never、kakao，称自己买的全是长线中登股，一篮子买入，等科技板块回落\nice_招行谷子地：用户提及五粮液，表示仓位还有余量未打满；其余发言围绕金领定义、离岸信托税收政策、财富分配等话题，未涉及其他具体股票标的",
+  "fetched_at": "2026-08-18 12:42:26",
+  "daily_summary": "紫金陈：紫金陈提及周生生、建滔集团、百度、韩股Never和Kakao，称保本卖出广州酒家和顺丰，加仓青岛港H股，新入马应龙等\nice_招行谷子地：用户讨论9家上市股份行中8家表现靠后，认为存在真雷与错杀机会，计划写专栏澄清。未明确点名具体标的，也无实盘操作动作",
   "user_count": 2,
-  "new_count": 7,
+  "new_count": 2,
   "text_signal_count": 0,
   "vision_signal_count": 0,
   "showing_fallback": false,
   "posts": [
     {
-      "id": 405353651,
-      "created_at": 1786963114000,
-      "text": "回复@存储时代: 怎么就突然感慨万千地发表起获奖感言了？//@存储时代:回复@紫金陈:不要以为长线中登就安全了，君不见港股$周生生(00116)$ $建滔集团(00148)$ 趋势风口还便宜的要死，又怎么样，百度都破净了也没啥用。韩股never、kakao都1pb，韩国垄断互联网，也没有用…投资是一件很难的事情，无非是a股流动性太好，很多人把运气当实力，我承认自己以前赚钱七分运气，三分认知。",
-      "source": "iPhone",
-      "is_retweet": true,
-      "truncated": false,
-      "user_id": 6515752937,
-      "user_name": "紫金陈",
-      "pics": []
-    },
-    {
-      "id": 405346488,
-      "created_at": 1786959409000,
-      "text": "我买的全是长线中登股，等科技板块回落自然又行了。六月底是gj队减持完毕+资金恐慌性卖出进科技的双重底，我是想象不出这个底还有什么可能会被击穿。单个票不知道，我一篮子买，一年半载后，没有理由不赚钱。",
-      "source": "iPhone",
-      "is_retweet": true,
-      "truncated": false,
-      "user_id": 6515752937,
-      "user_name": "紫金陈",
-      "pics": []
-    },
-    {
-      "id": 405337055,
-      "created_at": 1786955367000,
-      "text": "回复@米兰城的风: 没。还有一点余量。//@米兰城的风:回复@ice_招行谷子地:谷大给五粮液的仓位算满了没",
+      "id": 405423306,
+      "created_at": 1787018906000,
+      "text": "一共9个上市股份行，8个倒数。这里面有真雷，有错杀，浑水摸鱼的时候到了。看来需要写个专栏以正视听了。",
       "source": "雪球",
-      "is_retweet": true,
+      "is_retweet": false,
       "truncated": false,
       "user_id": 1821992043,
       "user_name": "ice_招行谷子地",
       "pics": []
     },
     {
-      "id": 405330773,
-      "created_at": 1786952769000,
-      "text": "回复@徐叶叶叶: 年薪百万以上//@徐叶叶叶:回复@ice_招行谷子地:如何定义金领",
-      "source": "Android",
-      "is_retweet": true,
-      "truncated": false,
-      "user_id": 1821992043,
-      "user_name": "ice_招行谷子地",
-      "pics": []
-    },
-    {
-      "id": 405321343,
-      "created_at": 1786949771000,
-      "text": "回复@完颜铁蒺藜阿骨朵: 这只是对资本外逃的惩罚，如果资本不外逃，国内基本没人管//@完颜铁蒺藜阿骨朵:回复@ice_招行谷子地:最近的离岸信托税收政策就不错",
-      "source": "Android",
-      "is_retweet": true,
-      "truncated": false,
-      "user_id": 1821992043,
-      "user_name": "ice_招行谷子地",
-      "pics": []
-    },
-    {
-      "id": 405320939,
-      "created_at": 1786949667000,
-      "text": "AI，拉黑",
-      "source": "Android",
-      "is_retweet": true,
-      "truncated": false,
-      "user_id": 1821992043,
-      "user_name": "ice_招行谷子地",
-      "pics": []
-    },
-    {
-      "id": 405316971,
-      "created_at": 1786948509000,
-      "text": "回复@小钱钱真可爱: 怎么分？打土豪分田地？现在是法治社会私人财产受保护的//@小钱钱真可爱:回复@ice_招行谷子地:把最富有的人手里的钱慢慢分了消费不就起来了，说到底还是个分配问题",
-      "source": "Android",
-      "is_retweet": true,
+      "id": 405407053,
+      "created_at": 1787015710000,
+      "text": "",
+      "source": "雪球",
+      "is_retweet": false,
       "truncated": false,
       "user_id": 1821992043,
       "user_name": "ice_招行谷子地",
@@ -210,6 +155,28 @@
       "pics": []
     },
     {
+      "id": 405423306,
+      "created_at": 1787018906000,
+      "text": "一共9个上市股份行，8个倒数。这里面有真雷，有错杀，浑水摸鱼的时候到了。看来需要写个专栏以正视听了。",
+      "source": "雪球",
+      "is_retweet": false,
+      "truncated": false,
+      "user_id": 1821992043,
+      "user_name": "ice_招行谷子地",
+      "pics": []
+    },
+    {
+      "id": 405407053,
+      "created_at": 1787015710000,
+      "text": "",
+      "source": "雪球",
+      "is_retweet": false,
+      "truncated": false,
+      "user_id": 1821992043,
+      "user_name": "ice_招行谷子地",
+      "pics": []
+    },
+    {
       "id": 405337055,
       "created_at": 1786955367000,
       "text": "回复@米兰城的风: 没。还有一点余量。//@米兰城的风:回复@ice_招行谷子地:谷大给五粮液的仓位算满了没",
@@ -285,61 +252,16 @@
       "user_id": 1821992043,
       "user_name": "ice_招行谷子地",
       "pics": []
-    },
-    {
-      "id": 405264653,
-      "created_at": 1786932303000,
-      "text": "回复@青春的泥沼: 我在高铁上要么睡觉（头一天熬夜写专栏），要么写专栏或者整理数据//@青春的泥沼:回复@青春的泥沼:京沪高铁真是牛马专列，班味真浓，我坐二等座靠过道的D座，旁边F座的姐姐从九点五分到现在一直用英语打语音还是打电话的，到现在还没结束，我这一排A座的大哥八点多的时候说某能源央企集团新疆和包头新建了电厂，他过几天过去看看，对比一下，我在玩手机。。。差距太大了。。",
-      "source": "Android",
-      "is_retweet": true,
-      "truncated": false,
-      "user_id": 1821992043,
-      "user_name": "ice_招行谷子地",
-      "pics": []
-    },
-    {
-      "id": 405255041,
-      "created_at": 1786930618000,
-      "text": "回复@shrek: 审核//@shrek:回复@ice_招行谷子地:过了这么长时间还能抢到沙发🛋，什么情况？",
-      "source": "雪球",
-      "is_retweet": true,
-      "truncated": false,
-      "user_id": 1821992043,
-      "user_name": "ice_招行谷子地",
-      "pics": []
     }
   ],
   "users": [
     {
       "user_id": "6515752937",
       "name": "紫金陈",
-      "new_count": 2,
+      "new_count": 0,
       "text_signal_count": 0,
       "vision_signal_count": 0,
-      "posts": [
-        {
-          "id": 405353651,
-          "created_at": 1786963114000,
-          "text": "回复@存储时代: 怎么就突然感慨万千地发表起获奖感言了？//@存储时代:回复@紫金陈:不要以为长线中登就安全了，君不见港股$周生生(00116)$ $建滔集团(00148)$ 趋势风口还便宜的要死，又怎么样，百度都破净了也没啥用。韩股never、kakao都1pb，韩国垄断互联网，也没有用…投资是一件很难的事情，无非是a股流动性太好，很多人把运气当实力，我承认自己以前赚钱七分运气，三分认知。",
-          "source": "iPhone",
-          "is_retweet": true,
-          "truncated": false,
-          "user_id": 6515752937,
-          "user_name": "紫金陈",
-          "pics": []
-        },
-        {
-          "id": 405346488,
-          "created_at": 1786959409000,
-          "text": "我买的全是长线中登股，等科技板块回落自然又行了。六月底是gj队减持完毕+资金恐慌性卖出进科技的双重底，我是想象不出这个底还有什么可能会被击穿。单个票不知道，我一篮子买，一年半载后，没有理由不赚钱。",
-          "source": "iPhone",
-          "is_retweet": true,
-          "truncated": false,
-          "user_id": 6515752937,
-          "user_name": "紫金陈",
-          "pics": []
-        }
-      ],
+      "posts": [],
       "recent_posts": [
         {
           "id": 385877271,
@@ -458,60 +380,27 @@
     {
       "user_id": "1821992043",
       "name": "ice_招行谷子地",
-      "new_count": 5,
+      "new_count": 2,
       "text_signal_count": 0,
       "vision_signal_count": 0,
       "posts": [
         {
-          "id": 405337055,
-          "created_at": 1786955367000,
-          "text": "回复@米兰城的风: 没。还有一点余量。//@米兰城的风:回复@ice_招行谷子地:谷大给五粮液的仓位算满了没",
+          "id": 405423306,
+          "created_at": 1787018906000,
+          "text": "一共9个上市股份行，8个倒数。这里面有真雷，有错杀，浑水摸鱼的时候到了。看来需要写个专栏以正视听了。",
           "source": "雪球",
-          "is_retweet": true,
+          "is_retweet": false,
           "truncated": false,
           "user_id": 1821992043,
           "user_name": "ice_招行谷子地",
           "pics": []
         },
         {
-          "id": 405330773,
-          "created_at": 1786952769000,
-          "text": "回复@徐叶叶叶: 年薪百万以上//@徐叶叶叶:回复@ice_招行谷子地:如何定义金领",
-          "source": "Android",
-          "is_retweet": true,
-          "truncated": false,
-          "user_id": 1821992043,
-          "user_name": "ice_招行谷子地",
-          "pics": []
-        },
-        {
-          "id": 405321343,
-          "created_at": 1786949771000,
-          "text": "回复@完颜铁蒺藜阿骨朵: 这只是对资本外逃的惩罚，如果资本不外逃，国内基本没人管//@完颜铁蒺藜阿骨朵:回复@ice_招行谷子地:最近的离岸信托税收政策就不错",
-          "source": "Android",
-          "is_retweet": true,
-          "truncated": false,
-          "user_id": 1821992043,
-          "user_name": "ice_招行谷子地",
-          "pics": []
-        },
-        {
-          "id": 405320939,
-          "created_at": 1786949667000,
-          "text": "AI，拉黑",
-          "source": "Android",
-          "is_retweet": true,
-          "truncated": false,
-          "user_id": 1821992043,
-          "user_name": "ice_招行谷子地",
-          "pics": []
-        },
-        {
-          "id": 405316971,
-          "created_at": 1786948509000,
-          "text": "回复@小钱钱真可爱: 怎么分？打土豪分田地？现在是法治社会私人财产受保护的//@小钱钱真可爱:回复@ice_招行谷子地:把最富有的人手里的钱慢慢分了消费不就起来了，说到底还是个分配问题",
-          "source": "Android",
-          "is_retweet": true,
+          "id": 405407053,
+          "created_at": 1787015710000,
+          "text": "",
+          "source": "雪球",
+          "is_retweet": false,
           "truncated": false,
           "user_id": 1821992043,
           "user_name": "ice_招行谷子地",
@@ -522,6 +411,28 @@
         {
           "id": 178287183,
           "created_at": 1619485608000,
+          "text": "",
+          "source": "雪球",
+          "is_retweet": false,
+          "truncated": false,
+          "user_id": 1821992043,
+          "user_name": "ice_招行谷子地",
+          "pics": []
+        },
+        {
+          "id": 405423306,
+          "created_at": 1787018906000,
+          "text": "一共9个上市股份行，8个倒数。这里面有真雷，有错杀，浑水摸鱼的时候到了。看来需要写个专栏以正视听了。",
+          "source": "雪球",
+          "is_retweet": false,
+          "truncated": false,
+          "user_id": 1821992043,
+          "user_name": "ice_招行谷子地",
+          "pics": []
+        },
+        {
+          "id": 405407053,
+          "created_at": 1787015710000,
           "text": "",
           "source": "雪球",
           "is_retweet": false,
@@ -601,28 +512,6 @@
           "created_at": 1786938447000,
           "text": "回复@只做成长票: 拍脑袋就来，有什么问题就直接推给制度准没错。中国居民部门的杠杆率并不高。再见！//@只做成长票:回复@ice_招行谷子地:刺激消费有啥用？居民杠杆还不够高？分配机制的问题。",
           "source": "Android",
-          "is_retweet": true,
-          "truncated": false,
-          "user_id": 1821992043,
-          "user_name": "ice_招行谷子地",
-          "pics": []
-        },
-        {
-          "id": 405264653,
-          "created_at": 1786932303000,
-          "text": "回复@青春的泥沼: 我在高铁上要么睡觉（头一天熬夜写专栏），要么写专栏或者整理数据//@青春的泥沼:回复@青春的泥沼:京沪高铁真是牛马专列，班味真浓，我坐二等座靠过道的D座，旁边F座的姐姐从九点五分到现在一直用英语打语音还是打电话的，到现在还没结束，我这一排A座的大哥八点多的时候说某能源央企集团新疆和包头新建了电厂，他过几天过去看看，对比一下，我在玩手机。。。差距太大了。。",
-          "source": "Android",
-          "is_retweet": true,
-          "truncated": false,
-          "user_id": 1821992043,
-          "user_name": "ice_招行谷子地",
-          "pics": []
-        },
-        {
-          "id": 405255041,
-          "created_at": 1786930618000,
-          "text": "回复@shrek: 审核//@shrek:回复@ice_招行谷子地:过了这么长时间还能抢到沙发🛋，什么情况？",
-          "source": "雪球",
           "is_retweet": true,
           "truncated": false,
           "user_id": 1821992043,
