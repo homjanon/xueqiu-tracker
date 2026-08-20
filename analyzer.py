@@ -13,11 +13,16 @@ def _post(backend, messages):
     if not backend.get("api_key"):
         return None
     try:
+        payload = {"model": backend["model"], "messages": messages, "temperature": 0.3}
+        # 后端级 max_tokens / extra（如 SenseNova reasoning_effort=low，参考 qiugecaozuo 用法）
+        if backend.get("max_tokens"):
+            payload["max_tokens"] = backend["max_tokens"]
+        payload.update(backend.get("extra", {}))
         r = requests.post(
             f"{backend['base_url']}/chat/completions",
             headers={"Authorization": f"Bearer {backend['api_key']}",
                       "Content-Type": "application/json"},
-            json={"model": backend["model"], "messages": messages, "temperature": 0.3},
+            json=payload,
             timeout=backend.get("timeout", TIMEOUT))
         r.raise_for_status()
         # 兼容两种响应：标准 content / SenseNova 系 reasoning_content（2026-08-20）
