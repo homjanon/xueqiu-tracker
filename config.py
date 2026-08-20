@@ -64,6 +64,9 @@ DATA_DIR = os.getenv("DATA_DIR", "data")
 REPORT_DIR = os.getenv("REPORT_DIR", "reports")
 STATE_FILE = os.getenv("STATE_FILE", "state.json")
 
+# 每日报告只保留最近多少天（2026-08-20 用户要求，默认 90 日）
+KEEP_REPORT_DAYS = int(os.getenv("KEEP_REPORT_DAYS", "90"))
+
 # ============ 标的提及追踪（mentions.json） ============
 
 # 标的别名词典：规范名 -> 该标的在发言中可能出现的各种叫法
