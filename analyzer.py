@@ -20,7 +20,10 @@ def _post(backend, messages):
             json={"model": backend["model"], "messages": messages, "temperature": 0.3},
             timeout=backend.get("timeout", TIMEOUT))
         r.raise_for_status()
-        return r.json()["choices"][0]["message"]["content"]
+        # 兼容两种响应：标准 content / SenseNova 系 reasoning_content（2026-08-20）
+        msg = r.json()["choices"][0].get("message", {})
+        c = msg.get("content") or msg.get("reasoning_content") or ""
+        return c or None
     except Exception as e:
         print(f"[analyzer] {backend['name']} 调用失败: {e}")
         return None
