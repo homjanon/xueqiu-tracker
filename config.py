@@ -41,11 +41,11 @@ BACKENDS = [
         "timeout": int(os.getenv("AGNES_TIMEOUT", "30")),
     },
     {
-        # ③ 兜底：商汤日日新 SenseNova 6.7 Flash-Lite（免费；响应为 reasoning_content 非 content，兼容性差）
-        "name": "sensenova-6.7-flash-lite",
+        # ③ 兜底：商汤日日新 SenseNova 6.8 Flash-Lite（免费；6.7 即将下线，2026-08-20 换版）
+        "name": "sensenova-6.8-flash-lite",
         "base_url": os.getenv("SENSENOVA_BASE_URL", "https://token.sensenova.cn/v1"),
         "api_key": os.getenv("SENSENOVA_API_KEY", ""),
-        "model": os.getenv("SENSENOVA_MODEL", "sensenova-6.7-flash-lite"),
+        "model": os.getenv("SENSENOVA_MODEL", "sensenova-6.8-flash-lite"),
         "timeout": int(os.getenv("SENSENOVA_TIMEOUT", "30")),
     },
 ]
