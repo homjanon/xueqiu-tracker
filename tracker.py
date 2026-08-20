@@ -188,6 +188,7 @@ def cleanup_reports(days=90):
             pass
     if removed:
         print(f"[清理] 已删除 {removed} 份超过 {days} 天的旧报告")
+    return removed
 
 
 if __name__ == "__main__":
