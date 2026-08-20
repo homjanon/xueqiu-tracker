@@ -2,7 +2,7 @@
 模型调用按优先级走三级后端（均为原生多模态，图文通吃）：
   1) Agnes AI agnes-2.0-flash（免费多模态，复用 douban-tracker 配置）
   2) NVIDIA GLM-5.2（z-ai/glm-5.2，免费，参考 portfolio 仓调用方式）
-  3) 商汤日日新 SenseNova 6.7 Flash-Lite（免费，Token Plan 限时免费）
+  3) 商汤日日新 SenseNova deepseek-v4-flash（deepseek-v4-flash，标准 content 响应，免费）
 支持多用户（逗号分隔）；USER_HINTS 为各用户专属黑话词典（注入 LLM 提示）。
 """
 import os
@@ -41,11 +41,12 @@ BACKENDS = [
         "timeout": int(os.getenv("AGNES_TIMEOUT", "30")),
     },
     {
-        # ③ 兜底：商汤日日新 SenseNova 6.8 Flash-Lite（免费；6.7 即将下线，2026-08-20 换版）
-        "name": "sensenova-6.8-flash-lite",
+        # ③ 兜底：商汤日日新 SenseNova deepseek-v4-flash（标准 content 响应；
+        #    2026-08-20 由 6.8-flash-lite 换版——6.8 答案在 message.reasoning 字段，兼容性差）
+        "name": "sensenova-deepseek-v4-flash",
         "base_url": os.getenv("SENSENOVA_BASE_URL", "https://token.sensenova.cn/v1"),
         "api_key": os.getenv("SENSENOVA_API_KEY", ""),
-        "model": os.getenv("SENSENOVA_MODEL", "sensenova-6.8-flash-lite"),
+        "model": os.getenv("SENSENOVA_MODEL", "deepseek-v4-flash"),
         "timeout": int(os.getenv("SENSENOVA_TIMEOUT", "30")),
     },
 ]
