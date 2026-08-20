@@ -41,13 +41,16 @@ BACKENDS = [
         "timeout": int(os.getenv("AGNES_TIMEOUT", "30")),
     },
     {
-        # ③ 兜底：商汤日日新 SenseNova deepseek-v4-flash（标准 content 响应；
-        #    2026-08-20 由 6.8-flash-lite 换版——6.8 答案在 message.reasoning 字段，兼容性差）
+        # ③ 兜底：商汤日日新 SenseNova deepseek-v4-flash（2026-08-20 由 6.8-flash-lite 换版；
+        #    reasoning_effort=low 轻思考：实测 12s→2.6s 且 content 稳定非空（参考 qiugecaozuo 用法）；
+        #    max_tokens 需给足，否则思考链抢占预算致 content 截断/为空）
         "name": "sensenova-deepseek-v4-flash",
         "base_url": os.getenv("SENSENOVA_BASE_URL", "https://token.sensenova.cn/v1"),
         "api_key": os.getenv("SENSENOVA_API_KEY", ""),
         "model": os.getenv("SENSENOVA_MODEL", "deepseek-v4-flash"),
         "timeout": int(os.getenv("SENSENOVA_TIMEOUT", "30")),
+        "max_tokens": 8000,
+        "extra": {"reasoning_effort": "low"},
     },
 ]
 
