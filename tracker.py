@@ -10,7 +10,7 @@ import json
 import os
 
 from config import (XUEQIU_USER_IDS, PAGES, HEADLESS, RECENT_N,
-                    DATA_DIR, REPORT_DIR, STATE_FILE, MENTIONS_FILE)
+                    DATA_DIR, REPORT_DIR, STATE_FILE, MENTIONS_FILE, KEEP_REPORT_DAYS)
 from scraper import fetch_timeline, normalize
 from analyzer import daily_summary
 from extractor import update_mentions, save_store
@@ -163,8 +163,31 @@ def main():
     st["updated_at"] = ts
     save_state(st)
 
+    cleanup_reports(days=KEEP_REPORT_DAYS)
+
     print(f"[完成] data/latest.json 已更新（网站可读顶层合并字段，亦可单独读 daily_summary）；"
           f"报告 reports/{now.strftime('%Y-%m-%d')}.md")
+
+
+def cleanup_reports(days=90):
+    """清理 reports/ 下超过 days 天的旧日报告（按文件名 YYYY-MM-DD 判断）。
+
+    2026-08-20 用户要求：每日运行结果只保留最近 90 日，避免无限累积。
+    注意：workflow 提交需用 `git add -A` 才会把删除同步到仓库。
+    """
+    import glob
+    cutoff = (datetime.date.today() - datetime.timedelta(days=days)).strftime("%Y-%m-%d")
+    removed = 0
+    for f in glob.glob(os.path.join(REPORT_DIR, "*.md")):
+        name = os.path.basename(f)[:10]
+        try:
+            if len(name) == 10 and name < cutoff:
+                os.remove(f)
+                removed += 1
+        except Exception:
+            pass
+    if removed:
+        print(f"[清理] 已删除 {removed} 份超过 {days} 天的旧报告")
 
 
 if __name__ == "__main__":
