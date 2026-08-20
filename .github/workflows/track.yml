@@ -35,18 +35,19 @@ jobs:
           python -u - <<'PY'
           import os, time, requests
           backends = [
-            ("NVIDIA glm-5.2", "https://integrate.api.nvidia.com/v1/chat/completions", os.getenv("NVIDIA_API_KEY"), "z-ai/glm-5.2"),
-            ("Agnes 2.0-flash", "https://apihub.agnes-ai.com/v1/chat/completions", os.getenv("AGNES_API_KEY"), "agnes-2.0-flash"),
-            ("SenseNova deepseek-v4-flash", "https://token.sensenova.cn/v1/chat/completions", os.getenv("SENSENOVA_API_KEY"), "deepseek-v4-flash"),
+            ("NVIDIA glm-5.2", "https://integrate.api.nvidia.com/v1/chat/completions", os.getenv("NVIDIA_API_KEY"), "z-ai/glm-5.2", {}),
+            ("Agnes 2.0-flash", "https://apihub.agnes-ai.com/v1/chat/completions", os.getenv("AGNES_API_KEY"), "agnes-2.0-flash", {}),
+            ("SenseNova deepseek-v4-flash", "https://token.sensenova.cn/v1/chat/completions", os.getenv("SENSENOVA_API_KEY"), "deepseek-v4-flash", {"reasoning_effort": "low", "max_tokens": 2000}),
           ]
-          for name, url, key, model in backends:
+          for name, url, key, model, extra in backends:
             if not key:
               print(f"[probe] {name}: ⚠️ 无 Key"); continue
             t0 = time.time()
             try:
+              payload = {"model": model, "messages": [{"role": "user", "content": "ok"}]}
+              payload.update(extra)
               r = requests.post(url, headers={"Authorization": f"Bearer {key}"},
-                                json={"model": model, "messages": [{"role": "user", "content": "ok"}], "max_tokens": 5},
-                                timeout=30)
+                                json=payload, timeout=30)
               c = ""
               try:
                 m = r.json()["choices"][0]["message"]
