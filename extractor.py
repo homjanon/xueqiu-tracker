@@ -307,6 +307,50 @@ def _ai_extract(text, uid):
     return d
 
 
+def _ai_extract_batch(posts, uid):
+    """把某用户多条新帖合并为【一次】LLM 调用，返回 {idx: payload}；失败返回 None。
+
+    2026-08-20 优化：mentions 由逐帖调用（20 条新帖=20 次 LLM）改为每用户一次批量，
+    大幅减少调用次数与 NVIDIA 429 限流。输出格式：
+      {"posts": [{"idx": 0, "mentions": [...], "account": {...}}, ...]}
+    idx 对应输入 posts 的下标；没有提及的帖子也返回空 mentions。
+    """
+    if not posts:
+        return None
+    try:
+        from analyzer import call_multi
+    except Exception:
+        return None
+    hint = USER_HINTS.get(str(uid), "")
+    system = PROMPT_SYSTEM + (("\n\n该用户黑话提示：\n" + hint) if hint else "")
+    lines = "\n".join("[%d] %s" % (i, (p.get("text", "") or "")[:300])
+                      for i, p in enumerate(posts))
+    user = ("以下是该用户最近的多条发言（[i] 为编号）：\n\n" + lines +
+            "\n\n请对【每条】发言分别执行抽取规则，输出 JSON：\n"
+            '{"posts": [{"idx": 0, "mentions": [{"raw_name": "", "quote": "", "qty": ""}],'
+            ' "account": {"position": "", "pnl": ""}}, ...]}\n'
+            "其中 idx 必须对应上面的 [i]；某条没有提及任何标的时返回 \"mentions\":[]。")
+    out = call_multi([{"role": "system", "content": system},
+                      {"role": "user", "content": user}])
+    if not out:
+        return None
+    s = re.sub(r"<think>.*?</think>", "", out, flags=re.DOTALL | re.I)
+    s = re.sub(r"^```(?:json)?|```$", "", s.strip(), flags=re.M).strip()
+    i, j = s.find("{"), s.rfind("}")
+    if i < 0 or j <= i:
+        return None
+    try:
+        d = json.loads(s[i:j + 1])
+    except Exception:
+        return None
+    res = {}
+    for p in (d.get("posts") or []):
+        idx = p.get("idx")
+        if isinstance(idx, int) and 0 <= idx < len(posts):
+            res[idx] = p
+    return res or None
+
+
 # ---------------------------------------------------------------- 三道校验闸
 
 def _squash(s):
@@ -354,13 +398,17 @@ def validate(payload, text):
 
 # ---------------------------------------------------------------- 单帖处理
 
-def extract_post(text, uid, use_ai=True):
-    """处理单条原创正文，返回校验后的 {mentions, account}。"""
+def extract_post(text, uid, use_ai=True, ai_payload=None):
+    """处理单条原创正文，返回校验后的 {mentions, account}。
+
+    ai_payload：批量模式传入已提取的 payload（跳过本单帖 LLM 调用）；为 None 时走单帖调用。
+    """
     if not text:
         return {"mentions": [], "account": {"position": "", "pnl": ""}}
     result = None
     if use_ai:
-        result = validate(_ai_extract(text, uid), text)
+        payload = ai_payload if ai_payload is not None else _ai_extract(text, uid)
+        result = validate(payload, text)
     if result is None:
         result = fallback_extract(text)
         result["_source"] = "dict"
@@ -474,6 +522,8 @@ def update_mentions(users, store_path, use_ai=True, force_all=False):
         pool.update({p["id"]: p for p in (u.get("posts") or [])})
         posts = sorted(pool.values(), key=lambda p: (p.get("created_at") or 0))
 
+        # 先收集本用户新帖（post_id > seen_max）
+        new_posts = []
         for p in posts:
             pid = p.get("id") or 0
             if pid <= seen_max:
@@ -483,8 +533,18 @@ def update_mentions(users, store_path, use_ai=True, force_all=False):
                 stats["skipped"] += 1
                 slot["processed_max_id"] = max(slot["processed_max_id"], pid)
                 continue
+            new_posts.append((p, body))
 
-            res = extract_post(body, uid, use_ai=use_ai)
+        # 批量 AI 提取：本用户全部新帖合并为一次 LLM 调用（2026-08-20 优化，
+        # 原逐帖调用在新增 20 条时产生 20 次调用+429 限流）；失败整体回退词典。
+        batch = None
+        if use_ai and new_posts:
+            batch = _ai_extract_batch([b for _, b in new_posts], uid)
+
+        for i, (p, body) in enumerate(new_posts):
+            pid = p.get("id") or 0
+            ai_payload = (batch or {}).get(i) if batch else None
+            res = extract_post(body, uid, use_ai=use_ai, ai_payload=ai_payload)
             stats[res.get("_source", "dict")] += 1
             stats["posts"] += 1
 
