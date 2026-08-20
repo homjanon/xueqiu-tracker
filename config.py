@@ -25,33 +25,33 @@ USER_HINTS = {
 
 BACKENDS = [
     {
-        # ① Agnes AI agnes-2.0-flash（免费多模态，复用 douban-tracker 配置）
-        "name": "agnes-2.0-flash",
-        "base_url": os.getenv("AGNES_BASE_URL", "https://apihub.agnes-ai.com/v1"),
-        "api_key": os.getenv("AGNES_API_KEY", ""),
-        "model": os.getenv("AGNES_MODEL", "agnes-2.0-flash"),
-        "timeout": int(os.getenv("AGNES_TIMEOUT", "120")),
-    },
-    {
-        # ② NVIDIA GLM-5.2（免费，参考 portfolio 仓调用方式）
+        # ① NVIDIA GLM-5.2（免费；2026-08-20 实测 0.9s 最快最稳，升为第一优先）
         "name": "nvidia-glm-5.2",
         "base_url": os.getenv("PRIMARY_BASE_URL", "https://integrate.api.nvidia.com/v1"),
         "api_key": os.getenv("NVIDIA_API_KEY", ""),
         "model": os.getenv("PRIMARY_MODEL", "z-ai/glm-5.2"),
-        "timeout": int(os.getenv("PRIMARY_TIMEOUT", "120")),
+        "timeout": int(os.getenv("PRIMARY_TIMEOUT", "30")),
     },
     {
-        # ③ 兜底：商汤日日新 SenseNova 6.7 Flash-Lite（免费，Token Plan 限时免费）
+        # ② Agnes AI agnes-2.0-flash（免费多模态；8-20 实测返回 200 但 content 空 → 不兜底，降为第二）
+        "name": "agnes-2.0-flash",
+        "base_url": os.getenv("AGNES_BASE_URL", "https://apihub.agnes-ai.com/v1"),
+        "api_key": os.getenv("AGNES_API_KEY", ""),
+        "model": os.getenv("AGNES_MODEL", "agnes-2.0-flash"),
+        "timeout": int(os.getenv("AGNES_TIMEOUT", "30")),
+    },
+    {
+        # ③ 兜底：商汤日日新 SenseNova 6.7 Flash-Lite（免费；响应为 reasoning_content 非 content，兼容性差）
         "name": "sensenova-6.7-flash-lite",
         "base_url": os.getenv("SENSENOVA_BASE_URL", "https://token.sensenova.cn/v1"),
         "api_key": os.getenv("SENSENOVA_API_KEY", ""),
         "model": os.getenv("SENSENOVA_MODEL", "sensenova-6.7-flash-lite"),
-        "timeout": int(os.getenv("SENSENOVA_TIMEOUT", "120")),
+        "timeout": int(os.getenv("SENSENOVA_TIMEOUT", "30")),
     },
 ]
 
-# 全局默认超时（各后端可用 BACKENDS[].timeout 覆盖）
-TIMEOUT = int(os.getenv("TIMEOUT", "150"))
+# 全局默认超时（各后端可用 BACKENDS[].timeout 覆盖；2026-08-20 从 150 收紧到 60，防叠加拖垮 job）
+TIMEOUT = int(os.getenv("TIMEOUT", "60"))
 
 PAGES = int(os.getenv("PAGES", "2"))
 
