@@ -37,7 +37,7 @@ jobs:
           backends = [
             ("NVIDIA glm-5.2", "https://integrate.api.nvidia.com/v1/chat/completions", os.getenv("NVIDIA_API_KEY"), "z-ai/glm-5.2"),
             ("Agnes 2.0-flash", "https://apihub.agnes-ai.com/v1/chat/completions", os.getenv("AGNES_API_KEY"), "agnes-2.0-flash"),
-            ("SenseNova 6.7-lite", "https://token.sensenova.cn/v1/chat/completions", os.getenv("SENSENOVA_API_KEY"), "sensenova-6.7-flash-lite"),
+            ("SenseNova 6.8-lite", "https://token.sensenova.cn/v1/chat/completions", os.getenv("SENSENOVA_API_KEY"), "sensenova-6.8-flash-lite"),
           ]
           for name, url, key, model in backends:
             if not key:
