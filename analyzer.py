@@ -2,6 +2,7 @@
 不再判断买卖操作——由用户自行根据归纳判断。无 Key 时回退发言摘录。"""
 import json
 import re
+import time
 
 import requests
 
@@ -25,13 +26,18 @@ def _post(backend, messages):
         return None
 
 
-def call_multi(messages):
-    """按 BACKENDS 顺序尝试，返回首个成功的内容；全失败返回 None。"""
+def call_multi(messages, budget=60):
+    """按 BACKENDS 顺序尝试，返回首个成功的内容；全失败返回 None。
+    budget=总时限(秒)：2026-08-20 加固，防止后端全挂时逐轮超时叠加拖垮 job。"""
+    start = time.monotonic()
     for b in BACKENDS:
         c = _post(b, messages)
         if c:
             print(f"[analyzer] ✅ {b['name']} 调用成功（{b['model']}）")
             return c
+        if time.monotonic() - start >= budget:
+            print(f"[analyzer] ⚠️ 已达总时限 {budget}s，放弃剩余后端")
+            break
     print("[analyzer] ⚠️ 所有后端均未成功（可能 Key 缺失或全失败），将回退摘录")
     return None
 
