@@ -11,7 +11,7 @@ permissions:
 jobs:
   track:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 35   # 2026-08-20: 20→35，给 Playwright 抓取+LLM 留余量（关键调用已各自加超时/降级）
     steps:
       - uses: actions/checkout@v7
         with:
@@ -26,13 +26,42 @@ jobs:
           pip install -r requirements.txt
           playwright install --with-deps chromium
 
+      - name: LLM 后端健康探测
+        env:
+          NVIDIA_API_KEY: ${{ secrets.NVIDIA_API_KEY }}
+          AGNES_API_KEY: ${{ secrets.AGNES_API_KEY }}
+          SENSENOVA_API_KEY: ${{ secrets.SENSENOVA_API_KEY }}
+        run: |
+          python -u - <<'PY'
+          import os, time, requests
+          backends = [
+            ("NVIDIA glm-5.2", "https://integrate.api.nvidia.com/v1/chat/completions", os.getenv("NVIDIA_API_KEY"), "z-ai/glm-5.2"),
+            ("Agnes 2.0-flash", "https://apihub.agnes-ai.com/v1/chat/completions", os.getenv("AGNES_API_KEY"), "agnes-2.0-flash"),
+            ("SenseNova 6.7-lite", "https://token.sensenova.cn/v1/chat/completions", os.getenv("SENSENOVA_API_KEY"), "sensenova-6.7-flash-lite"),
+          ]
+          for name, url, key, model in backends:
+            if not key:
+              print(f"[probe] {name}: ⚠️ 无 Key"); continue
+            t0 = time.time()
+            try:
+              r = requests.post(url, headers={"Authorization": f"Bearer {key}"},
+                                json={"model": model, "messages": [{"role": "user", "content": "ok"}], "max_tokens": 5},
+                                timeout=30)
+              c = ""
+              try: c = (r.json()["choices"][0]["message"]["content"] or "")
+              except Exception: pass
+              print(f"[probe] {name}: HTTP {r.status_code} in {time.time()-t0:.1f}s content={len(c)}字")
+            except Exception as e:
+              print(f"[probe] {name}: ❌ {type(e).__name__} {str(e)[:60]}")
+          PY
+
       - name: 抓取并分析
         env:
           XUEQIU_USER_IDS: ${{ secrets.XUEQIU_USER_IDS }}
           NVIDIA_API_KEY: ${{ secrets.NVIDIA_API_KEY }}
           AGNES_API_KEY: ${{ secrets.AGNES_API_KEY }}
           SENSENOVA_API_KEY: ${{ secrets.SENSENOVA_API_KEY }}
-        run: python tracker.py
+        run: python -u tracker.py   # -u 实时输出，超时被杀也能看到卡点（2026-08-20）
 
       - name: 提交数据回仓库
         run: |
