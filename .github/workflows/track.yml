@@ -48,7 +48,9 @@ jobs:
                                 json={"model": model, "messages": [{"role": "user", "content": "ok"}], "max_tokens": 5},
                                 timeout=30)
               c = ""
-              try: c = (r.json()["choices"][0]["message"]["content"] or "")
+              try:
+                m = r.json()["choices"][0]["message"]
+                c = m.get("content") or m.get("reasoning_content") or ""
               except Exception: pass
               print(f"[probe] {name}: HTTP {r.status_code} in {time.time()-t0:.1f}s content={len(c)}字")
             except Exception as e:
