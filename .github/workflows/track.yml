@@ -67,6 +67,6 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data reports state.json
+          git add -A data reports state.json   # -A：包含 reports 清理后的删除（2026-08-20）
           git diff --cached --quiet || git commit -m "chore: 每日追踪更新 $(date +%F)"
           git push
