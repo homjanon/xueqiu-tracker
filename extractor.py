@@ -314,6 +314,8 @@ def _ai_extract_batch(posts, uid):
     大幅减少调用次数与 NVIDIA 429 限流。输出格式：
       {"posts": [{"idx": 0, "mentions": [...], "account": {...}}, ...]}
     idx 对应输入 posts 的下标；没有提及的帖子也返回空 mentions。
+    posts 元素兼容两种形态：str（split_original 后的正文，update_mentions 实际传入）
+    或 dict（{text,...} 原始帖子对象，防御兼容）。
     """
     if not posts:
         return None
@@ -323,7 +325,8 @@ def _ai_extract_batch(posts, uid):
         return None
     hint = USER_HINTS.get(str(uid), "")
     system = PROMPT_SYSTEM + (("\n\n该用户黑话提示：\n" + hint) if hint else "")
-    lines = "\n".join("[%d] %s" % (i, (p.get("text", "") or "")[:300])
+    lines = "\n".join("[%d] %s" % (i, (p if isinstance(p, str)
+                                       else (p.get("text", "") or ""))[:300])
                       for i, p in enumerate(posts))
     user = ("以下是该用户最近的多条发言（[i] 为编号）：\n\n" + lines +
             "\n\n请对【每条】发言分别执行抽取规则，输出 JSON：\n"
