@@ -1,8 +1,8 @@
 """配置：从环境变量读取，缺失时用默认值。
 模型调用按优先级走三级后端（均为原生多模态，图文通吃）：
-  1) Agnes AI agnes-2.0-flash（免费多模态，复用 douban-tracker 配置）
-  2) NVIDIA GLM-5.2（z-ai/glm-5.2，免费，参考 portfolio 仓调用方式）
-  3) 商汤日日新 SenseNova deepseek-v4-flash（deepseek-v4-flash，标准 content 响应，免费）
+  1) NVIDIA GLM-5.2（z-ai/glm-5.2，免费，参考 portfolio 仓调用方式；2026-08-20 实测最快最稳，升为第一优先）
+  2) Agnes AI agnes-2.0-flash（免费多模态，复用 douban-tracker 配置；曾实测返回 200 但 content 空，降为第二）
+  3) 商汤日日新 SenseNova deepseek-v4-flash（deepseek-v4-flash，标准 content 响应，免费，兜底）
 支持多用户（逗号分隔）；USER_HINTS 为各用户专属黑话词典（注入 LLM 提示）。
 """
 import os
