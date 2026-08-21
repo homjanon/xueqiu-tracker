@@ -345,6 +345,9 @@ def _ai_extract_batch(posts, uid):
         return None
     res = {}
     for p in (d.get("posts") or []):
+        # 防御：模型偶发把某条帖子输出成裸字符串（2026-08-21 线上 '[提及] 生成失败'），跳过
+        if not isinstance(p, dict):
+            continue
         idx = p.get("idx")
         if isinstance(idx, int) and 0 <= idx < len(posts):
             res[idx] = p
@@ -359,9 +362,12 @@ def _squash(s):
 
 def validate(payload, text):
     """三道闸拦幻觉。任何编造标的或改写原文的输出都会在此被拦下。"""
-    if not payload:
+    # 防御：模型偶发返回非对象 / mentions 为字符串等（2026-08-21 线上 '[提及] 生成失败'）
+    if not isinstance(payload, dict):
         return None
-    mentions = payload.get("mentions") or []
+    mentions = payload.get("mentions")
+    if not isinstance(mentions, list):
+        mentions = []
     if len(mentions) > MAX_MENTIONS_PER_POST:
         print(f"[extractor] ⚠️ 单帖 {len(mentions)} 个标的，超阈值，整条丢弃")
         return None
@@ -388,7 +394,9 @@ def validate(payload, text):
         qty = _valid_qty(m.get("qty"))
         ok.append({"raw_name": raw, "quote": quote, "qty": qty})
 
-    acc = payload.get("account") or {}
+    acc = payload.get("account")
+    if not isinstance(acc, dict):   # 防御：account 偶发为字符串
+        acc = {}
     account = {}
     for k in ("position", "pnl"):
         v = (acc.get(k) or "").strip()

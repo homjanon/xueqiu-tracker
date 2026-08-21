@@ -154,6 +154,9 @@ def main():
         print(f"[提及] 处理 {mstats['posts']} 帖 · 提取 {mstats['mentions']} 条 · "
               f"来源 AI{mstats['ai']}/词典{mstats['dict']}")
     except Exception as e:
+        # 打印完整堆栈，便于 Actions 日志直接定位（2026-08-21 起）
+        import traceback
+        traceback.print_exc()
         print(f"[提及] 生成失败，跳过: {e}")
 
     md = build_report(ts, summary, users, showing_fallback)
