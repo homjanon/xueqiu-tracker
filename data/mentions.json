@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-08-22 12:40:36",
+  "updated_at": "2026-08-22 21:47:44",
   "users": {
     "1821992043": {
       "name": "ice_招行谷子地",
@@ -57,7 +57,7 @@
             "post_id": 406060946,
             "raw_name": "招行",
             "quote": "并不是说招行要对民生信托的所有未兑付资产兜底",
-            "qty": "875300股"
+            "qty": "877400股"
           },
           "history": [
             {
@@ -96,7 +96,7 @@
             "post_id": 405899133,
             "raw_name": "中国平安",
             "quote": "$中国平安(SH601318)$  2个账户持有6500股平保的小散户飘过",
-            "qty": "6500股"
+            "qty": "5500股"
           },
           "history": [
             {
@@ -123,70 +123,6 @@
           ],
           "first_at": 1785740922000,
           "mention_count": 5
-        },
-        "宁波银行": {
-          "normalized": true,
-          "aliases_seen": [
-            "波行"
-          ],
-          "latest": {
-            "at": 1787189857000,
-            "post_id": 405783424,
-            "raw_name": "波行",
-            "quote": "还有一笔34.08卖的，波行已经清空，换成招行。",
-            "qty": ""
-          },
-          "history": [],
-          "first_at": 1787189857000,
-          "mention_count": 1
-        },
-        "平保": {
-          "normalized": false,
-          "aliases_seen": [
-            "平保"
-          ],
-          "latest": {
-            "at": 1787219744000,
-            "post_id": 405899133,
-            "raw_name": "平保",
-            "quote": "$中国平安(SH601318)$  2个账户持有6500股平保的小散户飘过",
-            "qty": "6500股"
-          },
-          "history": [],
-          "first_at": 1787219744000,
-          "mention_count": 1
-        },
-        "贵州茅台": {
-          "normalized": true,
-          "aliases_seen": [
-            "茅台"
-          ],
-          "latest": {
-            "at": 1787273894000,
-            "post_id": 405972617,
-            "raw_name": "茅台",
-            "quote": "请以下球友过来领沙发奖：@熟都懒得去成  1次@韭叔老黄牛  1次@shrek  1次@小铁铁qj7 1次@做招商茅台安克股东  1次@Anton299  1次要爱晓宇 1次",
-            "qty": ""
-          },
-          "history": [],
-          "first_at": 1787273894000,
-          "mention_count": 1
-        },
-        "赛力斯": {
-          "normalized": false,
-          "aliases_seen": [
-            "赛力斯"
-          ],
-          "latest": {
-            "at": 1787280040000,
-            "post_id": 406005809,
-            "raw_name": "赛力斯",
-            "quote": "可笑当时还有人把赛力斯放在10年持股标底内",
-            "qty": ""
-          },
-          "history": [],
-          "first_at": 1787280040000,
-          "mention_count": 1
         }
       },
       "processed_max_id": 406060946
