@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-08-25 12:46:10",
+  "updated_at": "2026-08-25 21:01:15",
   "users": {
     "1821992043": {
       "name": "ice_招行谷子地",
@@ -64,7 +64,7 @@
             "post_id": 406327615,
             "raw_name": "招商银行",
             "quote": "$招商银行(SH600036)$ 好饭不怕晚，后胖压塌炕。",
-            "qty": "877400股"
+            "qty": "875700股"
           },
           "history": [
             {
@@ -131,22 +131,6 @@
           "first_at": 1785740922000,
           "mention_count": 5
         },
-        "汾酒": {
-          "normalized": false,
-          "aliases_seen": [
-            "汾酒"
-          ],
-          "latest": {
-            "at": 1787533998000,
-            "post_id": 406261406,
-            "raw_name": "汾酒",
-            "quote": "汾酒早年是全国老大",
-            "qty": ""
-          },
-          "history": [],
-          "first_at": 1787533998000,
-          "mention_count": 1
-        },
         "宁波银行": {
           "normalized": true,
           "aliases_seen": [
@@ -158,7 +142,7 @@
             "post_id": 406303323,
             "raw_name": "大波",
             "quote": "$宁波银行(SZ002142)$ 散户又不要大波了",
-            "qty": ""
+            "qty": "1000股"
           },
           "history": [
             {
