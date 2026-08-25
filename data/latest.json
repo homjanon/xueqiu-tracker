@@ -1,16 +1,27 @@
 {
-  "fetched_at": "2026-08-24 12:53:20",
-  "daily_summary": "紫金陈：紫金陈保本卖出广州酒家和顺丰，加仓青岛港H股，新入马应龙；提及周生生、建滔集团、百度及韩股Never、Kakao，称回撤20%是加仓时机\nice_招行谷子地：讨论宁波银行（大波）散户不买、自己实盘操作；询问五粮液地震影响；反驳黑材料护招行黄金头寸；劝人别买银行",
+  "fetched_at": "2026-08-25 12:46:10",
+  "daily_summary": "紫金陈：紫金陈表示保本卖出广州酒家和顺丰，加仓青岛港H股，新入顺丰、广州酒家、马应龙、青岛港等标的，并提及周生生、建滔集团、百度及韩股never、kakao\nice_招行谷子地：讨论兴业银行是否会暴雷，回应他人关于买入招商银行的提问，表示意淫伤身，并看好招商银行，认为好饭不怕晚、后胖压塌炕",
   "user_count": 2,
-  "new_count": 12,
+  "new_count": 9,
   "text_signal_count": 0,
   "vision_signal_count": 0,
   "showing_fallback": false,
   "posts": [
     {
-      "id": 406304808,
-      "created_at": 1787541900000,
-      "text": "回复@坚定的翻倍小谦虚: 新股民吧//@坚定的翻倍小谦虚:回复@ice_招行谷子地:请教冰哥为啥100股100股买呢？稍微一次性多买些不是手续费会更少吗？",
+      "id": 406474091,
+      "created_at": 1787625932000,
+      "text": "回复@满仓修行: 过两天你不就知道了？//@满仓修行:回复@ice_招行谷子地:所以兴业到底会不会暴雷？",
+      "source": "雪球",
+      "is_retweet": true,
+      "truncated": false,
+      "user_id": 1821992043,
+      "user_name": "ice_招行谷子地",
+      "pics": []
+    },
+    {
+      "id": 406471519,
+      "created_at": 1787625359000,
+      "text": "同质化三个字一放就知道你啥都不懂",
       "source": "Android",
       "is_retweet": true,
       "truncated": false,
@@ -19,10 +30,21 @@
       "pics": []
     },
     {
-      "id": 406303323,
-      "created_at": 1787541546000,
-      "text": "$宁波银行(SZ002142)$ 散户又不要大波了。mnp来点",
-      "source": "Android",
+      "id": 406462687,
+      "created_at": 1787623586000,
+      "text": "回复@k线不懂看: 26-31度，不算热。//@k线不懂看:回复@ice_招行谷子地:请问那里气温怎么样",
+      "source": "雪球",
+      "is_retweet": true,
+      "truncated": false,
+      "user_id": 1821992043,
+      "user_name": "ice_招行谷子地",
+      "pics": []
+    },
+    {
+      "id": 406451895,
+      "created_at": 1787621791000,
+      "text": "",
+      "source": "雪球",
       "is_retweet": false,
       "truncated": false,
       "user_id": 1821992043,
@@ -30,9 +52,9 @@
       "pics": []
     },
     {
-      "id": 406263333,
-      "created_at": 1787534697000,
-      "text": "很多银行所谓交流就是照着念稿",
+      "id": 406435380,
+      "created_at": 1787611659000,
+      "text": "AI垃圾，拉黑",
       "source": "Android",
       "is_retweet": true,
       "truncated": false,
@@ -41,9 +63,9 @@
       "pics": []
     },
     {
-      "id": 406261406,
-      "created_at": 1787533998000,
-      "text": "回复@豆沙馅儿: 汾酒早年是全国老大//@豆沙馅儿:回复@少年宫孙连城:对，至少在山西，大家更喜欢喝汾酒",
+      "id": 406403035,
+      "created_at": 1787577402000,
+      "text": "我就看你敢不敢制裁熊猫",
       "source": "Android",
       "is_retweet": true,
       "truncated": false,
@@ -52,9 +74,9 @@
       "pics": []
     },
     {
-      "id": 406261312,
-      "created_at": 1787533955000,
-      "text": "回复@望京博格: 怎么跟我这穷屌丝一个选择，不行！博格大师必须标配玛莎拉蒂//@望京博格:回复@寒浪滔滔:只用神州或者一嗨",
+      "id": 406388258,
+      "created_at": 1787570812000,
+      "text": "回复@木屋66: 意淫伤身//@木屋66:？买$招商银行(SH600036)$ 吗？@ice_招行谷子地",
       "source": "Android",
       "is_retweet": true,
       "truncated": false,
@@ -63,10 +85,10 @@
       "pics": []
     },
     {
-      "id": 406260890,
-      "created_at": 1787533823000,
-      "text": "回复@九月鹿鸣: 难道是因为震一震，地气精华升腾，渗入酒中，喝了可以延年益寿，金枪不倒？//@九月鹿鸣:回复@ice_招行谷子地:隔三差五就震一震，搞不好可以帮助提升酒质",
-      "source": "Android",
+      "id": 406330448,
+      "created_at": 1787550918000,
+      "text": "回复@轻轻随风-SUN: 你看到的只有眼前的苟且，我看到的是诗和远方。//@轻轻随风-SUN:回复@ice_招行谷子地:现在，银行保险，都是尿壶，大跌就拿来护盘，企稳就开砸。 完全都是资金行为，根本不管估值了。",
+      "source": "雪球",
       "is_retweet": true,
       "truncated": false,
       "user_id": 1821992043,
@@ -74,66 +96,11 @@
       "pics": []
     },
     {
-      "id": 406260336,
-      "created_at": 1787533605000,
-      "text": "回复@云水001: 没关系，眼光放长远，未来万国来朝时，茅五泸都会有更好的未来。我相信民族的就是世界的//@云水001:回复@ice_招行谷子地:哈哈，地震没影响，市场份额被国窖和茅台抢了不少。",
-      "source": "Android",
-      "is_retweet": true,
-      "truncated": false,
-      "user_id": 1821992043,
-      "user_name": "ice_招行谷子地",
-      "pics": []
-    },
-    {
-      "id": 406259876,
-      "created_at": 1787533335000,
-      "text": "你千万别买银行，再见",
-      "source": "Android",
-      "is_retweet": true,
-      "truncated": false,
-      "user_id": 1821992043,
-      "user_name": "ice_招行谷子地",
-      "pics": []
-    },
-    {
-      "id": 406259619,
-      "created_at": 1787533193000,
-      "text": "$五粮液(SZ000858)$ 不懂就问，地震应该没影响吧",
-      "source": "Android",
+      "id": 406327615,
+      "created_at": 1787550254000,
+      "text": "$招商银行(SH600036)$ 好饭不怕晚，后胖压塌炕。",
+      "source": "雪球",
       "is_retweet": false,
-      "truncated": false,
-      "user_id": 1821992043,
-      "user_name": "ice_招行谷子地",
-      "pics": []
-    },
-    {
-      "id": 406257265,
-      "created_at": 1787531524000,
-      "text": "据说某招黑又拿老掉牙的黑材料黑招行业绩了。黄金头寸这个事情，我3个月前就写过了，我只能说黑子完全是不学无术。",
-      "source": "Android",
-      "is_retweet": true,
-      "truncated": false,
-      "user_id": 1821992043,
-      "user_name": "ice_招行谷子地",
-      "pics": []
-    },
-    {
-      "id": 406217225,
-      "created_at": 1787468105000,
-      "text": "再见",
-      "source": "Android",
-      "is_retweet": true,
-      "truncated": false,
-      "user_id": 1821992043,
-      "user_name": "ice_招行谷子地",
-      "pics": []
-    },
-    {
-      "id": 406217104,
-      "created_at": 1787467982000,
-      "text": "拉黑智商欠费的",
-      "source": "Android",
-      "is_retweet": true,
       "truncated": false,
       "user_id": 1821992043,
       "user_name": "ice_招行谷子地",
@@ -265,9 +232,20 @@
       "pics": []
     },
     {
-      "id": 406304808,
-      "created_at": 1787541900000,
-      "text": "回复@坚定的翻倍小谦虚: 新股民吧//@坚定的翻倍小谦虚:回复@ice_招行谷子地:请教冰哥为啥100股100股买呢？稍微一次性多买些不是手续费会更少吗？",
+      "id": 406474091,
+      "created_at": 1787625932000,
+      "text": "回复@满仓修行: 过两天你不就知道了？//@满仓修行:回复@ice_招行谷子地:所以兴业到底会不会暴雷？",
+      "source": "雪球",
+      "is_retweet": true,
+      "truncated": false,
+      "user_id": 1821992043,
+      "user_name": "ice_招行谷子地",
+      "pics": []
+    },
+    {
+      "id": 406471519,
+      "created_at": 1787625359000,
+      "text": "同质化三个字一放就知道你啥都不懂",
       "source": "Android",
       "is_retweet": true,
       "truncated": false,
@@ -276,10 +254,21 @@
       "pics": []
     },
     {
-      "id": 406303323,
-      "created_at": 1787541546000,
-      "text": "$宁波银行(SZ002142)$ 散户又不要大波了。mnp来点",
-      "source": "Android",
+      "id": 406462687,
+      "created_at": 1787623586000,
+      "text": "回复@k线不懂看: 26-31度，不算热。//@k线不懂看:回复@ice_招行谷子地:请问那里气温怎么样",
+      "source": "雪球",
+      "is_retweet": true,
+      "truncated": false,
+      "user_id": 1821992043,
+      "user_name": "ice_招行谷子地",
+      "pics": []
+    },
+    {
+      "id": 406451895,
+      "created_at": 1787621791000,
+      "text": "",
+      "source": "雪球",
       "is_retweet": false,
       "truncated": false,
       "user_id": 1821992043,
@@ -287,9 +276,9 @@
       "pics": []
     },
     {
-      "id": 406263333,
-      "created_at": 1787534697000,
-      "text": "很多银行所谓交流就是照着念稿",
+      "id": 406435380,
+      "created_at": 1787611659000,
+      "text": "AI垃圾，拉黑",
       "source": "Android",
       "is_retweet": true,
       "truncated": false,
@@ -298,9 +287,9 @@
       "pics": []
     },
     {
-      "id": 406261406,
-      "created_at": 1787533998000,
-      "text": "回复@豆沙馅儿: 汾酒早年是全国老大//@豆沙馅儿:回复@少年宫孙连城:对，至少在山西，大家更喜欢喝汾酒",
+      "id": 406403035,
+      "created_at": 1787577402000,
+      "text": "我就看你敢不敢制裁熊猫",
       "source": "Android",
       "is_retweet": true,
       "truncated": false,
@@ -309,9 +298,9 @@
       "pics": []
     },
     {
-      "id": 406261312,
-      "created_at": 1787533955000,
-      "text": "回复@望京博格: 怎么跟我这穷屌丝一个选择，不行！博格大师必须标配玛莎拉蒂//@望京博格:回复@寒浪滔滔:只用神州或者一嗨",
+      "id": 406388258,
+      "created_at": 1787570812000,
+      "text": "回复@木屋66: 意淫伤身//@木屋66:？买$招商银行(SH600036)$ 吗？@ice_招行谷子地",
       "source": "Android",
       "is_retweet": true,
       "truncated": false,
@@ -320,10 +309,10 @@
       "pics": []
     },
     {
-      "id": 406260890,
-      "created_at": 1787533823000,
-      "text": "回复@九月鹿鸣: 难道是因为震一震，地气精华升腾，渗入酒中，喝了可以延年益寿，金枪不倒？//@九月鹿鸣:回复@ice_招行谷子地:隔三差五就震一震，搞不好可以帮助提升酒质",
-      "source": "Android",
+      "id": 406330448,
+      "created_at": 1787550918000,
+      "text": "回复@轻轻随风-SUN: 你看到的只有眼前的苟且，我看到的是诗和远方。//@轻轻随风-SUN:回复@ice_招行谷子地:现在，银行保险，都是尿壶，大跌就拿来护盘，企稳就开砸。 完全都是资金行为，根本不管估值了。",
+      "source": "雪球",
       "is_retweet": true,
       "truncated": false,
       "user_id": 1821992043,
@@ -331,32 +320,10 @@
       "pics": []
     },
     {
-      "id": 406260336,
-      "created_at": 1787533605000,
-      "text": "回复@云水001: 没关系，眼光放长远，未来万国来朝时，茅五泸都会有更好的未来。我相信民族的就是世界的//@云水001:回复@ice_招行谷子地:哈哈，地震没影响，市场份额被国窖和茅台抢了不少。",
-      "source": "Android",
-      "is_retweet": true,
-      "truncated": false,
-      "user_id": 1821992043,
-      "user_name": "ice_招行谷子地",
-      "pics": []
-    },
-    {
-      "id": 406259876,
-      "created_at": 1787533335000,
-      "text": "你千万别买银行，再见",
-      "source": "Android",
-      "is_retweet": true,
-      "truncated": false,
-      "user_id": 1821992043,
-      "user_name": "ice_招行谷子地",
-      "pics": []
-    },
-    {
-      "id": 406259619,
-      "created_at": 1787533193000,
-      "text": "$五粮液(SZ000858)$ 不懂就问，地震应该没影响吧",
-      "source": "Android",
+      "id": 406327615,
+      "created_at": 1787550254000,
+      "text": "$招商银行(SH600036)$ 好饭不怕晚，后胖压塌炕。",
+      "source": "雪球",
       "is_retweet": false,
       "truncated": false,
       "user_id": 1821992043,
@@ -490,14 +457,25 @@
     {
       "user_id": "1821992043",
       "name": "ice_招行谷子地",
-      "new_count": 12,
+      "new_count": 9,
       "text_signal_count": 0,
       "vision_signal_count": 0,
       "posts": [
         {
-          "id": 406304808,
-          "created_at": 1787541900000,
-          "text": "回复@坚定的翻倍小谦虚: 新股民吧//@坚定的翻倍小谦虚:回复@ice_招行谷子地:请教冰哥为啥100股100股买呢？稍微一次性多买些不是手续费会更少吗？",
+          "id": 406474091,
+          "created_at": 1787625932000,
+          "text": "回复@满仓修行: 过两天你不就知道了？//@满仓修行:回复@ice_招行谷子地:所以兴业到底会不会暴雷？",
+          "source": "雪球",
+          "is_retweet": true,
+          "truncated": false,
+          "user_id": 1821992043,
+          "user_name": "ice_招行谷子地",
+          "pics": []
+        },
+        {
+          "id": 406471519,
+          "created_at": 1787625359000,
+          "text": "同质化三个字一放就知道你啥都不懂",
           "source": "Android",
           "is_retweet": true,
           "truncated": false,
@@ -506,10 +484,21 @@
           "pics": []
         },
         {
-          "id": 406303323,
-          "created_at": 1787541546000,
-          "text": "$宁波银行(SZ002142)$ 散户又不要大波了。mnp来点",
-          "source": "Android",
+          "id": 406462687,
+          "created_at": 1787623586000,
+          "text": "回复@k线不懂看: 26-31度，不算热。//@k线不懂看:回复@ice_招行谷子地:请问那里气温怎么样",
+          "source": "雪球",
+          "is_retweet": true,
+          "truncated": false,
+          "user_id": 1821992043,
+          "user_name": "ice_招行谷子地",
+          "pics": []
+        },
+        {
+          "id": 406451895,
+          "created_at": 1787621791000,
+          "text": "",
+          "source": "雪球",
           "is_retweet": false,
           "truncated": false,
           "user_id": 1821992043,
@@ -517,9 +506,9 @@
           "pics": []
         },
         {
-          "id": 406263333,
-          "created_at": 1787534697000,
-          "text": "很多银行所谓交流就是照着念稿",
+          "id": 406435380,
+          "created_at": 1787611659000,
+          "text": "AI垃圾，拉黑",
           "source": "Android",
           "is_retweet": true,
           "truncated": false,
@@ -528,9 +517,9 @@
           "pics": []
         },
         {
-          "id": 406261406,
-          "created_at": 1787533998000,
-          "text": "回复@豆沙馅儿: 汾酒早年是全国老大//@豆沙馅儿:回复@少年宫孙连城:对，至少在山西，大家更喜欢喝汾酒",
+          "id": 406403035,
+          "created_at": 1787577402000,
+          "text": "我就看你敢不敢制裁熊猫",
           "source": "Android",
           "is_retweet": true,
           "truncated": false,
@@ -539,9 +528,9 @@
           "pics": []
         },
         {
-          "id": 406261312,
-          "created_at": 1787533955000,
-          "text": "回复@望京博格: 怎么跟我这穷屌丝一个选择，不行！博格大师必须标配玛莎拉蒂//@望京博格:回复@寒浪滔滔:只用神州或者一嗨",
+          "id": 406388258,
+          "created_at": 1787570812000,
+          "text": "回复@木屋66: 意淫伤身//@木屋66:？买$招商银行(SH600036)$ 吗？@ice_招行谷子地",
           "source": "Android",
           "is_retweet": true,
           "truncated": false,
@@ -550,10 +539,10 @@
           "pics": []
         },
         {
-          "id": 406260890,
-          "created_at": 1787533823000,
-          "text": "回复@九月鹿鸣: 难道是因为震一震，地气精华升腾，渗入酒中，喝了可以延年益寿，金枪不倒？//@九月鹿鸣:回复@ice_招行谷子地:隔三差五就震一震，搞不好可以帮助提升酒质",
-          "source": "Android",
+          "id": 406330448,
+          "created_at": 1787550918000,
+          "text": "回复@轻轻随风-SUN: 你看到的只有眼前的苟且，我看到的是诗和远方。//@轻轻随风-SUN:回复@ice_招行谷子地:现在，银行保险，都是尿壶，大跌就拿来护盘，企稳就开砸。 完全都是资金行为，根本不管估值了。",
+          "source": "雪球",
           "is_retweet": true,
           "truncated": false,
           "user_id": 1821992043,
@@ -561,66 +550,11 @@
           "pics": []
         },
         {
-          "id": 406260336,
-          "created_at": 1787533605000,
-          "text": "回复@云水001: 没关系，眼光放长远，未来万国来朝时，茅五泸都会有更好的未来。我相信民族的就是世界的//@云水001:回复@ice_招行谷子地:哈哈，地震没影响，市场份额被国窖和茅台抢了不少。",
-          "source": "Android",
-          "is_retweet": true,
-          "truncated": false,
-          "user_id": 1821992043,
-          "user_name": "ice_招行谷子地",
-          "pics": []
-        },
-        {
-          "id": 406259876,
-          "created_at": 1787533335000,
-          "text": "你千万别买银行，再见",
-          "source": "Android",
-          "is_retweet": true,
-          "truncated": false,
-          "user_id": 1821992043,
-          "user_name": "ice_招行谷子地",
-          "pics": []
-        },
-        {
-          "id": 406259619,
-          "created_at": 1787533193000,
-          "text": "$五粮液(SZ000858)$ 不懂就问，地震应该没影响吧",
-          "source": "Android",
+          "id": 406327615,
+          "created_at": 1787550254000,
+          "text": "$招商银行(SH600036)$ 好饭不怕晚，后胖压塌炕。",
+          "source": "雪球",
           "is_retweet": false,
-          "truncated": false,
-          "user_id": 1821992043,
-          "user_name": "ice_招行谷子地",
-          "pics": []
-        },
-        {
-          "id": 406257265,
-          "created_at": 1787531524000,
-          "text": "据说某招黑又拿老掉牙的黑材料黑招行业绩了。黄金头寸这个事情，我3个月前就写过了，我只能说黑子完全是不学无术。",
-          "source": "Android",
-          "is_retweet": true,
-          "truncated": false,
-          "user_id": 1821992043,
-          "user_name": "ice_招行谷子地",
-          "pics": []
-        },
-        {
-          "id": 406217225,
-          "created_at": 1787468105000,
-          "text": "再见",
-          "source": "Android",
-          "is_retweet": true,
-          "truncated": false,
-          "user_id": 1821992043,
-          "user_name": "ice_招行谷子地",
-          "pics": []
-        },
-        {
-          "id": 406217104,
-          "created_at": 1787467982000,
-          "text": "拉黑智商欠费的",
-          "source": "Android",
-          "is_retweet": true,
           "truncated": false,
           "user_id": 1821992043,
           "user_name": "ice_招行谷子地",
@@ -640,9 +574,20 @@
           "pics": []
         },
         {
-          "id": 406304808,
-          "created_at": 1787541900000,
-          "text": "回复@坚定的翻倍小谦虚: 新股民吧//@坚定的翻倍小谦虚:回复@ice_招行谷子地:请教冰哥为啥100股100股买呢？稍微一次性多买些不是手续费会更少吗？",
+          "id": 406474091,
+          "created_at": 1787625932000,
+          "text": "回复@满仓修行: 过两天你不就知道了？//@满仓修行:回复@ice_招行谷子地:所以兴业到底会不会暴雷？",
+          "source": "雪球",
+          "is_retweet": true,
+          "truncated": false,
+          "user_id": 1821992043,
+          "user_name": "ice_招行谷子地",
+          "pics": []
+        },
+        {
+          "id": 406471519,
+          "created_at": 1787625359000,
+          "text": "同质化三个字一放就知道你啥都不懂",
           "source": "Android",
           "is_retweet": true,
           "truncated": false,
@@ -651,10 +596,21 @@
           "pics": []
         },
         {
-          "id": 406303323,
-          "created_at": 1787541546000,
-          "text": "$宁波银行(SZ002142)$ 散户又不要大波了。mnp来点",
-          "source": "Android",
+          "id": 406462687,
+          "created_at": 1787623586000,
+          "text": "回复@k线不懂看: 26-31度，不算热。//@k线不懂看:回复@ice_招行谷子地:请问那里气温怎么样",
+          "source": "雪球",
+          "is_retweet": true,
+          "truncated": false,
+          "user_id": 1821992043,
+          "user_name": "ice_招行谷子地",
+          "pics": []
+        },
+        {
+          "id": 406451895,
+          "created_at": 1787621791000,
+          "text": "",
+          "source": "雪球",
           "is_retweet": false,
           "truncated": false,
           "user_id": 1821992043,
@@ -662,9 +618,9 @@
           "pics": []
         },
         {
-          "id": 406263333,
-          "created_at": 1787534697000,
-          "text": "很多银行所谓交流就是照着念稿",
+          "id": 406435380,
+          "created_at": 1787611659000,
+          "text": "AI垃圾，拉黑",
           "source": "Android",
           "is_retweet": true,
           "truncated": false,
@@ -673,9 +629,9 @@
           "pics": []
         },
         {
-          "id": 406261406,
-          "created_at": 1787533998000,
-          "text": "回复@豆沙馅儿: 汾酒早年是全国老大//@豆沙馅儿:回复@少年宫孙连城:对，至少在山西，大家更喜欢喝汾酒",
+          "id": 406403035,
+          "created_at": 1787577402000,
+          "text": "我就看你敢不敢制裁熊猫",
           "source": "Android",
           "is_retweet": true,
           "truncated": false,
@@ -684,9 +640,9 @@
           "pics": []
         },
         {
-          "id": 406261312,
-          "created_at": 1787533955000,
-          "text": "回复@望京博格: 怎么跟我这穷屌丝一个选择，不行！博格大师必须标配玛莎拉蒂//@望京博格:回复@寒浪滔滔:只用神州或者一嗨",
+          "id": 406388258,
+          "created_at": 1787570812000,
+          "text": "回复@木屋66: 意淫伤身//@木屋66:？买$招商银行(SH600036)$ 吗？@ice_招行谷子地",
           "source": "Android",
           "is_retweet": true,
           "truncated": false,
@@ -695,10 +651,10 @@
           "pics": []
         },
         {
-          "id": 406260890,
-          "created_at": 1787533823000,
-          "text": "回复@九月鹿鸣: 难道是因为震一震，地气精华升腾，渗入酒中，喝了可以延年益寿，金枪不倒？//@九月鹿鸣:回复@ice_招行谷子地:隔三差五就震一震，搞不好可以帮助提升酒质",
-          "source": "Android",
+          "id": 406330448,
+          "created_at": 1787550918000,
+          "text": "回复@轻轻随风-SUN: 你看到的只有眼前的苟且，我看到的是诗和远方。//@轻轻随风-SUN:回复@ice_招行谷子地:现在，银行保险，都是尿壶，大跌就拿来护盘，企稳就开砸。 完全都是资金行为，根本不管估值了。",
+          "source": "雪球",
           "is_retweet": true,
           "truncated": false,
           "user_id": 1821992043,
@@ -706,32 +662,10 @@
           "pics": []
         },
         {
-          "id": 406260336,
-          "created_at": 1787533605000,
-          "text": "回复@云水001: 没关系，眼光放长远，未来万国来朝时，茅五泸都会有更好的未来。我相信民族的就是世界的//@云水001:回复@ice_招行谷子地:哈哈，地震没影响，市场份额被国窖和茅台抢了不少。",
-          "source": "Android",
-          "is_retweet": true,
-          "truncated": false,
-          "user_id": 1821992043,
-          "user_name": "ice_招行谷子地",
-          "pics": []
-        },
-        {
-          "id": 406259876,
-          "created_at": 1787533335000,
-          "text": "你千万别买银行，再见",
-          "source": "Android",
-          "is_retweet": true,
-          "truncated": false,
-          "user_id": 1821992043,
-          "user_name": "ice_招行谷子地",
-          "pics": []
-        },
-        {
-          "id": 406259619,
-          "created_at": 1787533193000,
-          "text": "$五粮液(SZ000858)$ 不懂就问，地震应该没影响吧",
-          "source": "Android",
+          "id": 406327615,
+          "created_at": 1787550254000,
+          "text": "$招商银行(SH600036)$ 好饭不怕晚，后胖压塌炕。",
+          "source": "雪球",
           "is_retweet": false,
           "truncated": false,
           "user_id": 1821992043,
