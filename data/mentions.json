@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-08-28 23:08:02",
+  "updated_at": "2026-08-29 00:30:23",
   "users": {
     "1821992043": {
       "name": "ice_招行谷子地",
@@ -192,16 +192,24 @@
         "建设银行": {
           "normalized": true,
           "aliases_seen": [
-            "建行"
+            "建行",
+            "建设银行"
           ],
           "latest": {
-            "at": 1787924848000,
-            "post_id": 407176307,
-            "raw_name": "建行",
-            "quote": "招行和建行的中报业绩预测也全中。",
+            "at": 1787933120000,
+            "post_id": 407192605,
+            "raw_name": "建设银行",
+            "quote": "$建设银行(SH601939)$  交作业。",
             "qty": ""
           },
           "history": [
+            {
+              "at": 1787924848000,
+              "post_id": 407176307,
+              "raw_name": "建行",
+              "quote": "招行和建行的中报业绩预测也全中。",
+              "qty": ""
+            },
             {
               "at": 1787664726000,
               "post_id": 406586299,
@@ -211,7 +219,7 @@
             }
           ],
           "first_at": 1787664726000,
-          "mention_count": 2
+          "mention_count": 3
         },
         "贵州茅台": {
           "normalized": true,
@@ -294,7 +302,7 @@
           "mention_count": 1
         }
       },
-      "processed_max_id": 407180167
+      "processed_max_id": 407192605
     },
     "6515752937": {
       "name": "紫金陈",
