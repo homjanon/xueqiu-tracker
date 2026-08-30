@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-08-29 18:58:42",
+  "updated_at": "2026-08-30 17:53:00",
   "users": {
     "1821992043": {
       "name": "ice_招行谷子地",
@@ -61,13 +61,20 @@
             "小昭"
           ],
           "latest": {
-            "at": 1787926005000,
-            "post_id": 407179136,
+            "at": 1788057494000,
+            "post_id": 407277092,
             "raw_name": "招行",
-            "quote": "炒股的尽头是囤积招行",
+            "quote": "1，看看前面的问题你喷的是招行，平安，茅台，这些龙头。",
             "qty": "875700股"
           },
           "history": [
+            {
+              "at": 1787926005000,
+              "post_id": 407179136,
+              "raw_name": "招行",
+              "quote": "炒股的尽头是囤积招行",
+              "qty": "875700股"
+            },
             {
               "at": 1787924848000,
               "post_id": 407176307,
@@ -81,17 +88,10 @@
               "raw_name": "招商银行",
               "quote": "$招商银行(SH600036)$ 交作业",
               "qty": "875700股"
-            },
-            {
-              "at": 1787911795000,
-              "post_id": 407137497,
-              "raw_name": "招商银行",
-              "quote": "预测命中。$招商银行(SH600036)$",
-              "qty": "875700股"
             }
           ],
           "first_at": 1785578374000,
-          "mention_count": 33
+          "mention_count": 34
         },
         "中国平安": {
           "normalized": true,
@@ -234,15 +234,23 @@
             "茅台"
           ],
           "latest": {
-            "at": 1787665785000,
-            "post_id": 406589291,
+            "at": 1788057494000,
+            "post_id": 407277092,
             "raw_name": "茅台",
-            "quote": "肯定茅台",
+            "quote": "1，看看前面的问题你喷的是招行，平安，茅台，这些龙头。",
             "qty": ""
           },
-          "history": [],
+          "history": [
+            {
+              "at": 1787665785000,
+              "post_id": 406589291,
+              "raw_name": "茅台",
+              "quote": "肯定茅台",
+              "qty": ""
+            }
+          ],
           "first_at": 1787665785000,
-          "mention_count": 1
+          "mention_count": 2
         },
         "中信银行": {
           "normalized": false,
@@ -354,9 +362,57 @@
           ],
           "first_at": 1787983300000,
           "mention_count": 2
+        },
+        "平安银行": {
+          "normalized": true,
+          "aliases_seen": [
+            "平安"
+          ],
+          "latest": {
+            "at": 1788057494000,
+            "post_id": 407277092,
+            "raw_name": "平安",
+            "quote": "1，看看前面的问题你喷的是招行，平安，茅台，这些龙头。",
+            "qty": ""
+          },
+          "history": [],
+          "first_at": 1788057494000,
+          "mention_count": 1
+        },
+        "IBM": {
+          "normalized": false,
+          "aliases_seen": [
+            "IBM"
+          ],
+          "latest": {
+            "at": 1788057494000,
+            "post_id": 407277092,
+            "raw_name": "IBM",
+            "quote": "3，真正能对标IBM，英伟达的公司没在A股上市。",
+            "qty": ""
+          },
+          "history": [],
+          "first_at": 1788057494000,
+          "mention_count": 1
+        },
+        "英伟达": {
+          "normalized": false,
+          "aliases_seen": [
+            "英伟达"
+          ],
+          "latest": {
+            "at": 1788057494000,
+            "post_id": 407277092,
+            "raw_name": "英伟达",
+            "quote": "3，真正能对标IBM，英伟达的公司没在A股上市。",
+            "qty": ""
+          },
+          "history": [],
+          "first_at": 1788057494000,
+          "mention_count": 1
         }
       },
-      "processed_max_id": 407249363
+      "processed_max_id": 407296080
     },
     "6515752937": {
       "name": "紫金陈",
