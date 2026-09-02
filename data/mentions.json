@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-09-02 21:00:30",
+  "updated_at": "2026-09-02 21:33:23",
   "users": {
     "1821992043": {
       "name": "ice_招行谷子地",
@@ -9,9 +9,9 @@
         "position_at": 1788333102000,
         "position_quote": "我是看着季度MA60进来的，小试水一下，有2万块闲钱不想去追招行了。",
         "position_quoted": false,
-        "pnl": "总资产-负债",
-        "pnl_at": 1788309594000,
-        "pnl_quote": "净资产=总资产-负债",
+        "pnl": "我的收益远超指数和全收益指数",
+        "pnl_at": 1788339870000,
+        "pnl_quote": "这东西都是暂时的，猫一年狗一年。拉长时间看，我的收益远超指数和全收益指数。",
         "pnl_quoted": false
       },
       "symbols": {
@@ -188,9 +188,25 @@
           "history": [],
           "first_at": 1788331626000,
           "mention_count": 1
+        },
+        "赛力斯": {
+          "normalized": false,
+          "aliases_seen": [
+            "赛力斯"
+          ],
+          "latest": {
+            "at": 1788355950000,
+            "post_id": 407801796,
+            "raw_name": "赛力斯",
+            "quote": "2年前我就给赛力斯定性了，他就是华为放出来的一条鲶鱼",
+            "qty": ""
+          },
+          "history": [],
+          "first_at": 1788355950000,
+          "mention_count": 1
         }
       },
-      "processed_max_id": 407754185
+      "processed_max_id": 407801796
     },
     "6515752937": {
       "name": "紫金陈",
