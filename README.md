@@ -106,5 +106,5 @@
 1. 把仓库推到 GitHub。
 2. `Settings → Secrets → Actions` 添加：`XUEQIU_USER_IDS`、`NVIDIA_API_KEY`、`AGNES_API_KEY`、`SENSENOVA_API_KEY`。
    （`XUEQIU_USER_IDS` 形如 `6515752937,1821992043`）
-3. 工作流每天**北京时间 12:00** 自动运行（亦可在 Actions 页手动触发），运行后自动提交 `data/`、`reports/`、`state.json`。
+3. 工作流每天**北京时间 14:30** 由 Cloudflare Worker（qdii-dispatch）触发（亦可在 Actions 页手动触发），运行后自动提交 `data/`、`reports/`、`state.json`。
 
