@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-09-03 14:31:59",
+  "updated_at": "2026-09-03 21:45:06",
   "users": {
     "1821992043": {
       "name": "ice_招行谷子地",
@@ -65,7 +65,7 @@
             "post_id": 407907741,
             "raw_name": "招行",
             "quote": "$招商银行(SH600036)$ 招行晃晃悠悠从板块落后排到靠前了",
-            "qty": "875700"
+            "qty": "876000股"
           },
           "history": [
             {
@@ -96,7 +96,8 @@
         "中国平安": {
           "normalized": true,
           "aliases_seen": [
-            "平宝、平安",
+            "平保",
+            "平安",
             "中国平安"
           ],
           "latest": {
@@ -104,7 +105,7 @@
             "post_id": 405899133,
             "raw_name": "中国平安",
             "quote": "$中国平安(SH601318)$  2个账户持有6500股平保的小散户飘过",
-            "qty": "6500"
+            "qty": "5500股"
           },
           "history": [
             {
@@ -176,7 +177,7 @@
         "北新建材": {
           "normalized": false,
           "aliases_seen": [
-            "北新建材"
+            "北新"
           ],
           "latest": {
             "at": 1788400138000,
@@ -211,22 +212,6 @@
           },
           "history": [],
           "first_at": 1788355950000,
-          "mention_count": 1
-        },
-        "平保": {
-          "normalized": false,
-          "aliases_seen": [
-            "平保"
-          ],
-          "latest": {
-            "at": 1788405137000,
-            "post_id": 407877063,
-            "raw_name": "平保",
-            "quote": "主仓所有平保已经全部换成招行",
-            "qty": ""
-          },
-          "history": [],
-          "first_at": 1788405137000,
           "mention_count": 1
         }
       },
