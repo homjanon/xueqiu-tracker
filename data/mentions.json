@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-09-03 21:45:32",
+  "updated_at": "2026-09-04 14:32:06",
   "users": {
     "1821992043": {
       "name": "ice_招行谷子地",
@@ -61,37 +61,37 @@
             "小昭"
           ],
           "latest": {
-            "at": 1788416022000,
-            "post_id": 407907741,
-            "raw_name": "招行",
-            "quote": "$招商银行(SH600036)$ 招行晃晃悠悠从板块落后排到靠前了",
+            "at": 1788498596000,
+            "post_id": 408057083,
+            "raw_name": "招商银行",
+            "quote": "$招商银行(SH600036)$ 港股咋了",
             "qty": "876000股"
           },
           "history": [
+            {
+              "at": 1788482942000,
+              "post_id": 407997425,
+              "raw_name": "招行",
+              "quote": "大行0.6-1.4 招行0.8-2.2",
+              "qty": "876000股"
+            },
+            {
+              "at": 1788416022000,
+              "post_id": 407907741,
+              "raw_name": "招行",
+              "quote": "$招商银行(SH600036)$ 招行晃晃悠悠从板块落后排到靠前了",
+              "qty": "876000股"
+            },
             {
               "at": 1788416022000,
               "post_id": 407907741,
               "raw_name": "招商银行",
               "quote": "$招商银行(SH600036)$ 招行晃晃悠悠从板块落后排到靠前了",
               "qty": "875700"
-            },
-            {
-              "at": 1788405887000,
-              "post_id": 407880048,
-              "raw_name": "招行",
-              "quote": "刚刚清理了，也换成招行",
-              "qty": "875700"
-            },
-            {
-              "at": 1788405591000,
-              "post_id": 407878879,
-              "raw_name": "招行",
-              "quote": "还有点，也可能择机换成招行",
-              "qty": "875700"
             }
           ],
           "first_at": 1785578374000,
-          "mention_count": 53
+          "mention_count": 55
         },
         "中国平安": {
           "normalized": true,
@@ -213,9 +213,89 @@
           "history": [],
           "first_at": 1788355950000,
           "mention_count": 1
+        },
+        "江苏银行": {
+          "normalized": false,
+          "aliases_seen": [
+            "江苏银行"
+          ],
+          "latest": {
+            "at": 1788440934000,
+            "post_id": 407962498,
+            "raw_name": "江苏银行",
+            "quote": "你赶紧多买点江苏银行，农业银行。",
+            "qty": ""
+          },
+          "history": [],
+          "first_at": 1788440934000,
+          "mention_count": 1
+        },
+        "农业银行": {
+          "normalized": true,
+          "aliases_seen": [
+            "农业银行"
+          ],
+          "latest": {
+            "at": 1788440934000,
+            "post_id": 407962498,
+            "raw_name": "农业银行",
+            "quote": "你赶紧多买点江苏银行，农业银行。",
+            "qty": ""
+          },
+          "history": [],
+          "first_at": 1788440934000,
+          "mention_count": 1
+        },
+        "浦发": {
+          "normalized": false,
+          "aliases_seen": [
+            "浦发"
+          ],
+          "latest": {
+            "at": 1788501332000,
+            "post_id": 408067416,
+            "raw_name": "浦发",
+            "quote": "浦发和民生，华夏我根本懒得看。",
+            "qty": ""
+          },
+          "history": [],
+          "first_at": 1788501332000,
+          "mention_count": 1
+        },
+        "民生": {
+          "normalized": false,
+          "aliases_seen": [
+            "民生"
+          ],
+          "latest": {
+            "at": 1788501332000,
+            "post_id": 408067416,
+            "raw_name": "民生",
+            "quote": "浦发和民生，华夏我根本懒得看。",
+            "qty": ""
+          },
+          "history": [],
+          "first_at": 1788501332000,
+          "mention_count": 1
+        },
+        "华夏": {
+          "normalized": false,
+          "aliases_seen": [
+            "华夏"
+          ],
+          "latest": {
+            "at": 1788501332000,
+            "post_id": 408067416,
+            "raw_name": "华夏",
+            "quote": "浦发和民生，华夏我根本懒得看。",
+            "qty": ""
+          },
+          "history": [],
+          "first_at": 1788501332000,
+          "mention_count": 1
         }
       },
-      "processed_max_id": 407907741
+      "processed_max_id": 408070660
     },
     "6515752937": {
       "name": "紫金陈",
