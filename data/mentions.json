@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-09-06 14:31:53",
+  "updated_at": "2026-09-07 14:31:59",
   "users": {
     "1821992043": {
       "name": "ice_招行谷子地",
@@ -293,9 +293,25 @@
           "history": [],
           "first_at": 1788501332000,
           "mention_count": 1
+        },
+        "光大银行": {
+          "normalized": false,
+          "aliases_seen": [
+            "光大银行"
+          ],
+          "latest": {
+            "at": 1788743030000,
+            "post_id": 408264255,
+            "raw_name": "光大银行",
+            "quote": "$光大银行(SH601818)$ 明天凌晨交的作业，建议自行保存，虽然我已经用别名替代了本名，但是，文章能活多久不确认。",
+            "qty": ""
+          },
+          "history": [],
+          "first_at": 1788743030000,
+          "mention_count": 1
         }
       },
-      "processed_max_id": 408210576
+      "processed_max_id": 408310932
     },
     "6515752937": {
       "name": "紫金陈",
