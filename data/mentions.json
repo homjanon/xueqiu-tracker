@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-09-07 14:31:59",
+  "updated_at": "2026-09-07 20:21:48",
   "users": {
     "1821992043": {
       "name": "ice_招行谷子地",
@@ -197,118 +197,6 @@
           ],
           "first_at": 1788331626000,
           "mention_count": 2
-        },
-        "赛力斯": {
-          "normalized": false,
-          "aliases_seen": [
-            "赛力斯"
-          ],
-          "latest": {
-            "at": 1788355950000,
-            "post_id": 407801796,
-            "raw_name": "赛力斯",
-            "quote": "2年前我就给赛力斯定性了，他就是华为放出来的一条鲶鱼",
-            "qty": ""
-          },
-          "history": [],
-          "first_at": 1788355950000,
-          "mention_count": 1
-        },
-        "江苏银行": {
-          "normalized": false,
-          "aliases_seen": [
-            "江苏银行"
-          ],
-          "latest": {
-            "at": 1788440934000,
-            "post_id": 407962498,
-            "raw_name": "江苏银行",
-            "quote": "你赶紧多买点江苏银行，农业银行。",
-            "qty": ""
-          },
-          "history": [],
-          "first_at": 1788440934000,
-          "mention_count": 1
-        },
-        "农业银行": {
-          "normalized": true,
-          "aliases_seen": [
-            "农业银行"
-          ],
-          "latest": {
-            "at": 1788440934000,
-            "post_id": 407962498,
-            "raw_name": "农业银行",
-            "quote": "你赶紧多买点江苏银行，农业银行。",
-            "qty": ""
-          },
-          "history": [],
-          "first_at": 1788440934000,
-          "mention_count": 1
-        },
-        "浦发": {
-          "normalized": false,
-          "aliases_seen": [
-            "浦发"
-          ],
-          "latest": {
-            "at": 1788501332000,
-            "post_id": 408067416,
-            "raw_name": "浦发",
-            "quote": "浦发和民生，华夏我根本懒得看。",
-            "qty": ""
-          },
-          "history": [],
-          "first_at": 1788501332000,
-          "mention_count": 1
-        },
-        "民生": {
-          "normalized": false,
-          "aliases_seen": [
-            "民生"
-          ],
-          "latest": {
-            "at": 1788501332000,
-            "post_id": 408067416,
-            "raw_name": "民生",
-            "quote": "浦发和民生，华夏我根本懒得看。",
-            "qty": ""
-          },
-          "history": [],
-          "first_at": 1788501332000,
-          "mention_count": 1
-        },
-        "华夏": {
-          "normalized": false,
-          "aliases_seen": [
-            "华夏"
-          ],
-          "latest": {
-            "at": 1788501332000,
-            "post_id": 408067416,
-            "raw_name": "华夏",
-            "quote": "浦发和民生，华夏我根本懒得看。",
-            "qty": ""
-          },
-          "history": [],
-          "first_at": 1788501332000,
-          "mention_count": 1
-        },
-        "光大银行": {
-          "normalized": false,
-          "aliases_seen": [
-            "光大银行"
-          ],
-          "latest": {
-            "at": 1788743030000,
-            "post_id": 408264255,
-            "raw_name": "光大银行",
-            "quote": "$光大银行(SH601818)$ 明天凌晨交的作业，建议自行保存，虽然我已经用别名替代了本名，但是，文章能活多久不确认。",
-            "qty": ""
-          },
-          "history": [],
-          "first_at": 1788743030000,
-          "mention_count": 1
         }
       },
       "processed_max_id": 408310932
