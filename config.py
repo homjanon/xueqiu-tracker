@@ -1,7 +1,7 @@
 """配置：从环境变量读取，缺失时用默认值。
 模型调用按优先级走三级后端（均为原生多模态，图文通吃）：
-  1) NVIDIA GLM-5.2（z-ai/glm-5.2，免费，参考 portfolio 仓调用方式；2026-08-20 实测最快最稳，升为第一优先）
-  2) Agnes AI agnes-2.0-flash（免费多模态，复用 douban-tracker 配置；曾实测返回 200 但 content 空，降为第二）
+  1) Google Gemini 3 Flash（gemini-3-flash-preview，免费，1500 RPD 独立配额桶；2026-09-16 已在 news-feed 验证稳定）
+  2) Agnes AI agnes-2.5-flash（免费多模态，复用 douban-tracker 配置；曾实测返回 200 但 content 空，降为第二）
   3) 商汤日日新 SenseNova deepseek-v4-flash（deepseek-v4-flash，标准 content 响应，免费，兜底）
 支持多用户（逗号分隔）；USER_HINTS 为各用户专属黑话词典（注入 LLM 提示）。
 """
@@ -25,19 +25,25 @@ USER_HINTS = {
 
 BACKENDS = [
     {
-        # ① NVIDIA GLM-5.2（免费；2026-08-20 实测 0.9s 最快最稳，升为第一优先）
-        "name": "nvidia-glm-5.2",
-        "base_url": os.getenv("PRIMARY_BASE_URL", "https://integrate.api.nvidia.com/v1"),
-        "api_key": os.getenv("NVIDIA_API_KEY", ""),
-        "model": os.getenv("PRIMARY_MODEL", "z-ai/glm-5.2"),
-        "timeout": int(os.getenv("PRIMARY_TIMEOUT", "30")),
+        # ① 主力：Google Gemini 3 Flash（免费，1500 RPD 独立配额桶）
+        #  2026-09-17 顶替被移除的 NVIDIA GLM-5.2：后者近一个月不稳定且 429 限流频发，
+        #    且会把整轮 35 分钟的抓取作业一起拖垮（主力挂了整轮白跑）。
+        #  ⚠️ 模型名必须带 -preview 后缀：实测无后缀 gemini-3-flash 会 404（2026-09-16 news-feed 验证）。
+        "name": "gemini-3-flash",
+        "base_url": os.getenv("GEMINI_BASE_URL", "https://generativelanguage.googleapis.com/v1beta/openai"),
+        "api_key": os.getenv("GEMINI_API_KEY", ""),
+        "model": os.getenv("GEMINI_MODEL", "gemini-3-flash-preview"),
+        # timeout 60（2026-09-17）：原 NVIDIA 位为 30，news-feed 为 180；
+        #   本仓有 budget=60 总时限 + 35 分钟 job 上限，60 在"够用"与"不拖垮"之间取平衡。
+        "timeout": int(os.getenv("GEMINI_TIMEOUT", "60")),
     },
     {
-        # ② Agnes AI agnes-2.0-flash（免费多模态；8-20 实测返回 200 但 content 空 → 不兜底，降为第二）
-        "name": "agnes-2.0-flash",
+        # ② Agnes AI agnes-2.5-flash（免费多模态；8-20 实测返回 200 但 content 空 → 不兜底，降为第二）
+        #  2026-09-17：agnes-2.0-flash 已被官方标记「已废弃」，升级为 agnes-2.5-flash（仅改模型名）
+        "name": "agnes-2.5-flash",
         "base_url": os.getenv("AGNES_BASE_URL", "https://apihub.agnes-ai.com/v1"),
         "api_key": os.getenv("AGNES_API_KEY", ""),
-        "model": os.getenv("AGNES_MODEL", "agnes-2.0-flash"),
+        "model": os.getenv("AGNES_MODEL", "agnes-2.5-flash"),
         "timeout": int(os.getenv("AGNES_TIMEOUT", "30")),
     },
     {

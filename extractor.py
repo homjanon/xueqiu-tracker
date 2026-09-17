@@ -311,7 +311,7 @@ def _ai_extract_batch(posts, uid):
     """把某用户多条新帖合并为【一次】LLM 调用，返回 {idx: payload}；失败返回 None。
 
     2026-08-20 优化：mentions 由逐帖调用（20 条新帖=20 次 LLM）改为每用户一次批量，
-    大幅减少调用次数与 NVIDIA 429 限流。输出格式：
+    大幅减少调用次数（同时显著缓解免费档后端的 429 限流风险）。输出格式：
       {"posts": [{"idx": 0, "mentions": [...], "account": {...}}, ...]}
     idx 对应输入 posts 的下标；没有提及的帖子也返回空 mentions。
     posts 元素兼容两种形态：str（split_original 后的正文，update_mentions 实际传入）

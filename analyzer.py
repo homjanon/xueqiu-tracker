@@ -1,5 +1,8 @@
 """每日讨论归纳：把多位雪球大V的发言，中性归纳成每人一句短评（≤50字）。
-不再判断买卖操作——由用户自行根据归纳判断。无 Key 时回退发言摘录。"""
+不再判断买卖操作——由用户自行根据归纳判断。无 Key 时回退发言摘录。
+
+后端链见 config.BACKENDS（Gemini 3 Flash → Agnes 2.5 → SenseNova DeepSeek-V4-Flash）。
+实际生效后端由 call_multi 记入 LAST_BACKEND，供产物追溯（2026-09-17 新增）。"""
 import json
 import re
 import time
@@ -7,6 +10,17 @@ import time
 import requests
 
 from config import BACKENDS, TIMEOUT, USER_HINTS
+
+
+# ============ 实际生效后端记录（2026-09-17 新增）============
+# 背景：BACKENDS 的 name 字段原先只用于日志打印、不落库，故障时无法从产物反查。
+# 做法：call_multi 每次成功即记下命中的 backend name，tracker 写入 latest.json。
+# 语义：记录的是【本进程内最后一次成功】的后端，足以判断"整体是否降级"。
+LAST_BACKEND = None
+
+def get_last_backend():
+    """返回本进程内最后一次成功的后端 name（用于写入产物，便于故障追溯）。"""
+    return LAST_BACKEND
 
 
 def _post(backend, messages):
@@ -37,17 +51,19 @@ def _post(backend, messages):
 def call_multi(messages, budget=60):
     """按 BACKENDS 顺序尝试，返回首个成功的内容；全失败返回 None。
     budget=总时限(秒)：2026-08-20 加固，防止后端全挂时逐轮超时叠加拖垮 job。"""
+    global LAST_BACKEND
     start = time.monotonic()
     for b in BACKENDS:
         c = _post(b, messages)
         if c:
+            LAST_BACKEND = b["name"]      # 2026-09-17：留痕，供产物追溯
             print(f"[analyzer] ✅ {b['name']} 调用成功（{b['model']}）")
             return c
         if time.monotonic() - start >= budget:
             print(f"[analyzer] ⚠️ 已达总时限 {budget}s，放弃剩余后端")
             break
     print("[analyzer] ⚠️ 所有后端均未成功（可能 Key 缺失或全失败），将回退摘录")
-    return None
+    return None   # 注：LAST_BACKEND 保持 None，产物侧即标记"无成功后端"
 
 
 def _clean_think(s):

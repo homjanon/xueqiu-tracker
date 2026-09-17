@@ -10,11 +10,21 @@
 2. 带 Cookie 调用xx时间线 JSON 接口 `statuses/user_timeline.json`，按 `XUEQIU_USER_IDS`（逗号分隔）逐个抓取动态。
 3. 清洗 HTML、按各用户 `last_post_id` 去重，仅处理新增发言。
 4. **每日讨论归纳**（`analyzer.daily_summary`）：每位用户各自调用 LLM，把其发言**中性归纳成一句 40-60 字**的短评；**重点抓取用户点名的具体标的（股票/ETF，勿以「消费/港口/券商」等泛称带过）**，可如实转述原文明确表达的动作（如「加仓XX」「出了XX」），但**不替用户推断未明说的操作**（不自行下「持有XX」结论）；某人当日无发言则显示「暂未发言」。三级后端链首个可用即生效：
-   - ① NVIDIA **GLM-5.2**（`z-ai/glm-5.2`，参考 portfolio 仓调用方式）— 免费，实测最快最稳，第一优先
-   - ② **Agnes AI agnes-2.0-flash**（`agnes-2.0-flash`，复用 douban-tracker 配置）— 免费（曾实测返回 200 但 content 空，降为第二）
+   - ① **Google Gemini 3 Flash**（`gemini-3-flash-preview`，`GEMINI_API_KEY`）— 免费，1500 RPD 独立配额桶，第一优先；⚠️ 模型名**必须带 `-preview` 后缀**，无后缀会 404（2026-09-16 news-feed 验证）
+   - ② **Agnes AI agnes-2.5-flash**（`agnes-2.5-flash`，复用 douban-tracker 配置）— 免费（曾实测返回 200 但 content 空，降为第二）
    - ③ 商汤日日新 **SenseNova deepseek-v4-flash**（`deepseek-v4-flash`，`reasoning_effort=low` 轻思考 + `max_tokens=8000`，实测 2-3s 返回、content 稳定非空；用法对齐 qiugecaozuo 仓）— 免费兜底
    - 无 Key / 全部失败时回退：取该用户最新发言原文前段作摘录（不代码层截断，长度由提示词约束）。
 5. 黑话提示 `USER_HINTS`（如 谷子地 的 mnp/大波/招行 等）作为轻量上下文注入，帮 LLM 读懂讨论，但归纳重点仍是抓取用户点名的具体标的。
+
+> **模型链变更记录（2026-09-17）**：
+> - **① 层**：NVIDIA `z-ai/glm-5.2` → **Google `gemini-3-flash-preview`**。动因：NVIDIA 位近一个月不稳定且 429 限流频发——本仓单轮跑 35 分钟（含 Playwright），**主力挂了整轮白跑**，改用已在 news-feed 验证稳定的 Gemini 3 Flash。
+> - **② 层**：`agnes-2.0-flash` → **`agnes-2.5-flash`**。动因：Agnes 官方已将 2.0 标记「已废弃」，2.5 为官方指定继任者（仅改模型名）。
+> - **③ 层**：SenseNova `deepseek-v4-flash` 不变。
+> - **超时**：Gemini 位设 `60`（原 NVIDIA 位为 30、news-feed 为 180）；本仓有 `budget=60` 总时限 + 35 分钟 job 上限，60 是「够用」与「不拖垮」之间的平衡取值。
+> - **顺带清理**：随 NVIDIA 位移除，其专用的 `PRIMARY_BASE_URL` / `PRIMARY_MODEL` / `PRIMARY_TIMEOUT` 环境变量一并删除，不留孤儿变量（避免「配了不生效」的困惑）。
+
+> **故障追溯能力新增（2026-09-17）**：产物 `data/latest.json` 新增 **`llm_backend`** 字段，记录本轮**实际生效的后端名**（如 `gemini-3-flash`）；若三个后端全失败、已回退摘录，该字段为 `null`。
+> 增设原因：`BACKENDS[].name` 原先**只用于日志打印、不落库**，后端故障时无法从产物反查，只能翻日志或反推。现可直接查该字段定位。语义上记录的是**本进程内最后一次成功**的后端，足以判断「整体是否降级」。
 
 ## 设计取舍
 - **不做交易信号提取**：此前尝试过 LLM/启发式判断买/卖/持仓并映射股票代码，但昵称映射、未标注标的、把提及误判为持有等问题反复出现。改为只做**中性归纳**，交易操作由你自行判断。
@@ -30,6 +40,7 @@
 ```jsonc
 {
   "fetched_at": "2026-07-17 12:00:00",
+  "llm_backend": "gemini-3-flash",   // 本轮实际生效的后端；null = 三后端全失败已回退摘录
   "daily_summary": "紫金陈：聚焦安琪酵母、东鹏饮料、鱼跃医疗等消费老登股，讨论回调布局与可转债风险\nice_招行谷子地：围绕招商银行、宁波银行做利差与打新，关注银行ETF与红利低波",
   "user_count": 2,
   "new_count": 10,
@@ -64,7 +75,7 @@
 - **三道校验门**：标的名与操作原文必须是原文子串、数量必须匹配正则，拦截幻觉。
 - **`//@` 转发引用段已剔除**：不会把网友的持仓算到大V头上。
 - **兜底**：无 LLM Key 时走字典扫描，照常产出（仅可能少抽定性描述）。
-- **批量 LLM 抽取**：每用户新帖合并为一次批量调用（20 帖→1 次，2026-08-20 优化，大幅减少调用次数与 NVIDIA 429 限流）；LLM 返回结构走样（`posts` 混入裸字符串 / `account` 为字符串 / `mentions` 非列表）会由防御层跳过或置空，不再抛异常拖垮整个提及模块（2026-08-21 加固，含输入 str/dict 双形态兼容）。
+- **批量 LLM 抽取**：每用户新帖合并为一次批量调用（20 帖→1 次，2026-08-20 优化，大幅减少调用次数，同时显著缓解免费档后端的 429 限流风险）；LLM 返回结构走样（`posts` 混入裸字符串 / `account` 为字符串 / `mentions` 非列表）会由防御层跳过或置空，不再抛异常拖垮整个提及模块（2026-08-21 加固，含输入 str/dict 双形态兼容）。
 
 **schema（节选）**
 ```jsonc
@@ -104,7 +115,7 @@
 
 ## GitHub Actions（推荐）
 1. 把仓库推到 GitHub。
-2. `Settings → Secrets → Actions` 添加：`XUEQIU_USER_IDS`、`NVIDIA_API_KEY`、`AGNES_API_KEY`、`SENSENOVA_API_KEY`。
+2. `Settings → Secrets → Actions` 添加：`XUEQIU_USER_IDS`、`GEMINI_API_KEY`、`AGNES_API_KEY`、`SENSENOVA_API_KEY`。
    （`XUEQIU_USER_IDS` 形如 `6515752937,1821992043`）
 3. 工作流每天**北京时间 14:30** 由 Cloudflare Worker（qdii-dispatch）触发（亦可在 Actions 页手动触发），运行后自动提交 `data/`、`reports/`、`state.json`。
 

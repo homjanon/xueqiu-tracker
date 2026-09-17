@@ -12,7 +12,7 @@ import os
 from config import (XUEQIU_USER_IDS, PAGES, HEADLESS, RECENT_N,
                     DATA_DIR, REPORT_DIR, STATE_FILE, MENTIONS_FILE, KEEP_REPORT_DAYS)
 from scraper import fetch_timeline, normalize
-from analyzer import daily_summary
+from analyzer import daily_summary, get_last_backend
 from extractor import update_mentions, save_store
 
 CST = datetime.timezone(datetime.timedelta(hours=8))
@@ -129,6 +129,9 @@ def main():
 
     latest = {
         "fetched_at": ts,
+        # 本轮实际生效的 LLM 后端（2026-09-17 新增）：None 表示三个后端全失败、已回退摘录。
+        # 用途：后端故障时可直接从产物定位，不必靠日志或反推。
+        "llm_backend": get_last_backend(),
         "daily_summary": summary,
         "user_count": len(users),
         "new_count": sum(u["new_count"] for u in users),
