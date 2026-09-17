@@ -27,15 +27,17 @@ jobs:
 
       - name: LLM 后端健康探测
         env:
-          NVIDIA_API_KEY: ${{ secrets.NVIDIA_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           AGNES_API_KEY: ${{ secrets.AGNES_API_KEY }}
           SENSENOVA_API_KEY: ${{ secrets.SENSENOVA_API_KEY }}
         run: |
           python -u - <<'PY'
           import os, time, requests
+          # 2026-09-17 同步模型链：Gemini 3 Flash 主力 + Agnes 2.5 + SenseNova 兜底。
+          # ⚠️ gemini 模型名必须带 -preview 后缀（无后缀会 404）。
           backends = [
-            ("NVIDIA glm-5.2", "https://integrate.api.nvidia.com/v1/chat/completions", os.getenv("NVIDIA_API_KEY"), "z-ai/glm-5.2", {}),
-            ("Agnes 2.0-flash", "https://apihub.agnes-ai.com/v1/chat/completions", os.getenv("AGNES_API_KEY"), "agnes-2.0-flash", {}),
+            ("Gemini 3 Flash", "https://generativelanguage.googleapis.com/v1beta/openai/chat/completions", os.getenv("GEMINI_API_KEY"), "gemini-3-flash-preview", {}),
+            ("Agnes 2.5-flash", "https://apihub.agnes-ai.com/v1/chat/completions", os.getenv("AGNES_API_KEY"), "agnes-2.5-flash", {}),
             ("SenseNova deepseek-v4-flash", "https://token.sensenova.cn/v1/chat/completions", os.getenv("SENSENOVA_API_KEY"), "deepseek-v4-flash", {"reasoning_effort": "low", "max_tokens": 2000}),
           ]
           for name, url, key, model, extra in backends:
@@ -60,7 +62,7 @@ jobs:
       - name: 抓取并分析
         env:
           XUEQIU_USER_IDS: ${{ secrets.XUEQIU_USER_IDS }}
-          NVIDIA_API_KEY: ${{ secrets.NVIDIA_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           AGNES_API_KEY: ${{ secrets.AGNES_API_KEY }}
           SENSENOVA_API_KEY: ${{ secrets.SENSENOVA_API_KEY }}
         run: python -u tracker.py   # -u 实时输出，超时被杀也能看到卡点（2026-08-20）
