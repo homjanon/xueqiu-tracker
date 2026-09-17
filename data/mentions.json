@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-09-17 14:32:29",
+  "updated_at": "2026-09-18 07:37:24",
   "users": {
     "1821992043": {
       "name": "ice_招行谷子地",
@@ -198,38 +198,6 @@
           ],
           "first_at": 1788331626000,
           "mention_count": 2
-        },
-        "红利低波": {
-          "normalized": false,
-          "aliases_seen": [
-            "红利低波"
-          ],
-          "latest": {
-            "at": 1788827907000,
-            "post_id": 408398835,
-            "raw_name": "红利低波",
-            "quote": "红利低波",
-            "qty": ""
-          },
-          "history": [],
-          "first_at": 1788827907000,
-          "mention_count": 1
-        },
-        "邮储": {
-          "normalized": false,
-          "aliases_seen": [
-            "邮储"
-          ],
-          "latest": {
-            "at": 1788842318000,
-            "post_id": 408451197,
-            "raw_name": "邮储",
-            "quote": "碧玉要留给邮储",
-            "qty": ""
-          },
-          "history": [],
-          "first_at": 1788842318000,
-          "mention_count": 1
         }
       },
       "processed_max_id": 409613903
