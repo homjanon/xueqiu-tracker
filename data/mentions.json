@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-09-21 14:31:51",
+  "updated_at": "2026-09-22 14:31:55",
   "users": {
     "1821992043": {
       "name": "ice_招行谷子地",
@@ -202,18 +202,27 @@
         "中国银行": {
           "normalized": true,
           "aliases_seen": [
-            "中国银行"
+            "中国银行",
+            "中行"
           ],
           "latest": {
-            "at": 1789870673000,
-            "post_id": 409925265,
-            "raw_name": "中国银行",
-            "quote": "中国银行业上一次加息是什么时候？",
+            "at": 1790041179000,
+            "post_id": 410134760,
+            "raw_name": "中行",
+            "quote": "人民币国际化最终如何反映到中行的报表上？",
             "qty": ""
           },
-          "history": [],
+          "history": [
+            {
+              "at": 1789870673000,
+              "post_id": 409925265,
+              "raw_name": "中国银行",
+              "quote": "中国银行业上一次加息是什么时候？",
+              "qty": ""
+            }
+          ],
           "first_at": 1789870673000,
-          "mention_count": 1
+          "mention_count": 2
         },
         "建设银行": {
           "normalized": true,
@@ -264,7 +273,7 @@
           "mention_count": 1
         }
       },
-      "processed_max_id": 410033827
+      "processed_max_id": 410184881
     },
     "6515752937": {
       "name": "紫金陈",
