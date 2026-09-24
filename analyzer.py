@@ -1,7 +1,7 @@
 """每日讨论归纳：把多位雪球大V的发言，中性归纳成每人一句短评（≤50字）。
 不再判断买卖操作——由用户自行根据归纳判断。无 Key 时回退发言摘录。
 
-后端链见 config.BACKENDS（Gemini 3 Flash → Agnes 2.5 → SenseNova DeepSeek-V4-Flash）。
+后端链见 config.BACKENDS（SenseNova DeepSeek-V4-Flash → Agnes 2.5 → Gemini 3 Flash）。
 实际生效后端由 call_multi 记入 LAST_BACKEND，供产物追溯（2026-09-17 新增）。"""
 import json
 import re

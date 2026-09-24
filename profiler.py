@@ -11,7 +11,7 @@
 - 重写式修订：有新依据的维度输出整合历史要点与今日新依据后的完整描述，
   可独立阅读；无新依据的维度原样返回。
 - evolution 同日幂等（同日重跑替换末行不追加），保留最近 60 条。
-- LLM 复用 analyzer.call_multi 三级后端（Gemini 3 Flash → Agnes 2.5 → SenseNova），
+- LLM 复用 analyzer.call_multi 三级后端（SenseNova → Agnes 2.5 → Gemini 3 Flash），
   每用户每天最多 1 次调用，失败不影响主流程。
 """
 import datetime

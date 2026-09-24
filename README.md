@@ -16,24 +16,8 @@
    - 无 Key / 全部失败时回退：取该用户最新发言原文前段作摘录（不代码层截断，长度由提示词约束）。
 5. 黑话提示 `USER_HINTS`（如 谷子地 的 mnp/大波/招行 等）作为轻量上下文注入，帮 LLM 读懂讨论，但归纳重点仍是抓取用户点名的具体标的。
 
-> **模型链变更记录（2026-09-17）**：
-> - **① 层**：NVIDIA `z-ai/glm-5.2` → **Google `gemini-3-flash-preview`**。动因：NVIDIA 位近一个月不稳定且 429 限流频发——本仓单轮跑 35 分钟（含 Playwright），**主力挂了整轮白跑**，改用已在 news-feed 验证稳定的 Gemini 3 Flash。
-> - **② 层**：`agnes-2.0-flash` → **`agnes-2.5-flash`**。动因：Agnes 官方已将 2.0 标记「已废弃」，2.5 为官方指定继任者（仅改模型名）。
-> - **③ 层**：SenseNova `deepseek-v4-flash` 不变。
-> - **超时**：Gemini 位设 `60`（原 NVIDIA 位为 30、news-feed 为 180）；本仓有 `budget=60` 总时限 + 35 分钟 job 上限，60 是「够用」与「不拖垮」之间的平衡取值。
-> - **顺带清理**：随 NVIDIA 位移除，其专用的 `PRIMARY_BASE_URL` / `PRIMARY_MODEL` / `PRIMARY_TIMEOUT` 环境变量一并删除，不留孤儿变量（避免「配了不生效」的困惑）。
-
 > **故障追溯能力新增（2026-09-17）**：产物 `data/latest.json` 新增 **`llm_backend`** 字段，记录本轮**实际生效的后端名**（如 `gemini-3-flash`）；若三个后端全失败、已回退摘录，该字段为 `null`。
 > 增设原因：`BACKENDS[].name` 原先**只用于日志打印、不落库**，后端故障时无法从产物反查，只能翻日志或反推。现可直接查该字段定位。语义上记录的是**本进程内最后一次成功**的后端，足以判断「整体是否降级」。
-
-> **模型链变更记录（2026-09-24）**：
-> - 动因：国内股市场景，首选换**商汤 SenseNova deepseek-v4-flash**（国内直连快、公测免费无配额压力）；
-> - ② 层 Gemini 由 `gemini-3-flash-preview` 升级为 **`gemini-3.8-flash`**（model 名以 portfolio 仓已落地为准，无 `-preview` 后缀）；
-> - ③ 层 Agnes 2.5 原样兜底。三级重排零代码逻辑变更，`llm_backend` 字段自动记录新后端名。
-
-> **模型链变更记录（2026-09-24 晚间）**：
-> - Gemini 3.8 Flash 免费档 503 连续拥堵（run122/123 连续观察到），换回确定性强的 `gemini-3-flash-preview` 作 ③ 兜底；
-> - 链序最终：① SenseNova deepseek-v4-flash → ② Agnes 2.5 → ③ Gemini 3 Flash；健康探测清单已同步（track.yml）。
 
 ## 设计取舍
 - **不做交易信号提取**：此前尝试过 LLM/启发式判断买/卖/持仓并映射股票代码，但昵称映射、未标注标的、把提及误判为持有等问题反复出现。改为只做**中性归纳**，交易操作由你自行判断。
