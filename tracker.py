@@ -14,6 +14,7 @@ from config import (XUEQIU_USER_IDS, PAGES, HEADLESS, RECENT_N,
 from scraper import fetch_timeline, normalize
 from analyzer import daily_summary, get_last_backend
 from extractor import update_mentions, save_store
+from profiler import update_profiles
 
 CST = datetime.timezone(datetime.timedelta(hours=8))
 
@@ -161,6 +162,17 @@ def main():
         import traceback
         traceback.print_exc()
         print(f"[提及] 生成失败，跳过: {e}")
+
+    # 大V投资画像：幂等消费新增发言，持续修订 data/vip_profiles.json（2026-09-24 新增）
+    # 失败不影响主流程：LLM 挂/输出走样 → 发言转 pending_posts，下轮自动重试；
+    # 无新增且无 pending → 0 次 LLM 调用（同日重跑自动跳过）
+    try:
+        for line in update_profiles(users, DATA_DIR):
+            print(f"[画像] {line}")
+    except Exception as e:
+        import traceback
+        traceback.print_exc()
+        print(f"[画像] 更新失败，跳过: {e}")
 
     md = build_report(ts, summary, users, showing_fallback)
     with open(f"{REPORT_DIR}/{now.strftime('%Y-%m-%d')}.md", "w", encoding="utf-8") as f:
