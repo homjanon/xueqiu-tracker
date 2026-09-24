@@ -2,9 +2,9 @@
 模型调用按优先级走三级后端（均为原生多模态，图文通吃）：
   1) 商汤日日新 SenseNova deepseek-v4-flash（SENSENOVA_API_KEY；2026-09-24 起首选：
      国内场景直连快、公测免费无配额压力，reasoning_effort=low 实测 2-3s 且 content 稳定非空）
-  2) Google Gemini 3.8 Flash（GEMINI_API_KEY，gemini-3.8-flash；2026-09-24 由 3-flash-preview
-     升级，model 名以 portfolio 仓已落地为准，无 -preview 后缀）
-  3) Agnes AI agnes-2.5-flash（AGNES_API_KEY，免费多模态，兜底）
+  2) Agnes AI agnes-2.5-flash（AGNES_API_KEY，免费多模态，次选）
+  3) Google Gemini 3 Flash（GEMINI_API_KEY，gemini-3-flash-preview；2026-09-24 晚间由 3.8 换回
+     ——3.8 免费档 503 连续拥堵，换回 09-16 验证稳定的 3-flash-preview 作确定性兜底）
 支持多用户（逗号分隔）；USER_HINTS 为各用户专属黑话词典（注入 LLM 提示）。
 """
 import os
@@ -40,24 +40,25 @@ BACKENDS = [
         "extra": {"reasoning_effort": "low"},
     },
     {
-        # ② 次选：Google Gemini 3.8 Flash（2026-09-24 由 gemini-3-flash-preview 升级；
-        #   model 名以 portfolio 仓已落地为准（无 -preview 后缀），官方 OpenAI 兼容端点不变。
-        #   ⚠️ 3 系无法关闭思考（官方明确），_extract_text 已兼容 <think>/reasoning_content；
-        #   ⚠️ 免费档偶发 503「high demand」拥堵，靠 ③ 兜底）
-        "name": "gemini-3.8-flash",
-        "base_url": os.getenv("GEMINI_BASE_URL", "https://generativelanguage.googleapis.com/v1beta/openai"),
-        "api_key": os.getenv("GEMINI_API_KEY", ""),
-        "model": os.getenv("GEMINI_MODEL", "gemini-3.8-flash"),
-        "timeout": int(os.getenv("GEMINI_TIMEOUT", "60")),
-    },
-    {
-        # ③ 兜底：Agnes AI agnes-2.5-flash（免费多模态，复用 douban-tracker 配置；
-        #   曾实测返回 200 但 content 空，居兜底位）
+        # ② 次选：Agnes AI agnes-2.5-flash（免费多模态，复用 douban-tracker 配置；
+        #   曾实测返回 200 但 content 空，居次选位）
         "name": "agnes-2.5-flash",
         "base_url": os.getenv("AGNES_BASE_URL", "https://apihub.agnes-ai.com/v1"),
         "api_key": os.getenv("AGNES_API_KEY", ""),
         "model": os.getenv("AGNES_MODEL", "agnes-2.5-flash"),
         "timeout": int(os.getenv("AGNES_TIMEOUT", "30")),
+    },
+    {
+        # ③ 兜底：Google Gemini 3 Flash（2026-09-24 晚间由 3.8 换回——
+        #   3.8 免费档 503「high demand」连续拥堵（run122/123 连续观察到），
+        #   换回 09-16 验证稳定的 3-flash-preview 作确定性兜底。
+        #   ⚠️ 该模型名必须带 -preview 后缀（无后缀会 404）；
+        #   3 系无法关闭思考，_extract_text 已兼容 <think>/reasoning_content）
+        "name": "gemini-3-flash",
+        "base_url": os.getenv("GEMINI_BASE_URL", "https://generativelanguage.googleapis.com/v1beta/openai"),
+        "api_key": os.getenv("GEMINI_API_KEY", ""),
+        "model": os.getenv("GEMINI_MODEL", "gemini-3-flash-preview"),
+        "timeout": int(os.getenv("GEMINI_TIMEOUT", "60")),
     },
 ]
 

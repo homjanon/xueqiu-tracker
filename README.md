@@ -11,8 +11,8 @@
 3. 清洗 HTML、按各用户 `last_post_id` 去重，仅处理新增发言。
 4. **每日讨论归纳**（`analyzer.daily_summary`）：每位用户各自调用 LLM，把其发言**中性归纳成一句 40-60 字**的短评；**重点抓取用户点名的具体标的（股票/ETF，勿以「消费/港口/券商」等泛称带过）**，可如实转述原文明确表达的动作（如「加仓XX」「出了XX」），但**不替用户推断未明说的操作**（不自行下「持有XX」结论）；某人当日无发言则显示「暂未发言」。三级后端链首个可用即生效：
    - ① 商汤日日新 **SenseNova deepseek-v4-flash**（`deepseek-v4-flash`，`reasoning_effort=low` 轻思考 + `max_tokens=8000`，实测 2-3s 返回、content 稳定非空；2026-09-24 起首选——国内股市场景直连快、公测免费无配额压力）
-   - ② **Google Gemini 3.8 Flash**（`gemini-3.8-flash`，`GEMINI_API_KEY`）— 2026-09-24 由 3-flash-preview 升级，model 名以 portfolio 仓已落地为准（无 `-preview` 后缀）；免费档偶发 503 拥堵
-   - ③ **Agnes AI agnes-2.5-flash**（`agnes-2.5-flash`，复用 douban-tracker 配置）— 免费兜底（曾实测返回 200 但 content 空）
+   - ② **Agnes AI agnes-2.5-flash**（`agnes-2.5-flash`，复用 douban-tracker 配置）— 免费次选（曾实测返回 200 但 content 空）
+   - ③ **Google Gemini 3 Flash**（`gemini-3-flash-preview`，`GEMINI_API_KEY`）— 2026-09-24 晚间由 3.8 换回：3.8 免费档 503 连续拥堵，换回 09-16 验证稳定的 3-flash-preview 作确定性兜底；⚠️ 模型名必须带 `-preview` 后缀
    - 无 Key / 全部失败时回退：取该用户最新发言原文前段作摘录（不代码层截断，长度由提示词约束）。
 5. 黑话提示 `USER_HINTS`（如 谷子地 的 mnp/大波/招行 等）作为轻量上下文注入，帮 LLM 读懂讨论，但归纳重点仍是抓取用户点名的具体标的。
 
@@ -30,6 +30,10 @@
 > - 动因：国内股市场景，首选换**商汤 SenseNova deepseek-v4-flash**（国内直连快、公测免费无配额压力）；
 > - ② 层 Gemini 由 `gemini-3-flash-preview` 升级为 **`gemini-3.8-flash`**（model 名以 portfolio 仓已落地为准，无 `-preview` 后缀）；
 > - ③ 层 Agnes 2.5 原样兜底。三级重排零代码逻辑变更，`llm_backend` 字段自动记录新后端名。
+
+> **模型链变更记录（2026-09-24 晚间）**：
+> - Gemini 3.8 Flash 免费档 503 连续拥堵（run122/123 连续观察到），换回确定性强的 `gemini-3-flash-preview` 作 ③ 兜底；
+> - 链序最终：① SenseNova deepseek-v4-flash → ② Agnes 2.5 → ③ Gemini 3 Flash；健康探测清单已同步（track.yml）。
 
 ## 设计取舍
 - **不做交易信号提取**：此前尝试过 LLM/启发式判断买/卖/持仓并映射股票代码，但昵称映射、未标注标的、把提及误判为持有等问题反复出现。改为只做**中性归纳**，交易操作由你自行判断。
