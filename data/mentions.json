@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-01 14:32:20",
+  "updated_at": "2026-10-02 14:32:08",
   "users": {
     "1821992043": {
       "name": "ice_招行谷子地",
@@ -214,9 +214,25 @@
           "history": [],
           "first_at": 1790728613000,
           "mention_count": 1
+        },
+        "浦发银行": {
+          "normalized": false,
+          "aliases_seen": [
+            "浦发银行"
+          ],
+          "latest": {
+            "at": 1790907940000,
+            "post_id": 411193837,
+            "raw_name": "浦发银行",
+            "quote": "这就跟节前有人说浦发银行强势一样。",
+            "qty": ""
+          },
+          "history": [],
+          "first_at": 1790907940000,
+          "mention_count": 1
         }
       },
-      "processed_max_id": 411145238
+      "processed_max_id": 411198708
     },
     "6515752937": {
       "name": "紫金陈",
