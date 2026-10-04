@@ -66,7 +66,8 @@
             "post_id": 411247490,
             "raw_name": "招行",
             "quote": "招行离高点不到10%差距。",
-            "qty": "1500股"
+            "qty": "876000股",
+            "qty_locked": true
           },
           "history": [
             {

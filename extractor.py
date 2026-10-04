@@ -13,7 +13,7 @@ import json
 import re
 
 from config import (SYMBOL_ALIAS, MAX_MENTIONS_PER_POST, HISTORY_KEEP,
-                    USER_HINTS)
+                    USER_HINTS, QTY_LOCKED)
 
 SCHEMA_VERSION = 1
 
@@ -480,18 +480,26 @@ def _user_slot(store, uid, name):
     return u
 
 
-def _apply_mention(slot, m, post):
-    """主行覆盖 + 旧记录压入历史（最多 HISTORY_KEEP 条）。"""
+def _apply_mention(slot, m, post, uid=""):
+    """主行覆盖 + 旧记录压入历史（最多 HISTORY_KEEP 条）。
+
+    数量字段取值规则（2026-10-04 修订）：
+      ① 命中 config.QTY_LOCKED（人工锁定名单）→ **永远沿用已有值**，抽取结果一律
+         不覆盖、不清空（该标的数量由人工维护，如谷子地×招商银行）；
+      ② 其余标的：新抽到非空值则覆盖，抽不到则沿用旧值（原逻辑）。
+    """
     canon, hit = normalize_symbol(m["raw_name"])
     if not canon:
         return
     sym = slot["symbols"].get(canon)
-    # 数量固定显示：新提取为空时，保留已读取的数量（用户手动/历史值不丢），非空才覆盖
     new_qty = m.get("qty", "")
     prev_qty = (sym or {}).get("latest", {}).get("qty", "") if sym else ""
-    rec_qty = new_qty or prev_qty
+    locked = (str(uid), canon) in QTY_LOCKED
+    rec_qty = prev_qty if locked else (new_qty or prev_qty)
     rec = {"at": post["created_at"], "post_id": post["id"],
            "raw_name": m["raw_name"], "quote": m["quote"], "qty": rec_qty}
+    if locked:
+        rec["qty_locked"] = True
     if sym is None:
         slot["symbols"][canon] = {
             "normalized": hit,
@@ -560,7 +568,7 @@ def update_mentions(users, store_path, use_ai=True, force_all=False):
             stats["posts"] += 1
 
             for m in res["mentions"]:
-                _apply_mention(slot, m, p)
+                _apply_mention(slot, m, p, uid)
                 stats["mentions"] += 1
 
             acc = res["account"]
