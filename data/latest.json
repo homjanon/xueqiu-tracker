@@ -1,13 +1,134 @@
 {
-  "fetched_at": "2026-10-04 14:31:41",
+  "fetched_at": "2026-10-04 16:38:25",
   "llm_backend": "sensenova-deepseek-v4-flash",
-  "daily_summary": "紫金陈：用户讨论长线登股策略，点名加仓顺丰、广州酒家、马应龙、青岛港H股，保本卖出酒家和顺丰，并提及周生生、建滔集团、百度等港股\nice_招行谷子地：讨论好公司标准，回应五年前言论，谈及扩张与融资，未点名具体股票",
+  "daily_summary": "紫金陈：他提及新买入顺丰、广州酒家、马应龙、青岛港H股，随后保本卖出广州酒家和顺丰，并加仓青岛港H股，还讨论了长线登股策略和回撤规律\nice_招行谷子地：讨论招商银行与爱尔眼科的股价表现，称招行接近高点而爱尔暴跌，强调价投优于炒作；提及长江电力被看好，预测其可能下跌（无新增，展示近期发言）。",
   "user_count": 2,
-  "new_count": 3,
+  "new_count": 0,
   "text_signal_count": 0,
   "vision_signal_count": 0,
-  "showing_fallback": false,
+  "showing_fallback": true,
   "posts": [
+    {
+      "id": 385877271,
+      "created_at": 1777201147000,
+      "text": "新小说《我不服》上市，剧情好看，多重反转，全网各平台有售，恳请各位土豪多多下单支持。",
+      "source": "iPhone",
+      "is_retweet": false,
+      "truncated": false,
+      "user_id": 6515752937,
+      "user_name": "紫金陈",
+      "pics": []
+    },
+    {
+      "id": 405353651,
+      "created_at": 1786963114000,
+      "text": "回复@存储时代: 怎么就突然感慨万千地发表起获奖感言了？//@存储时代:回复@紫金陈:不要以为长线中登就安全了，君不见港股$周生生(00116)$ $建滔集团(00148)$ 趋势风口还便宜的要死，又怎么样，百度都破净了也没啥用。韩股never、kakao都1pb，韩国垄断互联网，也没有用…投资是一件很难的事情，无非是a股流动性太好，很多人把运气当实力，我承认自己以前赚钱七分运气，三分认知。",
+      "source": "iPhone",
+      "is_retweet": true,
+      "truncated": false,
+      "user_id": 6515752937,
+      "user_name": "紫金陈",
+      "pics": []
+    },
+    {
+      "id": 405346488,
+      "created_at": 1786959409000,
+      "text": "我买的全是长线中登股，等科技板块回落自然又行了。六月底是gj队减持完毕+资金恐慌性卖出进科技的双重底，我是想象不出这个底还有什么可能会被击穿。单个票不知道，我一篮子买，一年半载后，没有理由不赚钱。",
+      "source": "iPhone",
+      "is_retweet": true,
+      "truncated": false,
+      "user_id": 6515752937,
+      "user_name": "紫金陈",
+      "pics": []
+    },
+    {
+      "id": 402640556,
+      "created_at": 1785301547000,
+      "text": "回复@紫金陈: 今年收益率已经跑过上证，虽然收益率显示是负，由于底部猛加仓，收益金额已经回正。查看图片//@紫金陈:回复@紫金陈:看看我回撤20个点就是底的炒股历史规律结不结实，我买到55%的仓位，再观察一段时间，如果消费跌不下去，就买港口，港口目前价格就算跌，收息都能回本，只是股价上下弹性都不高。查看图片",
+      "source": "iPhone",
+      "is_retweet": true,
+      "truncated": false,
+      "user_id": 6515752937,
+      "user_name": "紫金陈",
+      "pics": []
+    },
+    {
+      "id": 400241155,
+      "created_at": 1784083527000,
+      "text": "回复@我有三只喵: 是吧，我说我每次回撤20个点就是底，只是每次大家都不信。反正我回撤20点就会赶紧咬牙上仓位。 查看图片//@我有三只喵:回复@紫金陈:紫金陈底太准了这次，几乎没有误差",
+      "source": "iPhone",
+      "is_retweet": true,
+      "truncated": false,
+      "user_id": 6515752937,
+      "user_name": "紫金陈",
+      "pics": []
+    },
+    {
+      "id": 400235511,
+      "created_at": 1784082663000,
+      "text": "回复@紫金陈: 保本出了酒家和顺丰，酒家是买了后才留意到发可转债，我对这类资金宽裕的公司股权融资不喜欢，顺丰是买入后才注意到它扣非利润比净利少几十个，真实pe是19。前几天又加了一些青岛港h股。//@紫金陈:回复@紫金陈:再加五个点仓位，新入顺丰广州酒家马应龙青岛港这些登股。",
+      "source": "iPhone",
+      "is_retweet": true,
+      "truncated": false,
+      "user_id": 6515752937,
+      "user_name": "紫金陈",
+      "pics": []
+    },
+    {
+      "id": 398767650,
+      "created_at": 1783390684000,
+      "text": "我持仓里没有一个红利指数的成分股，但最近一个多月，所有持仓股股价都跟着红利指数走，真是奇怪。",
+      "source": "iPhone",
+      "is_retweet": false,
+      "truncated": false,
+      "user_id": 6515752937,
+      "user_name": "紫金陈",
+      "pics": []
+    },
+    {
+      "id": 398754261,
+      "created_at": 1783388766000,
+      "text": "回复@紫金陈: 再加五个点仓位，新入顺丰广州酒家马应龙青岛港这些登股。//@紫金陈:回复@紫金陈:看看我回撤20个点就是底的炒股历史规律结不结实，我买到55%的仓位，再观察一段时间，如果消费跌不下去，就买港口，港口目前价格就算跌，收息都能回本，只是股价上下弹性都不高。查看图片",
+      "source": "iPhone",
+      "is_retweet": true,
+      "truncated": false,
+      "user_id": 6515752937,
+      "user_name": "紫金陈",
+      "pics": []
+    },
+    {
+      "id": 398358690,
+      "created_at": 1783071210000,
+      "text": "刷到一些韩的采访，她嘴里就没几句实话，一个经常撒谎的人，搞基金就诚信了吗？她这基金确实收支合规，但怎么合规公转私，开公司的都会。把钱捐医疗设备，给医护搞培训，这类支出操作空间极大。",
+      "source": "iPhone",
+      "is_retweet": true,
+      "truncated": false,
+      "user_id": 6515752937,
+      "user_name": "紫金陈",
+      "pics": []
+    },
+    {
+      "id": 397788275,
+      "created_at": 1782874657000,
+      "text": "回复@紫金陈: 感觉前天保守了，登股集体破位时刻，上仓位不够果敢，继续看看，如果登股不破新低，只能加仓上下空间都不大的港口股了。//@紫金陈:回复@紫金陈:看看我回撤20个点就是底的炒股历史规律结不结实，我买到55%的仓位，再观察一段时间，如果消费跌不下去，就买港口，港口目前价格就算跌，收息都能回本，只是股价上下弹性都不高。查看图片",
+      "source": "iPhone",
+      "is_retweet": true,
+      "truncated": false,
+      "user_id": 6515752937,
+      "user_name": "紫金陈",
+      "pics": []
+    },
+    {
+      "id": 178287183,
+      "created_at": 1619485608000,
+      "text": "",
+      "source": "雪球",
+      "is_retweet": false,
+      "truncated": false,
+      "user_id": 1821992043,
+      "user_name": "ice_招行谷子地",
+      "pics": []
+    },
     {
       "id": 411285836,
       "created_at": 1791094856000,
@@ -34,6 +155,72 @@
       "id": 411262872,
       "created_at": 1791018084000,
       "text": "回复@比美无须画眉梢: 现在回头再看看5年前你的言论，到底什么是好公司？//@比美无须画眉梢:回复@ice_招行谷子地:好公司快速扩张过程缺钱是常事，格局明朗加快扩张没什么问题。至于价格，机构应该也不傻。至于差公司增发那就是另一回事了",
+      "source": "Android",
+      "is_retweet": true,
+      "truncated": false,
+      "user_id": 1821992043,
+      "user_name": "ice_招行谷子地",
+      "pics": []
+    },
+    {
+      "id": 411249967,
+      "created_at": 1790990141000,
+      "text": "",
+      "source": "Android",
+      "is_retweet": false,
+      "truncated": false,
+      "user_id": 1821992043,
+      "user_name": "ice_招行谷子地",
+      "pics": []
+    },
+    {
+      "id": 411247490,
+      "created_at": 1790984284000,
+      "text": "$招商银行(SH600036)$ 看看爱尔眼科复权高点40以上，现在不到8元。招行离高点不到10%差距。这就是瞎炒作和价投的区别。时间是价投的朋友，是瞎炒作的敌人。当初说银行报表不可信要暴雷的安总已经抛弃自己猛吹的爱尔眼科，去捧长江电力了。",
+      "source": "Android",
+      "is_retweet": false,
+      "truncated": false,
+      "user_id": 1821992043,
+      "user_name": "ice_招行谷子地",
+      "pics": []
+    },
+    {
+      "id": 411246851,
+      "created_at": 1790982337000,
+      "text": "长江电力被你看中估计快跌了",
+      "source": "Android",
+      "is_retweet": true,
+      "truncated": false,
+      "user_id": 1821992043,
+      "user_name": "ice_招行谷子地",
+      "pics": []
+    },
+    {
+      "id": 411234850,
+      "created_at": 1790956567000,
+      "text": "回复@坚硬的多头小葵花: 这一季一共就三篇//@坚硬的多头小葵花:回复@ice_招行谷子地:什么时候出第四篇？",
+      "source": "Android",
+      "is_retweet": true,
+      "truncated": false,
+      "user_id": 1821992043,
+      "user_name": "ice_招行谷子地",
+      "pics": []
+    },
+    {
+      "id": 411231877,
+      "created_at": 1790952640000,
+      "text": "回复@明雪浪客: 《史记》里的《货殖列传》//@明雪浪客:回复@慢着慢着就快了:这句话我好像在史记中见过",
+      "source": "Android",
+      "is_retweet": true,
+      "truncated": false,
+      "user_id": 1821992043,
+      "user_name": "ice_招行谷子地",
+      "pics": []
+    },
+    {
+      "id": 411198708,
+      "created_at": 1790912445000,
+      "text": "回复@繁花666666: 估计还能再拖拖//@繁花666666:回复@ice_招行谷子地:冰哥，看报道不是说这次伊朗主动要求和，伊朗绷不住了吗，长期看油价下跌。您怎么看这事儿冰哥",
       "source": "Android",
       "is_retweet": true,
       "truncated": false,
@@ -392,44 +579,10 @@
     {
       "user_id": "1821992043",
       "name": "ice_招行谷子地",
-      "new_count": 3,
+      "new_count": 0,
       "text_signal_count": 0,
       "vision_signal_count": 0,
-      "posts": [
-        {
-          "id": 411285836,
-          "created_at": 1791094856000,
-          "text": "大家来找找中国尊和大裤衩查看图片",
-          "source": "Android",
-          "is_retweet": true,
-          "truncated": false,
-          "user_id": 1821992043,
-          "user_name": "ice_招行谷子地",
-          "pics": []
-        },
-        {
-          "id": 411284512,
-          "created_at": 1791091479000,
-          "text": "上午神堂峪，中午吃虹鳟鱼，下午青龙峡",
-          "source": "Android",
-          "is_retweet": false,
-          "truncated": false,
-          "user_id": 1821992043,
-          "user_name": "ice_招行谷子地",
-          "pics": []
-        },
-        {
-          "id": 411262872,
-          "created_at": 1791018084000,
-          "text": "回复@比美无须画眉梢: 现在回头再看看5年前你的言论，到底什么是好公司？//@比美无须画眉梢:回复@ice_招行谷子地:好公司快速扩张过程缺钱是常事，格局明朗加快扩张没什么问题。至于价格，机构应该也不傻。至于差公司增发那就是另一回事了",
-          "source": "Android",
-          "is_retweet": true,
-          "truncated": false,
-          "user_id": 1821992043,
-          "user_name": "ice_招行谷子地",
-          "pics": []
-        }
-      ],
+      "posts": [],
       "recent_posts": [
         {
           "id": 178287183,
