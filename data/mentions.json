@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-09 14:31:42",
+  "updated_at": "2026-10-10 14:31:38",
   "users": {
     "1821992043": {
       "name": "ice_招行谷子地",
@@ -218,9 +218,25 @@
           "history": [],
           "first_at": 1791447650000,
           "mention_count": 1
+        },
+        "长鑫科技": {
+          "normalized": false,
+          "aliases_seen": [
+            "长鑫科技"
+          ],
+          "latest": {
+            "at": 1791553900000,
+            "post_id": 411740889,
+            "raw_name": "长鑫科技",
+            "quote": "$长鑫科技(SH688825)$  下周发个长鑫科技的专栏。",
+            "qty": ""
+          },
+          "history": [],
+          "first_at": 1791553900000,
+          "mention_count": 1
         }
       },
-      "processed_max_id": 411689458
+      "processed_max_id": 411778284
     },
     "6515752937": {
       "name": "紫金陈",
