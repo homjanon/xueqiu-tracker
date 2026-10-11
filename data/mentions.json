@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-10 14:31:38",
+  "updated_at": "2026-10-11 14:32:02",
   "users": {
     "1821992043": {
       "name": "ice_招行谷子地",
@@ -62,14 +62,22 @@
             "招商银行(SH600036)"
           ],
           "latest": {
-            "at": 1791527392000,
-            "post_id": 411689458,
+            "at": 1791640118000,
+            "post_id": 411807200,
             "raw_name": "招行",
-            "quote": "我的招行2014年复权收盘价10.33",
+            "quote": "直接提现销户转存招行",
             "qty": "876000股",
             "qty_locked": true
           },
           "history": [
+            {
+              "at": 1791527392000,
+              "post_id": 411689458,
+              "raw_name": "招行",
+              "quote": "我的招行2014年复权收盘价10.33",
+              "qty": "876000股",
+              "qty_locked": true
+            },
             {
               "at": 1791512872000,
               "post_id": 411638489,
@@ -85,18 +93,10 @@
               "quote": "$招商银行(SH600036)$  已经突破右眼，静待中阳蹬腿",
               "qty": "876000股",
               "qty_locked": true
-            },
-            {
-              "at": 1791436574000,
-              "post_id": 411509158,
-              "raw_name": "招行",
-              "quote": "不是，参考招行",
-              "qty": "876000股",
-              "qty_locked": true
             }
           ],
           "first_at": 1785578374000,
-          "mention_count": 83
+          "mention_count": 84
         },
         "中国平安": {
           "normalized": true,
@@ -236,7 +236,7 @@
           "mention_count": 1
         }
       },
-      "processed_max_id": 411778284
+      "processed_max_id": 411807200
     },
     "6515752937": {
       "name": "紫金陈",
