@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-11 14:32:02",
+  "updated_at": "2026-10-11 16:49:24",
   "users": {
     "1821992043": {
       "name": "ice_招行谷子地",
@@ -202,38 +202,6 @@
           ],
           "first_at": 1788331626000,
           "mention_count": 2
-        },
-        "比亚迪": {
-          "normalized": false,
-          "aliases_seen": [
-            "比亚迪"
-          ],
-          "latest": {
-            "at": 1791447650000,
-            "post_id": 411545507,
-            "raw_name": "比亚迪",
-            "quote": "买电车我只认大厂$比亚迪(SZ002594)$ ，除了大厂剩下都是杂牌车",
-            "qty": ""
-          },
-          "history": [],
-          "first_at": 1791447650000,
-          "mention_count": 1
-        },
-        "长鑫科技": {
-          "normalized": false,
-          "aliases_seen": [
-            "长鑫科技"
-          ],
-          "latest": {
-            "at": 1791553900000,
-            "post_id": 411740889,
-            "raw_name": "长鑫科技",
-            "quote": "$长鑫科技(SH688825)$  下周发个长鑫科技的专栏。",
-            "qty": ""
-          },
-          "history": [],
-          "first_at": 1791553900000,
-          "mention_count": 1
         }
       },
       "processed_max_id": 411807200
