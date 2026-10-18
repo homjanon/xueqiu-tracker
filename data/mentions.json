@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-17 14:31:40",
+  "updated_at": "2026-10-18 14:31:23",
   "users": {
     "1821992043": {
       "name": "ice_招行谷子地",
@@ -284,7 +284,7 @@
           "mention_count": 1
         }
       },
-      "processed_max_id": 412695437
+      "processed_max_id": 412764333
     },
     "6515752937": {
       "name": "紫金陈",
