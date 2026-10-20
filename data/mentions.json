@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-19 14:31:27",
+  "updated_at": "2026-10-20 14:31:37",
   "users": {
     "1821992043": {
       "name": "ice_招行谷子地",
@@ -62,41 +62,41 @@
             "招商银行(SH600036)"
           ],
           "latest": {
-            "at": 1792388913000,
-            "post_id": 412865942,
+            "at": 1792465357000,
+            "post_id": 412987107,
             "raw_name": "招商银行",
-            "quote": "$招商银行(SH600036)$ 摸上43号高地了，上刺刀白刃战！",
+            "quote": "$招商银行(SH600036)$ mnp，当红舞娘换深绿昭",
             "qty": "876000股",
             "qty_locked": true
           },
           "history": [
             {
-              "at": 1792377144000,
-              "post_id": 412834866,
+              "at": 1792459677000,
+              "post_id": 412956889,
               "raw_name": "招商银行",
-              "quote": "$招商银行(SH600036)$  架炮准备炮轰43号阵地那1万多匪军",
+              "quote": "张口就是银行估值在高位，低位的你不买非要去买估值高位的，你不亏天理不容。$招商银行(SH600036)$",
               "qty": "876000股",
               "qty_locked": true
             },
             {
-              "at": 1792375573000,
-              "post_id": 412826062,
-              "raw_name": "招商银行",
-              "quote": "$招商银行(SH600036)$ 周五mnp舞娘小昭做了个日内撸了750",
-              "qty": "876000股",
-              "qty_locked": true
-            },
-            {
-              "at": 1792370764000,
-              "post_id": 412807260,
+              "at": 1792459188000,
+              "post_id": 412955371,
               "raw_name": "招行",
-              "quote": "宁可买招行不要买民生",
+              "quote": "如果TA一直守着招行，而不是把运气当能力去搞什么杠杆网格搬砖，去弄什么华融，净值早就破2了。",
+              "qty": "876000股",
+              "qty_locked": true
+            },
+            {
+              "at": 1792416513000,
+              "post_id": 412921926,
+              "raw_name": "招行",
+              "quote": "招行的走势我几周前已经说过了，不重复",
               "qty": "876000股",
               "qty_locked": true
             }
           ],
           "first_at": 1785578374000,
-          "mention_count": 103
+          "mention_count": 107
         },
         "中国平安": {
           "normalized": true,
@@ -322,9 +322,65 @@
           "history": [],
           "first_at": 1792375573000,
           "mention_count": 1
+        },
+        "农业银行": {
+          "normalized": true,
+          "aliases_seen": [
+            "农行"
+          ],
+          "latest": {
+            "at": 1792416546000,
+            "post_id": 412921973,
+            "raw_name": "农行",
+            "quote": "说过，说完了农行就跌了。",
+            "qty": ""
+          },
+          "history": [
+            {
+              "at": 1792406006000,
+              "post_id": 412906574,
+              "raw_name": "农行",
+              "quote": "自己去看看农行最近一年的走势，再见",
+              "qty": ""
+            }
+          ],
+          "first_at": 1792406006000,
+          "mention_count": 2
+        },
+        "华融": {
+          "normalized": false,
+          "aliases_seen": [
+            "华融"
+          ],
+          "latest": {
+            "at": 1792459188000,
+            "post_id": 412955371,
+            "raw_name": "华融",
+            "quote": "如果TA一直守着招行，而不是把运气当能力去搞什么杠杆网格搬砖，去弄什么华融，净值早就破2了。",
+            "qty": ""
+          },
+          "history": [],
+          "first_at": 1792459188000,
+          "mention_count": 1
+        },
+        "深绿昭": {
+          "normalized": false,
+          "aliases_seen": [
+            "深绿昭"
+          ],
+          "latest": {
+            "at": 1792465357000,
+            "post_id": 412987107,
+            "raw_name": "深绿昭",
+            "quote": "$招商银行(SH600036)$ mnp，当红舞娘换深绿昭",
+            "qty": ""
+          },
+          "history": [],
+          "first_at": 1792465357000,
+          "mention_count": 1
         }
       },
-      "processed_max_id": 412871230
+      "processed_max_id": 413016998
     },
     "6515752937": {
       "name": "紫金陈",
