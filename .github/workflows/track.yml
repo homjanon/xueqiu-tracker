@@ -62,6 +62,10 @@ jobs:
           PY
 
       - name: 抓取并分析
+        id: track
+        # 2026-10-23：不再让抓取失败「静默成功」——步骤标记失败但继续，
+        # 以便先把已抓到的数据提交回仓库，最后再按 outcome 判定 job 失败。
+        continue-on-error: true
         env:
           XUEQIU_USER_IDS: ${{ secrets.XUEQIU_USER_IDS }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
@@ -70,9 +74,16 @@ jobs:
         run: python -u tracker.py   # -u 实时输出，超时被杀也能看到卡点（2026-08-20）
 
       - name: 提交数据回仓库
+        if: always()   # 抓取失败也要提交（保留部分数据/失败留痕）
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add -A data reports state.json   # -A：包含 reports 清理后的删除（2026-08-20）
           git diff --cached --quiet || git commit -m "chore: 每日追踪更新 $(date +%F)"
           git push
+
+      - name: 抓取失败标红
+        if: steps.track.outcome != 'success'
+        run: |
+          echo "::error title=雪球抓取失败::抓取失败，本次报告不可信（data/latest.json 未覆盖）。请查看「抓取并分析」日志中的 [scraper] 行。"
+          exit 1
