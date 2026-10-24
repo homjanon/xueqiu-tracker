@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-23 22:46:29",
+  "updated_at": "2026-10-24 14:31:26",
   "users": {
     "1821992043": {
       "name": "ice_招行谷子地",
@@ -62,14 +62,22 @@
             "招商银行(SH600036)"
           ],
           "latest": {
-            "at": 1792744876000,
-            "post_id": 413627760,
+            "at": 1792820696000,
+            "post_id": 413706291,
             "raw_name": "招行",
-            "quote": "易方达和富国都是招行托管的",
+            "quote": "招行更合适。",
             "qty": "876000股",
             "qty_locked": true
           },
           "history": [
+            {
+              "at": 1792744876000,
+              "post_id": 413627760,
+              "raw_name": "招行",
+              "quote": "易方达和富国都是招行托管的",
+              "qty": "876000股",
+              "qty_locked": true
+            },
             {
               "at": 1792744501000,
               "post_id": 413626806,
@@ -85,18 +93,10 @@
               "quote": "$招商银行(SH600036)$ 沧海横流，方显英雄本色",
               "qty": "876000股",
               "qty_locked": true
-            },
-            {
-              "at": 1792465357000,
-              "post_id": 412987107,
-              "raw_name": "招商银行",
-              "quote": "$招商银行(SH600036)$ mnp，当红舞娘换深绿昭",
-              "qty": "876000股",
-              "qty_locked": true
             }
           ],
           "first_at": 1785578374000,
-          "mention_count": 110
+          "mention_count": 111
         },
         "中国平安": {
           "normalized": true,
@@ -385,9 +385,25 @@
           "history": [],
           "first_at": 1792465357000,
           "mention_count": 1
+        },
+        "贵州茅台": {
+          "normalized": true,
+          "aliases_seen": [
+            "茅台"
+          ],
+          "latest": {
+            "at": 1792804734000,
+            "post_id": 413692180,
+            "raw_name": "茅台",
+            "quote": "请过来领近期的沙发奖：@润棠  1次@做招商茅台安克股东  2次@要爱晓宇  1次@人间寂寞几千秋  1次@小铁铁qj7  1次",
+            "qty": ""
+          },
+          "history": [],
+          "first_at": 1792804734000,
+          "mention_count": 1
         }
       },
-      "processed_max_id": 413665992
+      "processed_max_id": 413706291
     },
     "6515752937": {
       "name": "紫金陈",
