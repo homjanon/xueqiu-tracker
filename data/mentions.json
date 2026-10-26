@@ -18,7 +18,8 @@
         "五粮液": {
           "normalized": true,
           "aliases_seen": [
-            "五粮液"
+            "五粮液",
+            "舞娘"
           ],
           "latest": {
             "at": 1792046705000,
@@ -179,109 +180,6 @@
           "first_at": 1787541546000,
           "mention_count": 9
         },
-        "北新建材": {
-          "normalized": false,
-          "aliases_seen": [
-            "北新",
-            "北新建材"
-          ],
-          "latest": {
-            "at": 1792376191000,
-            "post_id": 412829710,
-            "raw_name": "北新建材",
-            "quote": "$北新建材(SZ000786)$ mnp卖出北新，买入中国平安",
-            "qty": "13手"
-          },
-          "history": [
-            {
-              "at": 1788400138000,
-              "post_id": 407851068,
-              "raw_name": "北新建材",
-              "quote": "$北新建材(SZ000786)$ 抄底成功？",
-              "qty": "13手"
-            },
-            {
-              "at": 1788331626000,
-              "post_id": 407748338,
-              "raw_name": "北新建材",
-              "quote": "$北新建材(SZ000786)$ @扶苏1989 群主@papadog 通知我来抄你的底",
-              "qty": "13手"
-            }
-          ],
-          "first_at": 1788331626000,
-          "mention_count": 3
-        },
-        "平安银行": {
-          "normalized": true,
-          "aliases_seen": [
-            "平安银行",
-            "平安"
-          ],
-          "latest": {
-            "at": 1792763708000,
-            "post_id": 413665122,
-            "raw_name": "平安银行",
-            "quote": "$平安银行(SZ000001)$  交作业了。",
-            "qty": ""
-          },
-          "history": [
-            {
-              "at": 1792744501000,
-              "post_id": 413626806,
-              "raw_name": "平安银行",
-              "quote": "平安银行的资产收益率一直是高于招行的",
-              "qty": ""
-            },
-            {
-              "at": 1792723730000,
-              "post_id": 413546718,
-              "raw_name": "平安",
-              "quote": "你确认平安跌到位了吗？",
-              "qty": ""
-            },
-            {
-              "at": 1792119641000,
-              "post_id": 412576068,
-              "raw_name": "平安银行",
-              "quote": "那你还不赶紧去买平安银行？",
-              "qty": ""
-            }
-          ],
-          "first_at": 1791772262000,
-          "mention_count": 6
-        },
-        "长鑫": {
-          "normalized": false,
-          "aliases_seen": [
-            "长鑫"
-          ],
-          "latest": {
-            "at": 1791816060000,
-            "post_id": 411999693,
-            "raw_name": "长鑫",
-            "quote": "今年游戏仓盈利全靠长鑫打新赚了60万",
-            "qty": "60万"
-          },
-          "history": [],
-          "first_at": 1791816060000,
-          "mention_count": 1
-        },
-        "兴业银行": {
-          "normalized": true,
-          "aliases_seen": [
-            "兴业"
-          ],
-          "latest": {
-            "at": 1791881245000,
-            "post_id": 412116572,
-            "raw_name": "兴业",
-            "quote": "当然还要结合招行和兴业的股价。",
-            "qty": ""
-          },
-          "history": [],
-          "first_at": 1791881245000,
-          "mention_count": 1
-        },
         "美国银行": {
           "normalized": false,
           "aliases_seen": [
@@ -299,123 +197,19 @@
           "mention_count": 1
         },
         "长鑫科技": {
-          "normalized": false,
-          "aliases_seen": [
-            "长鑫科技"
-          ],
-          "latest": {
-            "at": 1792373142000,
-            "post_id": 412811865,
-            "raw_name": "长鑫科技",
-            "quote": "$长鑫科技(SH688825)$ 上周五买入的全部被坑杀",
-            "qty": ""
-          },
-          "history": [],
-          "first_at": 1792373142000,
-          "mention_count": 1
-        },
-        "舞娘": {
-          "normalized": false,
-          "aliases_seen": [
-            "舞娘"
-          ],
-          "latest": {
-            "at": 1792375573000,
-            "post_id": 412826062,
-            "raw_name": "舞娘",
-            "quote": "周五mnp舞娘小昭做了个日内撸了750",
-            "qty": ""
-          },
-          "history": [],
-          "first_at": 1792375573000,
-          "mention_count": 1
-        },
-        "农业银行": {
           "normalized": true,
           "aliases_seen": [
-            "农行"
+            "长鑫"
           ],
           "latest": {
-            "at": 1792416546000,
-            "post_id": 412921973,
-            "raw_name": "农行",
-            "quote": "说过，说完了农行就跌了。",
-            "qty": ""
-          },
-          "history": [
-            {
-              "at": 1792406006000,
-              "post_id": 412906574,
-              "raw_name": "农行",
-              "quote": "自己去看看农行最近一年的走势，再见",
-              "qty": ""
-            }
-          ],
-          "first_at": 1792406006000,
-          "mention_count": 2
-        },
-        "华融": {
-          "normalized": false,
-          "aliases_seen": [
-            "华融"
-          ],
-          "latest": {
-            "at": 1792459188000,
-            "post_id": 412955371,
-            "raw_name": "华融",
-            "quote": "如果TA一直守着招行，而不是把运气当能力去搞什么杠杆网格搬砖，去弄什么华融，净值早就破2了。",
-            "qty": ""
+            "at": 1791816060000,
+            "post_id": 411999693,
+            "raw_name": "长鑫",
+            "quote": "今年游戏仓盈利全靠长鑫打新赚了60万",
+            "qty": "60万"
           },
           "history": [],
-          "first_at": 1792459188000,
-          "mention_count": 1
-        },
-        "深绿昭": {
-          "normalized": false,
-          "aliases_seen": [
-            "深绿昭"
-          ],
-          "latest": {
-            "at": 1792465357000,
-            "post_id": 412987107,
-            "raw_name": "深绿昭",
-            "quote": "$招商银行(SH600036)$ mnp，当红舞娘换深绿昭",
-            "qty": ""
-          },
-          "history": [],
-          "first_at": 1792465357000,
-          "mention_count": 1
-        },
-        "贵州茅台": {
-          "normalized": true,
-          "aliases_seen": [
-            "茅台"
-          ],
-          "latest": {
-            "at": 1792804734000,
-            "post_id": 413692180,
-            "raw_name": "茅台",
-            "quote": "请过来领近期的沙发奖：@润棠  1次@做招商茅台安克股东  2次@要爱晓宇  1次@人间寂寞几千秋  1次@小铁铁qj7  1次",
-            "qty": ""
-          },
-          "history": [],
-          "first_at": 1792804734000,
-          "mention_count": 1
-        },
-        "建设银行": {
-          "normalized": true,
-          "aliases_seen": [
-            "建行"
-          ],
-          "latest": {
-            "at": 1792824468000,
-            "post_id": 413708842,
-            "raw_name": "建行",
-            "quote": "我这么多年分类推荐一直是：大行推荐建行，股份行推荐招行，城商行推荐宁波银行。从没变过。",
-            "qty": ""
-          },
-          "history": [],
-          "first_at": 1792824468000,
+          "first_at": 1791816060000,
           "mention_count": 1
         }
       },
