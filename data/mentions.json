@@ -1,13 +1,13 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-27 14:36:22",
+  "updated_at": "2026-10-28 14:31:17",
   "users": {
     "1821992043": {
       "name": "ice_招行谷子地",
       "account": {
-        "position": "年内Q币加仓96.5万Q币",
-        "position_at": 1792998317000,
-        "position_quote": "$招商银行(SH600036)$ 今天mnp用Q币41.68加500，年内Q币加仓96.5万Q币，离年度百万Q币加仓还差3.5万，时间还有2个月。努力！",
+        "position": "空仓",
+        "position_at": 1793153047000,
+        "position_quote": "我又没空仓，我不难受。",
         "position_quoted": false,
         "pnl": "撸了1000多大洋",
         "pnl_at": 1792389198000,
@@ -63,14 +63,22 @@
             "招商银行(SH600036)"
           ],
           "latest": {
-            "at": 1793081347000,
-            "post_id": 414037734,
+            "at": 1793144774000,
+            "post_id": 414163668,
             "raw_name": "招行",
-            "quote": "股份制银行（除招行外）普遍应该都很一般",
+            "quote": "基本只持有招行。",
             "qty": "876000股",
             "qty_locked": true
           },
           "history": [
+            {
+              "at": 1793081347000,
+              "post_id": 414037734,
+              "raw_name": "招行",
+              "quote": "股份制银行（除招行外）普遍应该都很一般",
+              "qty": "876000股",
+              "qty_locked": true
+            },
             {
               "at": 1793068654000,
               "post_id": 413998402,
@@ -86,18 +94,10 @@
               "quote": "$招商银行(SH600036)$ 今天mnp用Q币41.68加500，年内Q币加仓96.5万Q币，离年度百万Q币加仓还差3.5万，时间还有2个月。努力！",
               "qty": "876000股",
               "qty_locked": true
-            },
-            {
-              "at": 1792986884000,
-              "post_id": 413840473,
-              "raw_name": "招行",
-              "quote": "拉一下10年K线，银行里能跑过招行的有几个？",
-              "qty": "876000股",
-              "qty_locked": true
             }
           ],
           "first_at": 1785578374000,
-          "mention_count": 118
+          "mention_count": 119
         },
         "中国平安": {
           "normalized": true,
@@ -292,9 +292,25 @@
           "history": [],
           "first_at": 1793078809000,
           "mention_count": 1
+        },
+        "贵州茅台": {
+          "normalized": true,
+          "aliases_seen": [
+            "茅台"
+          ],
+          "latest": {
+            "at": 1793091357000,
+            "post_id": 414080702,
+            "raw_name": "茅台",
+            "quote": "每月1000块定投能买几股茅台？",
+            "qty": ""
+          },
+          "history": [],
+          "first_at": 1793091357000,
+          "mention_count": 1
         }
       },
-      "processed_max_id": 414037734
+      "processed_max_id": 414206422
     },
     "6515752937": {
       "name": "紫金陈",
