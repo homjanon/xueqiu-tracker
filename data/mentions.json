@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-02 14:30:55",
+  "updated_at": "2026-11-03 14:31:01",
   "users": {
     "1821992043": {
       "name": "ice_招行谷子地",
@@ -9,9 +9,9 @@
         "position_at": 1793153047000,
         "position_quote": "我又没空仓，我不难受。",
         "position_quoted": false,
-        "pnl": "撸了1000多大洋",
-        "pnl_at": 1792389198000,
-        "pnl_quote": "今天mnp日内做完，撸了1000多大洋，晚上来个辣炒虾仁犒劳一下自己。",
+        "pnl": "10年内肯定能赚钱",
+        "pnl_at": 1793686473000,
+        "pnl_quote": "10年内肯定能赚钱。",
         "pnl_quoted": false
       },
       "symbols": {
@@ -22,13 +22,20 @@
             "舞娘"
           ],
           "latest": {
-            "at": 1792046705000,
-            "post_id": 412440062,
+            "at": 1793685103000,
+            "post_id": 415263473,
             "raw_name": "五粮液",
-            "quote": "手里的 $招商银行(SH600036)$  $中国平安(SH601318)$ $五粮液(SZ000858)$ 居然都红着。",
-            "qty": "109手"
+            "quote": "我早上用mnp的五粮液和平保换了51手招行。",
+            "qty": "51手"
           },
           "history": [
+            {
+              "at": 1792046705000,
+              "post_id": 412440062,
+              "raw_name": "五粮液",
+              "quote": "手里的 $招商银行(SH600036)$  $中国平安(SH601318)$ $五粮液(SZ000858)$ 居然都红着。",
+              "qty": "109手"
+            },
             {
               "at": 1791373867000,
               "post_id": 411431329,
@@ -42,17 +49,10 @@
               "raw_name": "五粮液",
               "quote": "我目前有宁波银行，五粮液",
               "qty": "109手"
-            },
-            {
-              "at": 1787739788000,
-              "post_id": 406742660,
-              "raw_name": "五粮液",
-              "quote": "$五粮液(SZ000858)$ $伊利股份(SH600887)$ $招商银行(SH600036)$",
-              "qty": "109手"
             }
           ],
           "first_at": 1785572039000,
-          "mention_count": 9
+          "mention_count": 10
         },
         "招商银行": {
           "normalized": true,
@@ -63,41 +63,41 @@
             "招商银行(SH600036)"
           ],
           "latest": {
-            "at": 1793588653000,
-            "post_id": 415048692,
-            "raw_name": "招商银行",
-            "quote": "$招商银行(SH600036)$ 来了，我的问题",
+            "at": 1793685783000,
+            "post_id": 415267338,
+            "raw_name": "招行",
+            "quote": "他问的是长鑫不是招行。",
             "qty": "876000股",
             "qty_locked": true
           },
           "history": [
             {
-              "at": 1793525020000,
-              "post_id": 414969882,
-              "raw_name": "招商银行",
-              "quote": "$招商银行(SH600036)$ 让小奴隶做的，PIAPIA打脸@papadog",
+              "at": 1793685103000,
+              "post_id": 415263473,
+              "raw_name": "招行",
+              "quote": "我早上用mnp的五粮液和平保换了51手招行。",
               "qty": "876000股",
               "qty_locked": true
             },
             {
-              "at": 1793364133000,
-              "post_id": 414818386,
-              "raw_name": "招商银行",
-              "quote": "$招商银行(SH600036)$ 今年18.24%",
+              "at": 1793666868000,
+              "post_id": 415185139,
+              "raw_name": "招行",
+              "quote": "今年招行涨幅还不过10%，怎么就过热了？",
               "qty": "876000股",
               "qty_locked": true
             },
             {
-              "at": 1793362680000,
-              "post_id": 414814840,
+              "at": 1793588653000,
+              "post_id": 415048692,
               "raw_name": "招商银行",
-              "quote": "$招商银行(SH600036)$  交作业了。",
+              "quote": "$招商银行(SH600036)$ 来了，我的问题",
               "qty": "876000股",
               "qty_locked": true
             }
           ],
           "first_at": 1785578374000,
-          "mention_count": 132
+          "mention_count": 135
         },
         "中国平安": {
           "normalized": true,
@@ -434,9 +434,41 @@
           "history": [],
           "first_at": 1793600497000,
           "mention_count": 1
+        },
+        "平保": {
+          "normalized": false,
+          "aliases_seen": [
+            "平保"
+          ],
+          "latest": {
+            "at": 1793685103000,
+            "post_id": 415263473,
+            "raw_name": "平保",
+            "quote": "我早上用mnp的五粮液和平保换了51手招行。",
+            "qty": ""
+          },
+          "history": [],
+          "first_at": 1793685103000,
+          "mention_count": 1
+        },
+        "长鑫": {
+          "normalized": false,
+          "aliases_seen": [
+            "长鑫"
+          ],
+          "latest": {
+            "at": 1793685783000,
+            "post_id": 415267338,
+            "raw_name": "长鑫",
+            "quote": "他问的是长鑫不是招行。",
+            "qty": ""
+          },
+          "history": [],
+          "first_at": 1793685783000,
+          "mention_count": 1
         }
       },
-      "processed_max_id": 415087697
+      "processed_max_id": 415271247
     },
     "6515752937": {
       "name": "紫金陈",
