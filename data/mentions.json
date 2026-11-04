@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-03 14:31:01",
+  "updated_at": "2026-11-04 14:30:54",
   "users": {
     "1821992043": {
       "name": "ice_招行谷子地",
@@ -63,41 +63,41 @@
             "招商银行(SH600036)"
           ],
           "latest": {
-            "at": 1793685783000,
-            "post_id": 415267338,
-            "raw_name": "招行",
-            "quote": "他问的是长鑫不是招行。",
+            "at": 1793755520000,
+            "post_id": 415395544,
+            "raw_name": "招商银行",
+            "quote": "$招商银行(SH600036)$  休息了2天爬了个香山缓过来了，明天开始恢复凌晨更新。明天招行三季报业绩交流会点评。",
             "qty": "876000股",
             "qty_locked": true
           },
           "history": [
             {
-              "at": 1793685103000,
-              "post_id": 415263473,
+              "at": 1793691670000,
+              "post_id": 415297211,
               "raw_name": "招行",
-              "quote": "我早上用mnp的五粮液和平保换了51手招行。",
+              "quote": "我持有招行不持有银行，再说股市里有一只股票叫银行吗？",
               "qty": "876000股",
               "qty_locked": true
             },
             {
-              "at": 1793666868000,
-              "post_id": 415185139,
-              "raw_name": "招行",
-              "quote": "今年招行涨幅还不过10%，怎么就过热了？",
-              "qty": "876000股",
-              "qty_locked": true
-            },
-            {
-              "at": 1793588653000,
-              "post_id": 415048692,
+              "at": 1793688997000,
+              "post_id": 415284986,
               "raw_name": "招商银行",
-              "quote": "$招商银行(SH600036)$ 来了，我的问题",
+              "quote": "$招商银行(SH600036)$ 今天尾盘又有好戏看了",
+              "qty": "876000股",
+              "qty_locked": true
+            },
+            {
+              "at": 1793685783000,
+              "post_id": 415267338,
+              "raw_name": "招行",
+              "quote": "他问的是长鑫不是招行。",
               "qty": "876000股",
               "qty_locked": true
             }
           ],
           "first_at": 1785578374000,
-          "mention_count": 135
+          "mention_count": 138
         },
         "中国平安": {
           "normalized": true,
@@ -199,18 +199,27 @@
         "长鑫科技": {
           "normalized": true,
           "aliases_seen": [
-            "长鑫"
+            "长鑫",
+            "长鑫科技"
           ],
           "latest": {
-            "at": 1791816060000,
-            "post_id": 411999693,
-            "raw_name": "长鑫",
-            "quote": "今年游戏仓盈利全靠长鑫打新赚了60万",
+            "at": 1793770954000,
+            "post_id": 415458320,
+            "raw_name": "长鑫科技",
+            "quote": "$长鑫科技(SH688825)$ 一买就赚，那我就跑路回大本营歇歇",
             "qty": "60万"
           },
-          "history": [],
+          "history": [
+            {
+              "at": 1791816060000,
+              "post_id": 411999693,
+              "raw_name": "长鑫",
+              "quote": "今年游戏仓盈利全靠长鑫打新赚了60万",
+              "qty": "60万"
+            }
+          ],
           "first_at": 1791816060000,
-          "mention_count": 1
+          "mention_count": 2
         },
         "平安银行": {
           "normalized": true,
@@ -466,9 +475,25 @@
           "history": [],
           "first_at": 1793685783000,
           "mention_count": 1
+        },
+        "CoreWeave": {
+          "normalized": false,
+          "aliases_seen": [
+            "CoreWeave"
+          ],
+          "latest": {
+            "at": 1793766840000,
+            "post_id": 415444470,
+            "raw_name": "CoreWeave",
+            "quote": "$CoreWeave(CRWV)$ 民主党加油干，这种新闻多来点。要环保不要天网",
+            "qty": ""
+          },
+          "history": [],
+          "first_at": 1793766840000,
+          "mention_count": 1
         }
       },
-      "processed_max_id": 415271247
+      "processed_max_id": 415469909
     },
     "6515752937": {
       "name": "紫金陈",
