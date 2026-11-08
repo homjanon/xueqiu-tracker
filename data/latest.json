@@ -1,7 +1,7 @@
 {
-  "fetched_at": "2026-11-07 14:31:16",
-  "llm_backend": "agnes-2.5-flash",
-  "daily_summary": "紫金陈：讨论回撤20%即底的规律，保本卖出广州酒家和顺丰，新入顺丰、广州酒家、马应龙、青岛港（含H股），并考虑若消费不跌则增持港口股\nice_招行谷子地：冰哥确认了招行APP的文章转发授权，并以“对子顶了，你们快跑吧”提示招商银行股价已至高点，建议投资者及时撤离",
+  "fetched_at": "2026-11-08 14:31:05",
+  "llm_backend": "sensenova-deepseek-v4-flash",
+  "daily_summary": "紫金陈：讨论回撤抄底策略，称已保本卖出广州酒家、顺丰，加仓青岛港H股，并提及港股周生生、建滔集团、百度破净\nice_招行谷子地：讨论招商银行ROE与满融收益差异，提及金玉银行交作业，以及回应和谐健康减持招行A股一事",
   "user_count": 2,
   "new_count": 3,
   "text_signal_count": 0,
@@ -9,33 +9,33 @@
   "showing_fallback": false,
   "posts": [
     {
-      "id": 415914125,
-      "created_at": 1793965725000,
-      "text": "回复@Firefly__: 免费转载//@Firefly__:回复@ice_招行谷子地:稿费多吗",
+      "id": 416020288,
+      "created_at": 1794116546000,
+      "text": "回复@有德便shi财: 不加杠杆自己去看招行的平均ROE，满融就是ROE+6%～8%//@有德便shi财:回复@ice_招行谷子地:你持有招行这些年的复合收益率是多少呀？",
+      "source": "Android",
+      "is_retweet": true,
+      "truncated": false,
+      "user_id": 1821992043,
+      "user_name": "ice_招行谷子地",
+      "pics": []
+    },
+    {
+      "id": 416009863,
+      "created_at": 1794103736000,
+      "text": "周一凌晨，金玉银行交作业",
       "source": "雪球",
-      "is_retweet": true,
-      "truncated": false,
-      "user_id": 1821992043,
-      "user_name": "ice_招行谷子地",
-      "pics": []
-    },
-    {
-      "id": 415912362,
-      "created_at": 1793964477000,
-      "text": "回复@人在韭途_: 是的，我和招行APP有转发授权，我注册了ID，他们可以转发我的文章到招行App内//@人在韭途_:回复@ice_招行谷子地:冰哥，招行app里面也有个这个id，也是你吗？ 查看图片",
-      "source": "Android",
-      "is_retweet": true,
-      "truncated": false,
-      "user_id": 1821992043,
-      "user_name": "ice_招行谷子地",
-      "pics": []
-    },
-    {
-      "id": 415874509,
-      "created_at": 1793948488000,
-      "text": "$招商银行(SH600036)$ 对子顶了，你们快跑吧！",
-      "source": "Android",
       "is_retweet": false,
+      "truncated": false,
+      "user_id": 1821992043,
+      "user_name": "ice_招行谷子地",
+      "pics": []
+    },
+    {
+      "id": 415984046,
+      "created_at": 1794045345000,
+      "text": "回复@开心的银行钉子户: 这有什么可看的，安邦余孽早死早超生//@开心的银行钉子户:回复@ice_招行谷子地:和谐健康减持招商银行A股，冰哥，这件事情怎么看。@ice_招行谷子地",
+      "source": "Android",
+      "is_retweet": true,
       "truncated": false,
       "user_id": 1821992043,
       "user_name": "ice_招行谷子地",
@@ -156,6 +156,39 @@
       "pics": []
     },
     {
+      "id": 416020288,
+      "created_at": 1794116546000,
+      "text": "回复@有德便shi财: 不加杠杆自己去看招行的平均ROE，满融就是ROE+6%～8%//@有德便shi财:回复@ice_招行谷子地:你持有招行这些年的复合收益率是多少呀？",
+      "source": "Android",
+      "is_retweet": true,
+      "truncated": false,
+      "user_id": 1821992043,
+      "user_name": "ice_招行谷子地",
+      "pics": []
+    },
+    {
+      "id": 416009863,
+      "created_at": 1794103736000,
+      "text": "周一凌晨，金玉银行交作业",
+      "source": "雪球",
+      "is_retweet": false,
+      "truncated": false,
+      "user_id": 1821992043,
+      "user_name": "ice_招行谷子地",
+      "pics": []
+    },
+    {
+      "id": 415984046,
+      "created_at": 1794045345000,
+      "text": "回复@开心的银行钉子户: 这有什么可看的，安邦余孽早死早超生//@开心的银行钉子户:回复@ice_招行谷子地:和谐健康减持招商银行A股，冰哥，这件事情怎么看。@ice_招行谷子地",
+      "source": "Android",
+      "is_retweet": true,
+      "truncated": false,
+      "user_id": 1821992043,
+      "user_name": "ice_招行谷子地",
+      "pics": []
+    },
+    {
       "id": 415914125,
       "created_at": 1793965725000,
       "text": "回复@Firefly__: 免费转载//@Firefly__:回复@ice_招行谷子地:稿费多吗",
@@ -225,39 +258,6 @@
       "id": 415863333,
       "created_at": 1793945232000,
       "text": "回复@咒雨: 买那种公司的就是赌徒，根本没人关注股东权益。就像赌场的赌徒会关注骰子是金子做的还是木头做的吗？反正都是赌具而已。//@咒雨:回复@ice_招行谷子地:这是另一个问题，或者说这是一个问题的二个内容。限售股确实是现在新股炒作后，上市就一路下跌的问题。我指的是，既然现在上市就有大小非，那么减持要有限制，相当于和市场有一个对赌，不然就别上市。当然也可以一上市就全流通，但这些年大小非积累的量已经这么大了，也要解决。更有上市公司用本该分红的钱购买了股权去股权激励，我不知道买这些上市公司的投资者是什么心态，自己的股权利益就这么分给别人了。",
-      "source": "Android",
-      "is_retweet": true,
-      "truncated": false,
-      "user_id": 1821992043,
-      "user_name": "ice_招行谷子地",
-      "pics": []
-    },
-    {
-      "id": 415862867,
-      "created_at": 1793945102000,
-      "text": "回复@二郎价投: 银行也不是什么公司都给做回购贷款的，你别胡说了//@二郎价投:回复@ice_招行谷子地:错了，损失的是银行。15年贷款给汪汪买股票，亏钱了可以印钞票还给银行；这次是汪汪低息贷款给银行，再让银汉加点水贷款给大老板或者公司买股票，亏钱了别人直接就不还钱了，这边银行还欠汪汪一屁股债。银行亏麻了。这就是为什么15年招商银行这么积极支持，这次只能看到四大妈出来挡挡箭牌的原因了。$建设银行(SH601939)$ $工商银行(SH601398)$ $农业银行(SH601288)$",
-      "source": "Android",
-      "is_retweet": true,
-      "truncated": false,
-      "user_id": 1821992043,
-      "user_name": "ice_招行谷子地",
-      "pics": []
-    },
-    {
-      "id": 415861703,
-      "created_at": 1793944766000,
-      "text": "前几天溢价只有4%的时候没见你说话。根本不是你想的那点原因",
-      "source": "Android",
-      "is_retweet": true,
-      "truncated": false,
-      "user_id": 1821992043,
-      "user_name": "ice_招行谷子地",
-      "pics": []
-    },
-    {
-      "id": 415861447,
-      "created_at": 1793944689000,
-      "text": "回复@咒雨: 正相反，就是因为限制减持才会有炒作。如果公司IPO后就可以全部流通减持，你看看还有资金敢炒作垃圾吗？//@咒雨:回复@ice_招行谷子地:我感觉上市融资可以，但是股东减持需要有代价，不能上市后直接把公司卖给市场。融资市场本意是给需要发展的企业送去活水，不是包装一个故事卖给大众。",
       "source": "Android",
       "is_retweet": true,
       "truncated": false,
@@ -397,33 +397,33 @@
       "vision_signal_count": 0,
       "posts": [
         {
-          "id": 415914125,
-          "created_at": 1793965725000,
-          "text": "回复@Firefly__: 免费转载//@Firefly__:回复@ice_招行谷子地:稿费多吗",
+          "id": 416020288,
+          "created_at": 1794116546000,
+          "text": "回复@有德便shi财: 不加杠杆自己去看招行的平均ROE，满融就是ROE+6%～8%//@有德便shi财:回复@ice_招行谷子地:你持有招行这些年的复合收益率是多少呀？",
+          "source": "Android",
+          "is_retweet": true,
+          "truncated": false,
+          "user_id": 1821992043,
+          "user_name": "ice_招行谷子地",
+          "pics": []
+        },
+        {
+          "id": 416009863,
+          "created_at": 1794103736000,
+          "text": "周一凌晨，金玉银行交作业",
           "source": "雪球",
-          "is_retweet": true,
-          "truncated": false,
-          "user_id": 1821992043,
-          "user_name": "ice_招行谷子地",
-          "pics": []
-        },
-        {
-          "id": 415912362,
-          "created_at": 1793964477000,
-          "text": "回复@人在韭途_: 是的，我和招行APP有转发授权，我注册了ID，他们可以转发我的文章到招行App内//@人在韭途_:回复@ice_招行谷子地:冰哥，招行app里面也有个这个id，也是你吗？ 查看图片",
-          "source": "Android",
-          "is_retweet": true,
-          "truncated": false,
-          "user_id": 1821992043,
-          "user_name": "ice_招行谷子地",
-          "pics": []
-        },
-        {
-          "id": 415874509,
-          "created_at": 1793948488000,
-          "text": "$招商银行(SH600036)$ 对子顶了，你们快跑吧！",
-          "source": "Android",
           "is_retweet": false,
+          "truncated": false,
+          "user_id": 1821992043,
+          "user_name": "ice_招行谷子地",
+          "pics": []
+        },
+        {
+          "id": 415984046,
+          "created_at": 1794045345000,
+          "text": "回复@开心的银行钉子户: 这有什么可看的，安邦余孽早死早超生//@开心的银行钉子户:回复@ice_招行谷子地:和谐健康减持招商银行A股，冰哥，这件事情怎么看。@ice_招行谷子地",
+          "source": "Android",
+          "is_retweet": true,
           "truncated": false,
           "user_id": 1821992043,
           "user_name": "ice_招行谷子地",
@@ -431,6 +431,39 @@
         }
       ],
       "recent_posts": [
+        {
+          "id": 416020288,
+          "created_at": 1794116546000,
+          "text": "回复@有德便shi财: 不加杠杆自己去看招行的平均ROE，满融就是ROE+6%～8%//@有德便shi财:回复@ice_招行谷子地:你持有招行这些年的复合收益率是多少呀？",
+          "source": "Android",
+          "is_retweet": true,
+          "truncated": false,
+          "user_id": 1821992043,
+          "user_name": "ice_招行谷子地",
+          "pics": []
+        },
+        {
+          "id": 416009863,
+          "created_at": 1794103736000,
+          "text": "周一凌晨，金玉银行交作业",
+          "source": "雪球",
+          "is_retweet": false,
+          "truncated": false,
+          "user_id": 1821992043,
+          "user_name": "ice_招行谷子地",
+          "pics": []
+        },
+        {
+          "id": 415984046,
+          "created_at": 1794045345000,
+          "text": "回复@开心的银行钉子户: 这有什么可看的，安邦余孽早死早超生//@开心的银行钉子户:回复@ice_招行谷子地:和谐健康减持招商银行A股，冰哥，这件事情怎么看。@ice_招行谷子地",
+          "source": "Android",
+          "is_retweet": true,
+          "truncated": false,
+          "user_id": 1821992043,
+          "user_name": "ice_招行谷子地",
+          "pics": []
+        },
         {
           "id": 415914125,
           "created_at": 1793965725000,
@@ -501,39 +534,6 @@
           "id": 415863333,
           "created_at": 1793945232000,
           "text": "回复@咒雨: 买那种公司的就是赌徒，根本没人关注股东权益。就像赌场的赌徒会关注骰子是金子做的还是木头做的吗？反正都是赌具而已。//@咒雨:回复@ice_招行谷子地:这是另一个问题，或者说这是一个问题的二个内容。限售股确实是现在新股炒作后，上市就一路下跌的问题。我指的是，既然现在上市就有大小非，那么减持要有限制，相当于和市场有一个对赌，不然就别上市。当然也可以一上市就全流通，但这些年大小非积累的量已经这么大了，也要解决。更有上市公司用本该分红的钱购买了股权去股权激励，我不知道买这些上市公司的投资者是什么心态，自己的股权利益就这么分给别人了。",
-          "source": "Android",
-          "is_retweet": true,
-          "truncated": false,
-          "user_id": 1821992043,
-          "user_name": "ice_招行谷子地",
-          "pics": []
-        },
-        {
-          "id": 415862867,
-          "created_at": 1793945102000,
-          "text": "回复@二郎价投: 银行也不是什么公司都给做回购贷款的，你别胡说了//@二郎价投:回复@ice_招行谷子地:错了，损失的是银行。15年贷款给汪汪买股票，亏钱了可以印钞票还给银行；这次是汪汪低息贷款给银行，再让银汉加点水贷款给大老板或者公司买股票，亏钱了别人直接就不还钱了，这边银行还欠汪汪一屁股债。银行亏麻了。这就是为什么15年招商银行这么积极支持，这次只能看到四大妈出来挡挡箭牌的原因了。$建设银行(SH601939)$ $工商银行(SH601398)$ $农业银行(SH601288)$",
-          "source": "Android",
-          "is_retweet": true,
-          "truncated": false,
-          "user_id": 1821992043,
-          "user_name": "ice_招行谷子地",
-          "pics": []
-        },
-        {
-          "id": 415861703,
-          "created_at": 1793944766000,
-          "text": "前几天溢价只有4%的时候没见你说话。根本不是你想的那点原因",
-          "source": "Android",
-          "is_retweet": true,
-          "truncated": false,
-          "user_id": 1821992043,
-          "user_name": "ice_招行谷子地",
-          "pics": []
-        },
-        {
-          "id": 415861447,
-          "created_at": 1793944689000,
-          "text": "回复@咒雨: 正相反，就是因为限制减持才会有炒作。如果公司IPO后就可以全部流通减持，你看看还有资金敢炒作垃圾吗？//@咒雨:回复@ice_招行谷子地:我感觉上市融资可以，但是股东减持需要有代价，不能上市后直接把公司卖给市场。融资市场本意是给需要发展的企业送去活水，不是包装一个故事卖给大众。",
           "source": "Android",
           "is_retweet": true,
           "truncated": false,
