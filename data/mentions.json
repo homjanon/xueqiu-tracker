@@ -1,17 +1,17 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-08 14:31:05",
+  "updated_at": "2026-11-09 14:31:03",
   "users": {
     "1821992043": {
       "name": "ice_招行谷子地",
       "account": {
         "position": "满融",
-        "position_at": 1794116546000,
-        "position_quote": "不加杠杆自己去看招行的平均ROE，满融就是ROE+6%～8%",
+        "position_at": 1794188506000,
+        "position_quote": "造成重要影响我还会满融吗",
         "position_quoted": false,
-        "pnl": "10年内肯定能赚钱",
-        "pnl_at": 1793686473000,
-        "pnl_quote": "10年内肯定能赚钱。",
+        "pnl": "今年基金赚了一点，收成凑活",
+        "pnl_at": 1794125949000,
+        "pnl_quote": "今年基金赚了一点，收成凑活",
         "pnl_quoted": false
       },
       "symbols": {
@@ -63,41 +63,41 @@
             "招商银行(SH600036)"
           ],
           "latest": {
-            "at": 1794116546000,
-            "post_id": 416020288,
-            "raw_name": "招行",
-            "quote": "不加杠杆自己去看招行的平均ROE，满融就是ROE+6%～8%",
+            "at": 1794186818000,
+            "post_id": 416064166,
+            "raw_name": "招商银行",
+            "quote": "原文摘抄）招商银行走的是负债端零售路线",
             "qty": "876000股",
             "qty_locked": true
           },
           "history": [
             {
-              "at": 1793964477000,
-              "post_id": 415912362,
+              "at": 1794121580000,
+              "post_id": 416023354,
               "raw_name": "招行",
-              "quote": "是的，我和招行APP有转发授权，我注册了ID，他们可以转发我的文章到招行App内",
+              "quote": "现在满融单调招行",
               "qty": "876000股",
               "qty_locked": true
             },
             {
-              "at": 1793948488000,
-              "post_id": 415874509,
-              "raw_name": "招商银行",
-              "quote": "$招商银行(SH600036)$ 对子顶了，你们快跑吧！",
+              "at": 1794121083000,
+              "post_id": 416023036,
+              "raw_name": "招行",
+              "quote": "融资也不在招行",
               "qty": "876000股",
               "qty_locked": true
             },
             {
-              "at": 1793941311000,
-              "post_id": 415850680,
+              "at": 1794116546000,
+              "post_id": 416020288,
               "raw_name": "招行",
-              "quote": "反正我的主仓就守住几年不涨的招行吃分红，然后复投。",
+              "quote": "不加杠杆自己去看招行的平均ROE，满融就是ROE+6%～8%",
               "qty": "876000股",
               "qty_locked": true
             }
           ],
           "first_at": 1785578374000,
-          "mention_count": 145
+          "mention_count": 148
         },
         "中国平安": {
           "normalized": true,
@@ -331,9 +331,25 @@
           "history": [],
           "first_at": 1793937402000,
           "mention_count": 1
+        },
+        "兴业银行": {
+          "normalized": true,
+          "aliases_seen": [
+            "兴业"
+          ],
+          "latest": {
+            "at": 1794186818000,
+            "post_id": 416064166,
+            "raw_name": "兴业",
+            "quote": "喷过浦发，说过兴业",
+            "qty": ""
+          },
+          "history": [],
+          "first_at": 1794186818000,
+          "mention_count": 1
         }
       },
-      "processed_max_id": 416020288
+      "processed_max_id": 416117768
     },
     "6515752937": {
       "name": "紫金陈",
