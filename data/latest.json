@@ -1,17 +1,17 @@
 {
-  "fetched_at": "2026-11-12 14:31:09",
+  "fetched_at": "2026-11-13 14:30:58",
   "llm_backend": "sensenova-deepseek-v4-flash",
-  "daily_summary": "紫金陈：紫金陈称回撤20点即底，加仓顺丰、广州酒家、马应龙、青岛港H股，后保本卖出酒家和顺丰，计划加仓港口股\nice_招行谷子地：讨论招行与上市公司联系紧密，并分析国债征税传闻对银行、保险的影响，特别提及配置债券多、免税多的城商行或受利空",
+  "daily_summary": "紫金陈：用户讨论长线投资，提到周生生、建滔、百度等，但具体操作涉及广州酒家、顺丰、马应龙、青岛港：保本卖出广州酒家和顺丰，加仓青岛港H股\nice_招行谷子地：用户讨论招商银行股价偏弱但坚持净资产以下分红复投，提及海信视像（送老婆礼物）和英伟达，未明确实盘买卖动作",
   "user_count": 2,
-  "new_count": 9,
+  "new_count": 17,
   "text_signal_count": 0,
   "vision_signal_count": 0,
   "showing_fallback": false,
   "posts": [
     {
-      "id": 416550283,
-      "created_at": 1794456884000,
-      "text": "回复@五六妻: 闲着也是闲着//@五六妻:回复@ice_招行谷子地:老哥不上班 感觉逛雪球的时间都变多了",
+      "id": 416757267,
+      "created_at": 1794550804000,
+      "text": "回复@long52033: 看不上你去买别的呗，又没人拦着你//@long52033:回复@ice_招行谷子地:今年招行的涨幅在整个板块里面 偏下啊，43久攻不下，压单好重，感觉是狗队",
       "source": "Android",
       "is_retweet": true,
       "truncated": false,
@@ -20,9 +20,9 @@
       "pics": []
     },
     {
-      "id": 416537799,
-      "created_at": 1794452696000,
-      "text": "高位，呵呵，拉黑",
+      "id": 416753548,
+      "created_at": 1794550037000,
+      "text": "回复@天目兄: 长跑拼的不是冲刺，净资产以下继续分红复投//@天目兄:回复@ice_招行谷子地:都很弱。",
       "source": "Android",
       "is_retweet": true,
       "truncated": false,
@@ -31,9 +31,119 @@
       "pics": []
     },
     {
-      "id": 416501620,
-      "created_at": 1794444448000,
-      "text": "",
+      "id": 416748792,
+      "created_at": 1794549153000,
+      "text": "$招商银行(SH600036)$ @二郎价投 你咋不说港股招行拖后腿了",
+      "source": "Android",
+      "is_retweet": false,
+      "truncated": false,
+      "user_id": 1821992043,
+      "user_name": "ice_招行谷子地",
+      "pics": []
+    },
+    {
+      "id": 416732340,
+      "created_at": 1794544415000,
+      "text": "回复@百元招行: 大白应该是指类似超能陆战队里的智能陪伴。//@百元招行:回复@ice_招行谷子地:大，白，闺蜜，这些词怎么看都是为男用户打的广告",
+      "source": "Android",
+      "is_retweet": true,
+      "truncated": false,
+      "user_id": 1821992043,
+      "user_name": "ice_招行谷子地",
+      "pics": []
+    },
+    {
+      "id": 416732018,
+      "created_at": 1794544222000,
+      "text": "回复@明州巴韭特: 躺着追剧，健身跳操，健身看股票//@明州巴韭特:回复@ice_招行谷子地:我20岁的小登也不知道是用来追剧的吧",
+      "source": "Android",
+      "is_retweet": true,
+      "truncated": false,
+      "user_id": 1821992043,
+      "user_name": "ice_招行谷子地",
+      "pics": []
+    },
+    {
+      "id": 416731489,
+      "created_at": 1794543934000,
+      "text": "回复@来一杯龙井: 不知道的都是老登，而且是男老登//@来一杯龙井:回复@ice_招行谷子地:俺也不知道",
+      "source": "Android",
+      "is_retweet": true,
+      "truncated": false,
+      "user_id": 1821992043,
+      "user_name": "ice_招行谷子地",
+      "pics": []
+    },
+    {
+      "id": 416731119,
+      "created_at": 1794543722000,
+      "text": "回复@descent2Q: 老登无疑//@descent2Q:回复@ice_招行谷子地:闺蜜机？这是个啥",
+      "source": "Android",
+      "is_retweet": true,
+      "truncated": false,
+      "user_id": 1821992043,
+      "user_name": "ice_招行谷子地",
+      "pics": []
+    },
+    {
+      "id": 416730966,
+      "created_at": 1794543631000,
+      "text": "$海信视像(SH600060)$ 送老婆的生日礼物",
+      "source": "Android",
+      "is_retweet": false,
+      "truncated": false,
+      "user_id": 1821992043,
+      "user_name": "ice_招行谷子地",
+      "pics": []
+    },
+    {
+      "id": 416670651,
+      "created_at": 1794522225000,
+      "text": "回复@李根硕: 每天3-4个没事。//@李根硕:回复@ice_招行谷子地:吃多了上火",
+      "source": "雪球",
+      "is_retweet": true,
+      "truncated": false,
+      "user_id": 1821992043,
+      "user_name": "ice_招行谷子地",
+      "pics": []
+    },
+    {
+      "id": 416670246,
+      "created_at": 1794521379000,
+      "text": "回复@高贞的理财小沙堡: 从不指导具体操作。//@高贞的理财小沙堡:回复@ice_招行谷子地:谷子老师，融资买42元的招行可行吗？",
+      "source": "雪球",
+      "is_retweet": true,
+      "truncated": false,
+      "user_id": 1821992043,
+      "user_name": "ice_招行谷子地",
+      "pics": []
+    },
+    {
+      "id": 416645311,
+      "created_at": 1794494150000,
+      "text": "回复@仓佑嘉绍: 一个正常男人总好过一堆恋童癖。//@仓佑嘉绍:回复@ice_招行谷子地:老黄这波应该是绿了不少人啊",
+      "source": "雪球",
+      "is_retweet": true,
+      "truncated": false,
+      "user_id": 1821992043,
+      "user_name": "ice_招行谷子地",
+      "pics": []
+    },
+    {
+      "id": 416640481,
+      "created_at": 1794493055000,
+      "text": "回复@划船上班就是刘B: 还有杨梅，东魁杨梅也不错。//@划船上班就是刘B:回复@ice_招行谷子地:确实好吃，之前临海的朋友带过，皮很薄，甜度高，酸度也很适中，其实临海不光橘子好吃，葡萄也是非常不错的。",
+      "source": "雪球",
+      "is_retweet": true,
+      "truncated": false,
+      "user_id": 1821992043,
+      "user_name": "ice_招行谷子地",
+      "pics": []
+    },
+    {
+      "id": 416637293,
+      "created_at": 1794492097000,
+      "text": "$英伟达(NVDA)$ 要不让黄皮衣来大陆建个中伟大吧",
       "source": "雪球",
       "is_retweet": false,
       "truncated": false,
@@ -42,31 +152,9 @@
       "pics": []
     },
     {
-      "id": 416473773,
-      "created_at": 1794403288000,
-      "text": "回复@Leit: 起码说明招行和很多上市公司联系紧密//@Leit:回复@ice_招行谷子地:这算不算利好",
-      "source": "Android",
-      "is_retweet": true,
-      "truncated": false,
-      "user_id": 1821992043,
-      "user_name": "ice_招行谷子地",
-      "pics": []
-    },
-    {
-      "id": 416473560,
-      "created_at": 1794403196000,
-      "text": "回复@高洁的升值小相机: 自己去看历史文章，两年前就定了的事，现在问还有必要吗？//@高洁的升值小相机:回复@ice_招行谷子地:老师，请问工商银行宣布增发意味着什么",
-      "source": "Android",
-      "is_retweet": true,
-      "truncated": false,
-      "user_id": 1821992043,
-      "user_name": "ice_招行谷子地",
-      "pics": []
-    },
-    {
-      "id": 416456796,
-      "created_at": 1794391815000,
-      "text": "回复@莹宝朵爸: 理论上可以征收，也可以不征收。//@莹宝朵爸:回复@ice_招行谷子地:个人也征收吗？",
+      "id": 416636301,
+      "created_at": 1794491781000,
+      "text": "回复@工业文化: 红美人最大的问题是橙腥味重//@工业文化:回复@ice_招行谷子地:呀 冰哥这么说那我得买来尝尝了。话说浙江的柑橘里，正宗象山红美人也是一绝，薄的跟纸一样的外皮里面是果冻一样duangduang的果肉。",
       "source": "雪球",
       "is_retweet": true,
       "truncated": false,
@@ -75,10 +163,10 @@
       "pics": []
     },
     {
-      "id": 416452934,
-      "created_at": 1794389728000,
-      "text": "回复@务实的财经小英勇: 那是营业税，这次传说是所得税//@务实的财经小英勇:回复@ice_招行谷子地:新发国债征税不是去年就开始了吗",
-      "source": "Android",
+      "id": 416634539,
+      "created_at": 1794491055000,
+      "text": "回复@工业文化: 正宗涌泉蜜桔的化渣率很高的，水分也足。//@工业文化:回复@ice_招行谷子地:各人追求口味不一样，有人喜欢酸甜丰富果味浓郁，我比较偏爱水头足化渣率高，所以我觉得耙耙柑好吃",
+      "source": "雪球",
       "is_retweet": true,
       "truncated": false,
       "user_id": 1821992043,
@@ -86,10 +174,10 @@
       "pics": []
     },
     {
-      "id": 416445545,
-      "created_at": 1794386413000,
-      "text": "回复@什么时候才能自由: 大概率是新老划断//@什么时候才能自由:回复@ice_招行谷子地:对保险公司是不是也是不小的利空啊，险企有大量中长期国债作为基础配置",
-      "source": "Android",
+      "id": 416634034,
+      "created_at": 1794490757000,
+      "text": "回复@小胖de妈妈: 对我这种实在人，品相不重要，好吃就行。//@小胖de妈妈:回复@一致的盈利小雪山:怎么没说呀，都说的呀，台风把树枝乱刮，把桔子刮出花纹，给我们桔农造成损失，但也不能天天说时时说呀，农产品都受气候影响的啊，我们也祈求风调雨顺啊，每年也都出钱出力求神拜佛了。查看图片",
+      "source": "雪球",
       "is_retweet": true,
       "truncated": false,
       "user_id": 1821992043,
@@ -97,10 +185,10 @@
       "pics": []
     },
     {
-      "id": 416442567,
-      "created_at": 1794385038000,
-      "text": "回复@hjxofgz: 如果是真的，那么利空债券配置多，实际税率低，免税较多的银行，比如有些城商行。//@hjxofgz:回复@ice_招行谷子地:冰哥，新鲜出炉的国债征税小作文怎么看……",
-      "source": "Android",
+      "id": 416633928,
+      "created_at": 1794490682000,
+      "text": "回复@平静的赚钱小电车: 比涌泉蜜桔差远了。//@平静的赚钱小电车:回复@ice_招行谷子地:冰哥，粑粑柑好吃",
+      "source": "雪球",
       "is_retweet": true,
       "truncated": false,
       "user_id": 1821992043,
@@ -222,9 +310,9 @@
       "pics": []
     },
     {
-      "id": 416550283,
-      "created_at": 1794456884000,
-      "text": "回复@五六妻: 闲着也是闲着//@五六妻:回复@ice_招行谷子地:老哥不上班 感觉逛雪球的时间都变多了",
+      "id": 416757267,
+      "created_at": 1794550804000,
+      "text": "回复@long52033: 看不上你去买别的呗，又没人拦着你//@long52033:回复@ice_招行谷子地:今年招行的涨幅在整个板块里面 偏下啊，43久攻不下，压单好重，感觉是狗队",
       "source": "Android",
       "is_retweet": true,
       "truncated": false,
@@ -233,9 +321,9 @@
       "pics": []
     },
     {
-      "id": 416537799,
-      "created_at": 1794452696000,
-      "text": "高位，呵呵，拉黑",
+      "id": 416753548,
+      "created_at": 1794550037000,
+      "text": "回复@天目兄: 长跑拼的不是冲刺，净资产以下继续分红复投//@天目兄:回复@ice_招行谷子地:都很弱。",
       "source": "Android",
       "is_retweet": true,
       "truncated": false,
@@ -244,10 +332,10 @@
       "pics": []
     },
     {
-      "id": 416501620,
-      "created_at": 1794444448000,
-      "text": "",
-      "source": "雪球",
+      "id": 416748792,
+      "created_at": 1794549153000,
+      "text": "$招商银行(SH600036)$ @二郎价投 你咋不说港股招行拖后腿了",
+      "source": "Android",
       "is_retweet": false,
       "truncated": false,
       "user_id": 1821992043,
@@ -255,9 +343,9 @@
       "pics": []
     },
     {
-      "id": 416473773,
-      "created_at": 1794403288000,
-      "text": "回复@Leit: 起码说明招行和很多上市公司联系紧密//@Leit:回复@ice_招行谷子地:这算不算利好",
+      "id": 416732340,
+      "created_at": 1794544415000,
+      "text": "回复@百元招行: 大白应该是指类似超能陆战队里的智能陪伴。//@百元招行:回复@ice_招行谷子地:大，白，闺蜜，这些词怎么看都是为男用户打的广告",
       "source": "Android",
       "is_retweet": true,
       "truncated": false,
@@ -266,9 +354,9 @@
       "pics": []
     },
     {
-      "id": 416473560,
-      "created_at": 1794403196000,
-      "text": "回复@高洁的升值小相机: 自己去看历史文章，两年前就定了的事，现在问还有必要吗？//@高洁的升值小相机:回复@ice_招行谷子地:老师，请问工商银行宣布增发意味着什么",
+      "id": 416732018,
+      "created_at": 1794544222000,
+      "text": "回复@明州巴韭特: 躺着追剧，健身跳操，健身看股票//@明州巴韭特:回复@ice_招行谷子地:我20岁的小登也不知道是用来追剧的吧",
       "source": "Android",
       "is_retweet": true,
       "truncated": false,
@@ -277,9 +365,42 @@
       "pics": []
     },
     {
-      "id": 416456796,
-      "created_at": 1794391815000,
-      "text": "回复@莹宝朵爸: 理论上可以征收，也可以不征收。//@莹宝朵爸:回复@ice_招行谷子地:个人也征收吗？",
+      "id": 416731489,
+      "created_at": 1794543934000,
+      "text": "回复@来一杯龙井: 不知道的都是老登，而且是男老登//@来一杯龙井:回复@ice_招行谷子地:俺也不知道",
+      "source": "Android",
+      "is_retweet": true,
+      "truncated": false,
+      "user_id": 1821992043,
+      "user_name": "ice_招行谷子地",
+      "pics": []
+    },
+    {
+      "id": 416731119,
+      "created_at": 1794543722000,
+      "text": "回复@descent2Q: 老登无疑//@descent2Q:回复@ice_招行谷子地:闺蜜机？这是个啥",
+      "source": "Android",
+      "is_retweet": true,
+      "truncated": false,
+      "user_id": 1821992043,
+      "user_name": "ice_招行谷子地",
+      "pics": []
+    },
+    {
+      "id": 416730966,
+      "created_at": 1794543631000,
+      "text": "$海信视像(SH600060)$ 送老婆的生日礼物",
+      "source": "Android",
+      "is_retweet": false,
+      "truncated": false,
+      "user_id": 1821992043,
+      "user_name": "ice_招行谷子地",
+      "pics": []
+    },
+    {
+      "id": 416670651,
+      "created_at": 1794522225000,
+      "text": "回复@李根硕: 每天3-4个没事。//@李根硕:回复@ice_招行谷子地:吃多了上火",
       "source": "雪球",
       "is_retweet": true,
       "truncated": false,
@@ -288,42 +409,9 @@
       "pics": []
     },
     {
-      "id": 416452934,
-      "created_at": 1794389728000,
-      "text": "回复@务实的财经小英勇: 那是营业税，这次传说是所得税//@务实的财经小英勇:回复@ice_招行谷子地:新发国债征税不是去年就开始了吗",
-      "source": "Android",
-      "is_retweet": true,
-      "truncated": false,
-      "user_id": 1821992043,
-      "user_name": "ice_招行谷子地",
-      "pics": []
-    },
-    {
-      "id": 416445545,
-      "created_at": 1794386413000,
-      "text": "回复@什么时候才能自由: 大概率是新老划断//@什么时候才能自由:回复@ice_招行谷子地:对保险公司是不是也是不小的利空啊，险企有大量中长期国债作为基础配置",
-      "source": "Android",
-      "is_retweet": true,
-      "truncated": false,
-      "user_id": 1821992043,
-      "user_name": "ice_招行谷子地",
-      "pics": []
-    },
-    {
-      "id": 416442567,
-      "created_at": 1794385038000,
-      "text": "回复@hjxofgz: 如果是真的，那么利空债券配置多，实际税率低，免税较多的银行，比如有些城商行。//@hjxofgz:回复@ice_招行谷子地:冰哥，新鲜出炉的国债征税小作文怎么看……",
-      "source": "Android",
-      "is_retweet": true,
-      "truncated": false,
-      "user_id": 1821992043,
-      "user_name": "ice_招行谷子地",
-      "pics": []
-    },
-    {
-      "id": 416420797,
-      "created_at": 1794378019000,
-      "text": "回复@天空的火: 自己去看历史文章，普惠，消费贷一堆烂账。//@天空的火:回复@ice_招行谷子地:交通银行为何不良这么多？难道也因为房地产？",
+      "id": 416670246,
+      "created_at": 1794521379000,
+      "text": "回复@高贞的理财小沙堡: 从不指导具体操作。//@高贞的理财小沙堡:回复@ice_招行谷子地:谷子老师，融资买42元的招行可行吗？",
       "source": "雪球",
       "is_retweet": true,
       "truncated": false,
@@ -458,14 +546,14 @@
     {
       "user_id": "1821992043",
       "name": "ice_招行谷子地",
-      "new_count": 9,
+      "new_count": 17,
       "text_signal_count": 0,
       "vision_signal_count": 0,
       "posts": [
         {
-          "id": 416550283,
-          "created_at": 1794456884000,
-          "text": "回复@五六妻: 闲着也是闲着//@五六妻:回复@ice_招行谷子地:老哥不上班 感觉逛雪球的时间都变多了",
+          "id": 416757267,
+          "created_at": 1794550804000,
+          "text": "回复@long52033: 看不上你去买别的呗，又没人拦着你//@long52033:回复@ice_招行谷子地:今年招行的涨幅在整个板块里面 偏下啊，43久攻不下，压单好重，感觉是狗队",
           "source": "Android",
           "is_retweet": true,
           "truncated": false,
@@ -474,9 +562,9 @@
           "pics": []
         },
         {
-          "id": 416537799,
-          "created_at": 1794452696000,
-          "text": "高位，呵呵，拉黑",
+          "id": 416753548,
+          "created_at": 1794550037000,
+          "text": "回复@天目兄: 长跑拼的不是冲刺，净资产以下继续分红复投//@天目兄:回复@ice_招行谷子地:都很弱。",
           "source": "Android",
           "is_retweet": true,
           "truncated": false,
@@ -485,9 +573,119 @@
           "pics": []
         },
         {
-          "id": 416501620,
-          "created_at": 1794444448000,
-          "text": "",
+          "id": 416748792,
+          "created_at": 1794549153000,
+          "text": "$招商银行(SH600036)$ @二郎价投 你咋不说港股招行拖后腿了",
+          "source": "Android",
+          "is_retweet": false,
+          "truncated": false,
+          "user_id": 1821992043,
+          "user_name": "ice_招行谷子地",
+          "pics": []
+        },
+        {
+          "id": 416732340,
+          "created_at": 1794544415000,
+          "text": "回复@百元招行: 大白应该是指类似超能陆战队里的智能陪伴。//@百元招行:回复@ice_招行谷子地:大，白，闺蜜，这些词怎么看都是为男用户打的广告",
+          "source": "Android",
+          "is_retweet": true,
+          "truncated": false,
+          "user_id": 1821992043,
+          "user_name": "ice_招行谷子地",
+          "pics": []
+        },
+        {
+          "id": 416732018,
+          "created_at": 1794544222000,
+          "text": "回复@明州巴韭特: 躺着追剧，健身跳操，健身看股票//@明州巴韭特:回复@ice_招行谷子地:我20岁的小登也不知道是用来追剧的吧",
+          "source": "Android",
+          "is_retweet": true,
+          "truncated": false,
+          "user_id": 1821992043,
+          "user_name": "ice_招行谷子地",
+          "pics": []
+        },
+        {
+          "id": 416731489,
+          "created_at": 1794543934000,
+          "text": "回复@来一杯龙井: 不知道的都是老登，而且是男老登//@来一杯龙井:回复@ice_招行谷子地:俺也不知道",
+          "source": "Android",
+          "is_retweet": true,
+          "truncated": false,
+          "user_id": 1821992043,
+          "user_name": "ice_招行谷子地",
+          "pics": []
+        },
+        {
+          "id": 416731119,
+          "created_at": 1794543722000,
+          "text": "回复@descent2Q: 老登无疑//@descent2Q:回复@ice_招行谷子地:闺蜜机？这是个啥",
+          "source": "Android",
+          "is_retweet": true,
+          "truncated": false,
+          "user_id": 1821992043,
+          "user_name": "ice_招行谷子地",
+          "pics": []
+        },
+        {
+          "id": 416730966,
+          "created_at": 1794543631000,
+          "text": "$海信视像(SH600060)$ 送老婆的生日礼物",
+          "source": "Android",
+          "is_retweet": false,
+          "truncated": false,
+          "user_id": 1821992043,
+          "user_name": "ice_招行谷子地",
+          "pics": []
+        },
+        {
+          "id": 416670651,
+          "created_at": 1794522225000,
+          "text": "回复@李根硕: 每天3-4个没事。//@李根硕:回复@ice_招行谷子地:吃多了上火",
+          "source": "雪球",
+          "is_retweet": true,
+          "truncated": false,
+          "user_id": 1821992043,
+          "user_name": "ice_招行谷子地",
+          "pics": []
+        },
+        {
+          "id": 416670246,
+          "created_at": 1794521379000,
+          "text": "回复@高贞的理财小沙堡: 从不指导具体操作。//@高贞的理财小沙堡:回复@ice_招行谷子地:谷子老师，融资买42元的招行可行吗？",
+          "source": "雪球",
+          "is_retweet": true,
+          "truncated": false,
+          "user_id": 1821992043,
+          "user_name": "ice_招行谷子地",
+          "pics": []
+        },
+        {
+          "id": 416645311,
+          "created_at": 1794494150000,
+          "text": "回复@仓佑嘉绍: 一个正常男人总好过一堆恋童癖。//@仓佑嘉绍:回复@ice_招行谷子地:老黄这波应该是绿了不少人啊",
+          "source": "雪球",
+          "is_retweet": true,
+          "truncated": false,
+          "user_id": 1821992043,
+          "user_name": "ice_招行谷子地",
+          "pics": []
+        },
+        {
+          "id": 416640481,
+          "created_at": 1794493055000,
+          "text": "回复@划船上班就是刘B: 还有杨梅，东魁杨梅也不错。//@划船上班就是刘B:回复@ice_招行谷子地:确实好吃，之前临海的朋友带过，皮很薄，甜度高，酸度也很适中，其实临海不光橘子好吃，葡萄也是非常不错的。",
+          "source": "雪球",
+          "is_retweet": true,
+          "truncated": false,
+          "user_id": 1821992043,
+          "user_name": "ice_招行谷子地",
+          "pics": []
+        },
+        {
+          "id": 416637293,
+          "created_at": 1794492097000,
+          "text": "$英伟达(NVDA)$ 要不让黄皮衣来大陆建个中伟大吧",
           "source": "雪球",
           "is_retweet": false,
           "truncated": false,
@@ -496,31 +694,9 @@
           "pics": []
         },
         {
-          "id": 416473773,
-          "created_at": 1794403288000,
-          "text": "回复@Leit: 起码说明招行和很多上市公司联系紧密//@Leit:回复@ice_招行谷子地:这算不算利好",
-          "source": "Android",
-          "is_retweet": true,
-          "truncated": false,
-          "user_id": 1821992043,
-          "user_name": "ice_招行谷子地",
-          "pics": []
-        },
-        {
-          "id": 416473560,
-          "created_at": 1794403196000,
-          "text": "回复@高洁的升值小相机: 自己去看历史文章，两年前就定了的事，现在问还有必要吗？//@高洁的升值小相机:回复@ice_招行谷子地:老师，请问工商银行宣布增发意味着什么",
-          "source": "Android",
-          "is_retweet": true,
-          "truncated": false,
-          "user_id": 1821992043,
-          "user_name": "ice_招行谷子地",
-          "pics": []
-        },
-        {
-          "id": 416456796,
-          "created_at": 1794391815000,
-          "text": "回复@莹宝朵爸: 理论上可以征收，也可以不征收。//@莹宝朵爸:回复@ice_招行谷子地:个人也征收吗？",
+          "id": 416636301,
+          "created_at": 1794491781000,
+          "text": "回复@工业文化: 红美人最大的问题是橙腥味重//@工业文化:回复@ice_招行谷子地:呀 冰哥这么说那我得买来尝尝了。话说浙江的柑橘里，正宗象山红美人也是一绝，薄的跟纸一样的外皮里面是果冻一样duangduang的果肉。",
           "source": "雪球",
           "is_retweet": true,
           "truncated": false,
@@ -529,10 +705,10 @@
           "pics": []
         },
         {
-          "id": 416452934,
-          "created_at": 1794389728000,
-          "text": "回复@务实的财经小英勇: 那是营业税，这次传说是所得税//@务实的财经小英勇:回复@ice_招行谷子地:新发国债征税不是去年就开始了吗",
-          "source": "Android",
+          "id": 416634539,
+          "created_at": 1794491055000,
+          "text": "回复@工业文化: 正宗涌泉蜜桔的化渣率很高的，水分也足。//@工业文化:回复@ice_招行谷子地:各人追求口味不一样，有人喜欢酸甜丰富果味浓郁，我比较偏爱水头足化渣率高，所以我觉得耙耙柑好吃",
+          "source": "雪球",
           "is_retweet": true,
           "truncated": false,
           "user_id": 1821992043,
@@ -540,10 +716,10 @@
           "pics": []
         },
         {
-          "id": 416445545,
-          "created_at": 1794386413000,
-          "text": "回复@什么时候才能自由: 大概率是新老划断//@什么时候才能自由:回复@ice_招行谷子地:对保险公司是不是也是不小的利空啊，险企有大量中长期国债作为基础配置",
-          "source": "Android",
+          "id": 416634034,
+          "created_at": 1794490757000,
+          "text": "回复@小胖de妈妈: 对我这种实在人，品相不重要，好吃就行。//@小胖de妈妈:回复@一致的盈利小雪山:怎么没说呀，都说的呀，台风把树枝乱刮，把桔子刮出花纹，给我们桔农造成损失，但也不能天天说时时说呀，农产品都受气候影响的啊，我们也祈求风调雨顺啊，每年也都出钱出力求神拜佛了。查看图片",
+          "source": "雪球",
           "is_retweet": true,
           "truncated": false,
           "user_id": 1821992043,
@@ -551,10 +727,10 @@
           "pics": []
         },
         {
-          "id": 416442567,
-          "created_at": 1794385038000,
-          "text": "回复@hjxofgz: 如果是真的，那么利空债券配置多，实际税率低，免税较多的银行，比如有些城商行。//@hjxofgz:回复@ice_招行谷子地:冰哥，新鲜出炉的国债征税小作文怎么看……",
-          "source": "Android",
+          "id": 416633928,
+          "created_at": 1794490682000,
+          "text": "回复@平静的赚钱小电车: 比涌泉蜜桔差远了。//@平静的赚钱小电车:回复@ice_招行谷子地:冰哥，粑粑柑好吃",
+          "source": "雪球",
           "is_retweet": true,
           "truncated": false,
           "user_id": 1821992043,
@@ -564,9 +740,9 @@
       ],
       "recent_posts": [
         {
-          "id": 416550283,
-          "created_at": 1794456884000,
-          "text": "回复@五六妻: 闲着也是闲着//@五六妻:回复@ice_招行谷子地:老哥不上班 感觉逛雪球的时间都变多了",
+          "id": 416757267,
+          "created_at": 1794550804000,
+          "text": "回复@long52033: 看不上你去买别的呗，又没人拦着你//@long52033:回复@ice_招行谷子地:今年招行的涨幅在整个板块里面 偏下啊，43久攻不下，压单好重，感觉是狗队",
           "source": "Android",
           "is_retweet": true,
           "truncated": false,
@@ -575,9 +751,9 @@
           "pics": []
         },
         {
-          "id": 416537799,
-          "created_at": 1794452696000,
-          "text": "高位，呵呵，拉黑",
+          "id": 416753548,
+          "created_at": 1794550037000,
+          "text": "回复@天目兄: 长跑拼的不是冲刺，净资产以下继续分红复投//@天目兄:回复@ice_招行谷子地:都很弱。",
           "source": "Android",
           "is_retweet": true,
           "truncated": false,
@@ -586,10 +762,10 @@
           "pics": []
         },
         {
-          "id": 416501620,
-          "created_at": 1794444448000,
-          "text": "",
-          "source": "雪球",
+          "id": 416748792,
+          "created_at": 1794549153000,
+          "text": "$招商银行(SH600036)$ @二郎价投 你咋不说港股招行拖后腿了",
+          "source": "Android",
           "is_retweet": false,
           "truncated": false,
           "user_id": 1821992043,
@@ -597,9 +773,9 @@
           "pics": []
         },
         {
-          "id": 416473773,
-          "created_at": 1794403288000,
-          "text": "回复@Leit: 起码说明招行和很多上市公司联系紧密//@Leit:回复@ice_招行谷子地:这算不算利好",
+          "id": 416732340,
+          "created_at": 1794544415000,
+          "text": "回复@百元招行: 大白应该是指类似超能陆战队里的智能陪伴。//@百元招行:回复@ice_招行谷子地:大，白，闺蜜，这些词怎么看都是为男用户打的广告",
           "source": "Android",
           "is_retweet": true,
           "truncated": false,
@@ -608,9 +784,9 @@
           "pics": []
         },
         {
-          "id": 416473560,
-          "created_at": 1794403196000,
-          "text": "回复@高洁的升值小相机: 自己去看历史文章，两年前就定了的事，现在问还有必要吗？//@高洁的升值小相机:回复@ice_招行谷子地:老师，请问工商银行宣布增发意味着什么",
+          "id": 416732018,
+          "created_at": 1794544222000,
+          "text": "回复@明州巴韭特: 躺着追剧，健身跳操，健身看股票//@明州巴韭特:回复@ice_招行谷子地:我20岁的小登也不知道是用来追剧的吧",
           "source": "Android",
           "is_retweet": true,
           "truncated": false,
@@ -619,9 +795,42 @@
           "pics": []
         },
         {
-          "id": 416456796,
-          "created_at": 1794391815000,
-          "text": "回复@莹宝朵爸: 理论上可以征收，也可以不征收。//@莹宝朵爸:回复@ice_招行谷子地:个人也征收吗？",
+          "id": 416731489,
+          "created_at": 1794543934000,
+          "text": "回复@来一杯龙井: 不知道的都是老登，而且是男老登//@来一杯龙井:回复@ice_招行谷子地:俺也不知道",
+          "source": "Android",
+          "is_retweet": true,
+          "truncated": false,
+          "user_id": 1821992043,
+          "user_name": "ice_招行谷子地",
+          "pics": []
+        },
+        {
+          "id": 416731119,
+          "created_at": 1794543722000,
+          "text": "回复@descent2Q: 老登无疑//@descent2Q:回复@ice_招行谷子地:闺蜜机？这是个啥",
+          "source": "Android",
+          "is_retweet": true,
+          "truncated": false,
+          "user_id": 1821992043,
+          "user_name": "ice_招行谷子地",
+          "pics": []
+        },
+        {
+          "id": 416730966,
+          "created_at": 1794543631000,
+          "text": "$海信视像(SH600060)$ 送老婆的生日礼物",
+          "source": "Android",
+          "is_retweet": false,
+          "truncated": false,
+          "user_id": 1821992043,
+          "user_name": "ice_招行谷子地",
+          "pics": []
+        },
+        {
+          "id": 416670651,
+          "created_at": 1794522225000,
+          "text": "回复@李根硕: 每天3-4个没事。//@李根硕:回复@ice_招行谷子地:吃多了上火",
           "source": "雪球",
           "is_retweet": true,
           "truncated": false,
@@ -630,42 +839,9 @@
           "pics": []
         },
         {
-          "id": 416452934,
-          "created_at": 1794389728000,
-          "text": "回复@务实的财经小英勇: 那是营业税，这次传说是所得税//@务实的财经小英勇:回复@ice_招行谷子地:新发国债征税不是去年就开始了吗",
-          "source": "Android",
-          "is_retweet": true,
-          "truncated": false,
-          "user_id": 1821992043,
-          "user_name": "ice_招行谷子地",
-          "pics": []
-        },
-        {
-          "id": 416445545,
-          "created_at": 1794386413000,
-          "text": "回复@什么时候才能自由: 大概率是新老划断//@什么时候才能自由:回复@ice_招行谷子地:对保险公司是不是也是不小的利空啊，险企有大量中长期国债作为基础配置",
-          "source": "Android",
-          "is_retweet": true,
-          "truncated": false,
-          "user_id": 1821992043,
-          "user_name": "ice_招行谷子地",
-          "pics": []
-        },
-        {
-          "id": 416442567,
-          "created_at": 1794385038000,
-          "text": "回复@hjxofgz: 如果是真的，那么利空债券配置多，实际税率低，免税较多的银行，比如有些城商行。//@hjxofgz:回复@ice_招行谷子地:冰哥，新鲜出炉的国债征税小作文怎么看……",
-          "source": "Android",
-          "is_retweet": true,
-          "truncated": false,
-          "user_id": 1821992043,
-          "user_name": "ice_招行谷子地",
-          "pics": []
-        },
-        {
-          "id": 416420797,
-          "created_at": 1794378019000,
-          "text": "回复@天空的火: 自己去看历史文章，普惠，消费贷一堆烂账。//@天空的火:回复@ice_招行谷子地:交通银行为何不良这么多？难道也因为房地产？",
+          "id": 416670246,
+          "created_at": 1794521379000,
+          "text": "回复@高贞的理财小沙堡: 从不指导具体操作。//@高贞的理财小沙堡:回复@ice_招行谷子地:谷子老师，融资买42元的招行可行吗？",
           "source": "雪球",
           "is_retweet": true,
           "truncated": false,

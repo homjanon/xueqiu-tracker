@@ -1,13 +1,13 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-12 14:31:09",
+  "updated_at": "2026-11-13 14:30:58",
   "users": {
     "1821992043": {
       "name": "ice_招行谷子地",
       "account": {
-        "position": "满融",
-        "position_at": 1794188506000,
-        "position_quote": "造成重要影响我还会满融吗",
+        "position": "净资产以下继续分红复投",
+        "position_at": 1794550037000,
+        "position_quote": "长跑拼的不是冲刺，净资产以下继续分红复投",
         "position_quoted": false,
         "pnl": "今年基金赚了一点，收成凑活",
         "pnl_at": 1794125949000,
@@ -64,14 +64,22 @@
             "招商"
           ],
           "latest": {
-            "at": 1794403288000,
-            "post_id": 416473773,
-            "raw_name": "招行",
-            "quote": "起码说明招行和很多上市公司联系紧密",
+            "at": 1794549153000,
+            "post_id": 416748792,
+            "raw_name": "招商银行",
+            "quote": "$招商银行(SH600036)$ @二郎价投 你咋不说港股招行拖后腿了",
             "qty": "876000股",
             "qty_locked": true
           },
           "history": [
+            {
+              "at": 1794403288000,
+              "post_id": 416473773,
+              "raw_name": "招行",
+              "quote": "起码说明招行和很多上市公司联系紧密",
+              "qty": "876000股",
+              "qty_locked": true
+            },
             {
               "at": 1794363939000,
               "post_id": 416378358,
@@ -87,18 +95,10 @@
               "quote": "请以下球友领近期的沙发奖：@做招商茅台安克股东  1次@Anton299  3次@要爱晓宇  1次@恭喜我自己  2次",
               "qty": "876000股",
               "qty_locked": true
-            },
-            {
-              "at": 1794268751000,
-              "post_id": 416200684,
-              "raw_name": "招行",
-              "quote": "比如我过去所有买入招行的动作都是正确的，因为时间拉长后招行是长期上涨的",
-              "qty": "876000股",
-              "qty_locked": true
             }
           ],
           "first_at": 1785578374000,
-          "mention_count": 153
+          "mention_count": 154
         },
         "中国平安": {
           "normalized": true,
@@ -251,9 +251,41 @@
           "history": [],
           "first_at": 1794356658000,
           "mention_count": 1
+        },
+        "英伟达": {
+          "normalized": false,
+          "aliases_seen": [
+            "英伟达"
+          ],
+          "latest": {
+            "at": 1794492097000,
+            "post_id": 416637293,
+            "raw_name": "英伟达",
+            "quote": "$英伟达(NVDA)$ 要不让黄皮衣来大陆建个中伟大吧",
+            "qty": ""
+          },
+          "history": [],
+          "first_at": 1794492097000,
+          "mention_count": 1
+        },
+        "海信视像": {
+          "normalized": false,
+          "aliases_seen": [
+            "海信视像"
+          ],
+          "latest": {
+            "at": 1794543631000,
+            "post_id": 416730966,
+            "raw_name": "海信视像",
+            "quote": "$海信视像(SH600060)$ 送老婆的生日礼物",
+            "qty": ""
+          },
+          "history": [],
+          "first_at": 1794543631000,
+          "mention_count": 1
         }
       },
-      "processed_max_id": 416550283
+      "processed_max_id": 416757267
     },
     "6515752937": {
       "name": "紫金陈",
