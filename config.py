@@ -1,7 +1,9 @@
 """配置：从环境变量读取，缺失时用默认值。
 模型调用按优先级走三级后端（均为原生多模态，图文通吃）：
-  1) 商汤日日新 SenseNova deepseek-v4-flash（SENSENOVA_API_KEY；2026-09-24 起首选：
-     国内场景直连快、公测免费无配额压力，reasoning_effort=low 实测 2-3s 且 content 稳定非空）
+  1) 商汤日日新 SenseNova deepseek-flash（= DeepSeek V4.1 Flash，SENSENOVA_API_KEY；2026-09-24 起首选：
+     国内场景直连快、公测免费无配额压力，reasoning_effort=low 实测 2-3s 且 content 稳定非空。
+     ⚠️ 2026-11-16 由 deepseek-v4-flash 升级为 deepseek-flash：商汤公告 DeepSeek V4 Flash
+     于 2026-11-24 下线，要求在此前把 Model ID 换成 deepseek-flash）
   2) Agnes AI agnes-2.5-flash（AGNES_API_KEY，免费多模态，次选）
   3) Google Gemini 3 Flash（GEMINI_API_KEY，gemini-3-flash-preview；2026-09-24 晚间由 3.8 换回
      ——3.8 免费档 503 连续拥堵，换回 09-16 验证稳定的 3-flash-preview 作确定性兜底）
@@ -27,14 +29,17 @@ USER_HINTS = {
 
 BACKENDS = [
     {
-        # ① 首选：商汤日日新 SenseNova deepseek-v4-flash（2026-09-24 由 ③ 上移。
+        # ① 首选：商汤日日新 SenseNova deepseek-flash（= DeepSeek V4.1 Flash；2026-09-24 由 ③ 上移。
         #   动因：国内股市场景，商汤国内直连快、公测免费无配额压力；
         #   reasoning_effort=low 轻思考实测 12s→2.6s 且 content 稳定非空（参考 qiugecaozuo 用法）；
         #   max_tokens 需给足，否则思考链抢占预算致 content 截断/为空）
-        "name": "sensenova-deepseek-v4-flash",
+        #   ⚠️ 2026-11-16：Model ID 由 deepseek-v4-flash 换为 deepseek-flash（V4 Flash 2026-11-24 下线）。
+        #     注意 ID 是 `deepseek-flash`（不带版本号），不是 `deepseek-v4.1-flash`；
+        #     商汤模型表里新旧两个 ID 曾并列，填旧 ID 不报错、只会静默继续跑旧模型。
+        "name": "sensenova-deepseek-flash",
         "base_url": os.getenv("SENSENOVA_BASE_URL", "https://token.sensenova.cn/v1"),
         "api_key": os.getenv("SENSENOVA_API_KEY", ""),
-        "model": os.getenv("SENSENOVA_MODEL", "deepseek-v4-flash"),
+        "model": os.getenv("SENSENOVA_MODEL", "deepseek-flash"),
         "timeout": int(os.getenv("SENSENOVA_TIMEOUT", "30")),
         "max_tokens": 8000,
         "extra": {"reasoning_effort": "low"},
