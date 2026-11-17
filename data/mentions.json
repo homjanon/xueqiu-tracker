@@ -100,46 +100,6 @@
           "first_at": 1785578374000,
           "mention_count": 154
         },
-        "中国平安": {
-          "normalized": true,
-          "aliases_seen": [
-            "平保",
-            "平安",
-            "中国平安"
-          ],
-          "latest": {
-            "at": 1793181548000,
-            "post_id": 414291486,
-            "raw_name": "中国平安",
-            "quote": "$中国平安(SH601318)$ 我不懂保险随便瞎哔哔几句。看好的和吃息佬都在关注营运利润，不懂的散户在看3季度单季净利润下降93%。到底是吃息佬多还是不懂的散户多？根据我在招行的经验，通常乐观者认为的底部大概率会被打穿。",
-            "qty": "5500股"
-          },
-          "history": [
-            {
-              "at": 1792376191000,
-              "post_id": 412829710,
-              "raw_name": "中国平安",
-              "quote": "mnp卖出北新，买入中国平安。北新赚钱走旳",
-              "qty": "5500股"
-            },
-            {
-              "at": 1792046705000,
-              "post_id": 412440062,
-              "raw_name": "中国平安",
-              "quote": "手里的 $招商银行(SH600036)$  $中国平安(SH601318)$ $五粮液(SZ000858)$ 居然都红着。",
-              "qty": "5500股"
-            },
-            {
-              "at": 1787219744000,
-              "post_id": 405899133,
-              "raw_name": "中国平安",
-              "quote": "$中国平安(SH601318)$  2个账户持有6500股平保的小散户飘过",
-              "qty": "5500股"
-            }
-          ],
-          "first_at": 1785740922000,
-          "mention_count": 8
-        },
         "宁波银行": {
           "normalized": true,
           "aliases_seen": [
@@ -192,7 +152,7 @@
             "post_id": 417022147,
             "raw_name": "长鑫科技",
             "quote": "$长鑫科技(SH688825)$ mnp第二笔建仓",
-            "qty": "500股"
+            "qty": "1000股"
           },
           "history": [
             {
@@ -219,70 +179,6 @@
           ],
           "first_at": 1791816060000,
           "mention_count": 6
-        },
-        "贵州茅台": {
-          "normalized": true,
-          "aliases_seen": [
-            "茅台"
-          ],
-          "latest": {
-            "at": 1794356658000,
-            "post_id": 416352833,
-            "raw_name": "茅台",
-            "quote": "请以下球友领近期的沙发奖：@做招商茅台安克股东  1次@Anton299  3次@要爱晓宇  1次@恭喜我自己  2次",
-            "qty": ""
-          },
-          "history": [],
-          "first_at": 1794356658000,
-          "mention_count": 1
-        },
-        "安克": {
-          "normalized": false,
-          "aliases_seen": [
-            "安克"
-          ],
-          "latest": {
-            "at": 1794356658000,
-            "post_id": 416352833,
-            "raw_name": "安克",
-            "quote": "请以下球友领近期的沙发奖：@做招商茅台安克股东  1次@Anton299  3次@要爱晓宇  1次@恭喜我自己  2次",
-            "qty": ""
-          },
-          "history": [],
-          "first_at": 1794356658000,
-          "mention_count": 1
-        },
-        "英伟达": {
-          "normalized": false,
-          "aliases_seen": [
-            "英伟达"
-          ],
-          "latest": {
-            "at": 1794492097000,
-            "post_id": 416637293,
-            "raw_name": "英伟达",
-            "quote": "$英伟达(NVDA)$ 要不让黄皮衣来大陆建个中伟大吧",
-            "qty": ""
-          },
-          "history": [],
-          "first_at": 1794492097000,
-          "mention_count": 1
-        },
-        "海信视像": {
-          "normalized": false,
-          "aliases_seen": [
-            "海信视像"
-          ],
-          "latest": {
-            "at": 1794543631000,
-            "post_id": 416730966,
-            "raw_name": "海信视像",
-            "quote": "$海信视像(SH600060)$ 送老婆的生日礼物",
-            "qty": ""
-          },
-          "history": [],
-          "first_at": 1794543631000,
-          "mention_count": 1
         }
       },
       "processed_max_id": 417189081
