@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-18 14:31:00",
+  "updated_at": "2026-11-19 14:30:57",
   "users": {
     "1821992043": {
       "name": "ice_招行谷子地",
@@ -179,9 +179,25 @@
           ],
           "first_at": 1791816060000,
           "mention_count": 8
+        },
+        "格力": {
+          "normalized": false,
+          "aliases_seen": [
+            "格力"
+          ],
+          "latest": {
+            "at": 1795015084000,
+            "post_id": 417491039,
+            "raw_name": "格力",
+            "quote": "凤毛麟角的案例，而且跟格力的股权结构，机构资金的态度也有关系。",
+            "qty": ""
+          },
+          "history": [],
+          "first_at": 1795015084000,
+          "mention_count": 1
         }
       },
-      "processed_max_id": 417408415
+      "processed_max_id": 417580898
     },
     "6515752937": {
       "name": "紫金陈",
