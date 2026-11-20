@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-20 14:31:10",
+  "updated_at": "2026-11-20 21:22:57",
   "users": {
     "1821992043": {
       "name": "ice_招行谷子地",
@@ -179,38 +179,6 @@
           ],
           "first_at": 1791816060000,
           "mention_count": 9
-        },
-        "格力": {
-          "normalized": false,
-          "aliases_seen": [
-            "格力"
-          ],
-          "latest": {
-            "at": 1795015084000,
-            "post_id": 417491039,
-            "raw_name": "格力",
-            "quote": "凤毛麟角的案例，而且跟格力的股权结构，机构资金的态度也有关系。",
-            "qty": ""
-          },
-          "history": [],
-          "first_at": 1795015084000,
-          "mention_count": 1
-        },
-        "创业板指": {
-          "normalized": false,
-          "aliases_seen": [
-            "创业板指"
-          ],
-          "latest": {
-            "at": 1795141707000,
-            "post_id": 417757240,
-            "raw_name": "创业板指",
-            "quote": "$创业板指(SZ399006)$ 2个季度干完过去3年的活",
-            "qty": ""
-          },
-          "history": [],
-          "first_at": 1795141707000,
-          "mention_count": 1
         }
       },
       "processed_max_id": 417817386
