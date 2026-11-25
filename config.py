@@ -4,7 +4,9 @@
      国内场景直连快、公测免费无配额压力，reasoning_effort=low 实测 2-3s 且 content 稳定非空。
      ⚠️ 2026-11-16 由 deepseek-v4-flash 升级为 deepseek-flash：商汤公告 DeepSeek V4 Flash
      于 2026-11-24 下线，要求在此前把 Model ID 换成 deepseek-flash）
-  2) Agnes AI agnes-2.5-flash（AGNES_API_KEY，免费多模态，次选）
+  2) Agnes AI agnes-3.0-flash（AGNES_API_KEY，免费多模态，次选；2026-11-25 由 agnes-2.5-flash
+     升级——官方公告 2.5 于 2026-11-30 下线。3.0 为推理模型，extra 固定关思考
+     enable_thinking=false，防思考挤占可见输出、拖长耗时）
   3) Google Gemini 3 Flash（GEMINI_API_KEY，gemini-3-flash-preview；2026-09-24 晚间由 3.8 换回
      ——3.8 免费档 503 连续拥堵，换回 09-16 验证稳定的 3-flash-preview 作确定性兜底）
 支持多用户（逗号分隔）；USER_HINTS 为各用户专属黑话词典（注入 LLM 提示）。
@@ -45,13 +47,20 @@ BACKENDS = [
         "extra": {"reasoning_effort": "low"},
     },
     {
-        # ② 次选：Agnes AI agnes-2.5-flash（免费多模态，复用 douban-tracker 配置；
-        #   曾实测返回 200 但 content 空，居次选位）
-        "name": "agnes-2.5-flash",
+        # ② 次选：Agnes AI agnes-3.0-flash（免费多模态；2026-11-25 由 agnes-2.5-flash 升级，
+        #   动因：官方公告 agnes-2.5-flash 于 2026-11-30 下线，默认对话模型切为
+        #   agnes-3.0-flash（512K 上下文 / 最大输出 65,536，当前免费）。
+        #   ⚠️ 3.0 是推理模型：不关思考会先消费 output tokens、长输入耗时不可控
+        #   （参考仓曾在 74K 字符输入下 90s 超时），故 extra 发官方 chat template 的
+        #   chat_template_kwargs.enable_thinking=false 关闭内部思考。
+        #   2.5 曾实测返回 200 但 content 空，故仍居次选位；_post 已兼容
+        #   content / reasoning_content，3.0 答案若落在 reasoning 系字段也不会被误判为空。
+        "name": "agnes-3.0-flash",
         "base_url": os.getenv("AGNES_BASE_URL", "https://apihub.agnes-ai.com/v1"),
         "api_key": os.getenv("AGNES_API_KEY", ""),
-        "model": os.getenv("AGNES_MODEL", "agnes-2.5-flash"),
+        "model": os.getenv("AGNES_MODEL", "agnes-3.0-flash"),
         "timeout": int(os.getenv("AGNES_TIMEOUT", "30")),
+        "extra": {"chat_template_kwargs": {"enable_thinking": False}},
     },
     {
         # ③ 兜底：Google Gemini 3 Flash（2026-09-24 晚间由 3.8 换回——

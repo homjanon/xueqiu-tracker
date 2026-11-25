@@ -34,14 +34,16 @@ jobs:
           python -u - <<'PY'
           import os, time, requests
           # 2026-09-24 晚间同步模型链（与 config.BACKENDS 一致）：
-          # ① SenseNova deepseek-flash 首选 ② Agnes 2.5 次选 ③ Gemini 3 Flash（gemini-3-flash-preview）兜底。
+          # ① SenseNova deepseek-flash 首选 ② Agnes 3.0 次选 ③ Gemini 3 Flash（gemini-3-flash-preview）兜底。
           # ⚠️ 2026-11-16：商汤 Model ID 由 deepseek-v4-flash 换为 deepseek-flash（V4 Flash 2026-11-24 下线），
           #    本探测列表与 config.BACKENDS 必须同步，否则健康检查报的是已下线的旧模型。
+          # ⚠️ 2026-11-25：Agnes 由 agnes-2.5-flash 升级 agnes-3.0-flash（2.5 于 2026-11-30 下线）；
+          #    3.0 是推理模型，探测同样发 enable_thinking=false 关思考，否则探测本身可能被拖到超时。
           # ⚠️ 3.8 免费档 503 连续拥堵已换回 3-flash-preview（该模型名必须带 -preview 后缀）；
           # ⚠️ Gemini 免费档拥堵/503——探测如实反映当下可用性，非配置错误。
           backends = [
             ("SenseNova deepseek-flash", "https://token.sensenova.cn/v1/chat/completions", os.getenv("SENSENOVA_API_KEY"), "deepseek-flash", {"reasoning_effort": "low", "max_tokens": 2000}),
-            ("Agnes 2.5-flash", "https://apihub.agnes-ai.com/v1/chat/completions", os.getenv("AGNES_API_KEY"), "agnes-2.5-flash", {}),
+            ("Agnes 3.0-flash", "https://apihub.agnes-ai.com/v1/chat/completions", os.getenv("AGNES_API_KEY"), "agnes-3.0-flash", {"chat_template_kwargs": {"enable_thinking": False}}),
             ("Gemini 3 Flash", "https://generativelanguage.googleapis.com/v1beta/openai/chat/completions", os.getenv("GEMINI_API_KEY"), "gemini-3-flash-preview", {}),
           ]
           for name, url, key, model, extra in backends:
